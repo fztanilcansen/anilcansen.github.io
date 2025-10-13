@@ -1,13 +1,126 @@
-<!doctype html><html lang="en"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Services | Physio Island</title>
-<link rel="stylesheet" href="styles.css">
-</head><body>
-<header><h1>Our Services</h1></header>
-<main class="container services-list">
-  <section><h2>Musculoskeletal Rehab</h2><p>Assessment, manual therapy, exercise prescription.</p></section>
-  <section><h2>Vestibular & Balance</h2><p>Vertigo, dizziness, BPPV maneuvers, gait training.</p></section>
-  <section><h2>Sports Injury</h2><p>Return-to-play programs, strength & conditioning.</p></section>
-</main>
-<footer>© 2025 Physio Island</footer>
-</body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Services | Physio Island</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {font-family:Inter, Arial, sans-serif; margin:0; padding:0; line-height:1.6;}
+    header {background:#14b8a6; color:white; padding:20px; text-align:center;}
+    nav a {color:white; margin:0 10px; text-decoration:none; font-weight:600;}
+    .container {max-width:1000px; margin:40px auto; padding:0 20px;}
+    .sidebar {background:#ef4444; color:white; padding:20px; border-radius:8px;}
+    .sidebar a {display:block; color:white; margin:10px 0; text-decoration:none; font-weight:500;}
+    .sidebar a:hover {text-decoration:underline;}
+    .grid {display:grid; grid-template-columns:250px 1fr; gap:30px;}
+    @media (max-width:800px){.grid{grid-template-columns:1fr;}}
+    h1 {color:#0f172a;}
+    h2 {margin-top:30px; color:#0b1220;}
+    img {max-width:100%; border-radius:10px; margin:10px 0;}
+    footer {background:#f1f5f9; text-align:center; padding:20px; font-size:14px;}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Our Services</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <div class="container grid">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h3>Service Categories</h3>
+      <a href="#musculoskeletal">Musculoskeletal Injuries</a>
+      <a href="#advanced-sports">Advanced Sports Rehabilitation</a>
+      <a href="#acupuncture">Acupuncture</a>
+      <a href="#manual-therapy">Manual Therapy</a>
+      <a href="#vestibular">Vestibular Rehabilitation</a>
+      <a href="#shockwave">Shockwave Therapy</a>
+      <a href="#orthotics">Custom Base Orthotics</a>
+      <a href="#concussion">Concussion Management</a>
+      <a href="#neuro">Neurological Rehabilitation</a>
+      <a href="#workplace">Workplace NL</a>
+      <a href="#mva">MVA (Motor Vehicle Accidents)</a>
+    </aside>
+
+    <!-- Main Content -->
+    <main>
+      <section id="musculoskeletal">
+        <h2>Musculoskeletal Injuries</h2>
+        <img src="images/musculoskeletal.jpg" alt="Musculoskeletal Rehabilitation">
+        <p>We assess and treat muscle, joint, ligament and tendon injuries. Using manual therapy, corrective exercise and education, we help restore mobility, reduce pain and improve performance.</p>
+      </section>
+
+      <section id="advanced-sports">
+        <h2>Advanced Sports Rehabilitation</h2>
+        <img src="images/sports.jpg" alt="Sports Rehabilitation">
+        <p>For athletes and active individuals, our advanced rehab program integrates strength, flexibility, and functional movement retraining tailored to your sport and goals.</p>
+      </section>
+
+      <section id="acupuncture">
+        <h2>Acupuncture</h2>
+        <img src="images/acupuncture.jpg" alt="Acupuncture">
+        <p>We offer evidence-informed acupuncture for pain relief, muscle tension, and inflammation management, safely applied by licensed physiotherapists.</p>
+      </section>
+
+      <section id="manual-therapy">
+        <h2>Manual Therapy</h2>
+        <img src="images/manual-therapy.jpg" alt="Manual Therapy">
+        <p>Joint and soft tissue mobilizations improve range of motion, reduce stiffness and promote recovery. Techniques include Maitland, Mulligan and myofascial release methods.</p>
+      </section>
+
+      <section id="vestibular">
+        <h2>Vestibular Rehabilitation</h2>
+        <img src="images/vestibular.jpg" alt="Vestibular Rehabilitation">
+        <p>Treatment for dizziness, vertigo and balance disorders including BPPV, motion sensitivity, and post-concussion vestibular dysfunction.</p>
+      </section>
+
+      <section id="shockwave">
+        <h2>Shockwave Therapy</h2>
+        <img src="images/shockwave.jpg" alt="Shockwave Therapy">
+        <p>Shockwave therapy accelerates healing for chronic tendon pain, plantar fasciitis, and calcific shoulder tendinopathy. Fast, effective, and non-invasive.</p>
+      </section>
+
+      <section id="orthotics">
+        <h2>Custom Base Orthotics</h2>
+        <img src="images/orthotics.jpg" alt="Custom Orthotics">
+        <p>Custom-made orthotics support proper foot alignment and reduce stress on knees, hips and spine — ideal for work, daily walking or athletic performance.</p>
+      </section>
+
+      <section id="concussion">
+        <h2>Concussion Management</h2>
+        <img src="images/concussion.jpg" alt="Concussion Management">
+        <p>Evidence-based concussion care includes vestibular rehab, vision retraining, and graded return-to-activity programs to restore full function safely.</p>
+      </section>
+
+      <section id="neuro">
+        <h2>Neurological Rehabilitation</h2>
+        <img src="images/neuro.jpg" alt="Neurological Rehabilitation">
+        <p>We help clients with stroke, multiple sclerosis, and Parkinson’s disease improve mobility, coordination, and independence through functional training.</p>
+      </section>
+
+      <section id="workplace">
+        <h2>Workplace NL</h2>
+        <img src="images/workplace.jpg" alt="Workplace NL">
+        <p>We provide Workplace NL-approved physiotherapy for work-related injuries. Return-to-work programs and communication with case managers are included.</p>
+      </section>
+
+      <section id="mva">
+        <h2>MVA (Motor Vehicle Accidents)</h2>
+        <img src="images/mva.jpg" alt="MVA Rehabilitation">
+        <p>We offer rehabilitation programs for whiplash, soft tissue injuries, and pain management following car accidents, ensuring safe return to normal activities.</p>
+      </section>
+    </main>
+  </div>
+
+  <footer>
+    <p>© 2025 Physio Island | All Rights Reserved</p>
+  </footer>
+</body>
+</html>
