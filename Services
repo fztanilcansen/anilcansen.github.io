@@ -1,0 +1,13 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Services | Physio Island</title>
+<link rel="stylesheet" href="styles.css">
+</head><body>
+<header><h1>Our Services</h1></header>
+<main class="container services-list">
+  <section><h2>Musculoskeletal Rehab</h2><p>Assessment, manual therapy, exercise prescription.</p></section>
+  <section><h2>Vestibular & Balance</h2><p>Vertigo, dizziness, BPPV maneuvers, gait training.</p></section>
+  <section><h2>Sports Injury</h2><p>Return-to-play programs, strength & conditioning.</p></section>
+</main>
+<footer>© 2025 Physio Island</footer>
+</body></html>
