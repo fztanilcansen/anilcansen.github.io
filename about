@@ -1,0 +1,13 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>About | Physio Island</title>
+<link rel="stylesheet" href="styles.css">
+</head><body>
+<header><h1>About Physio Island</h1></header>
+<main class="container">
+  <p>We provide evidence-based physiotherapy in St. John’s, NL. Our mission is to help you recover faster and move better.</p>
+  <h2>Clinical Focus</h2>
+  <ul><li>Musculoskeletal Rehab</li><li>Vestibular Therapy</li><li>Sports Injury Care</li></ul>
+</main>
+<footer>© 2025 Physio Island</footer>
+</body></html>
