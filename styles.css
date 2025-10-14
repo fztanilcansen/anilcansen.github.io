@@ -32,6 +32,19 @@ a:hover{text-decoration:underline}
 .btn.sm{padding:10px 14px}
 .burger{display:none;cursor:pointer}
 .burger span{display:block;width:26px;height:2px;background:#0b1220;margin:6px 0}
+/* Custom navigation links */
+.nav-links a {
+  text-decoration: none;
+  color: #0b1220;
+  font-weight: 600;
+  padding: 8px 12px;
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: var(--brand);
+}
+
 .menu-toggle{display:none}
 @media (max-width:900px){
   .burger{display:block}
