@@ -1,28 +1,162 @@
-<!doctype html><html lang="en"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Contact | Physio Island</title>
-<link rel="stylesheet" href="styles.css?v=16">
-</head><body>
-<header><h1>Contact Us</h1></header>
-<main class="container">
-  <section
-  <details><summary>Do you offer direct billing?</summary><p>Yes, for many plans.</p></details>
-  <details><summary>Do I need a doctor’s referral?</summary><p>No referral required for physiotherapy in most cases.</p></details>
-</section>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact | Physio Island</title>
+  <link rel="stylesheet" href="styles.css?v=16" />
+</head>
+<body>
 
-<section id="location">
-  <h2>Location</h2>
-  <p>St. John’s, NL — Parking available, wheelchair accessible.</p>
-  <!-- Google Maps embed istersen buraya -->
-</section>
+  <!-- Topbar -->
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <span>Now accepting new patients</span>
+      <a class="topbar-link" href="tel:+17095550000">Call: (709) 555-0000</a>
+    </div>
+  </div>
 
-  <p>Email: info@physioisland.ca • Location: St. John’s, NL</p>
-  <form action="https://formspree.io/f/your-id-here" method="POST">
-    <label>Name<input name="name" required></label>
-    <label>Email<input type="email" name="email" required></label>
-    <label>Message<textarea name="message" rows="5" required></textarea></label>
-    <button type="submit">Send</button>
-  </form>
-</main>
-<footer>© 2025 Physio Island</footer>
-</body></html>
+  <!-- NAV (index ile birebir aynı) -->
+  <nav class="nav">
+    <div class="container nav-inner">
+
+      <!-- Logo -->
+      <a class="brand" href="index.html" aria-label="Physio Island Home">
+        <img src="images/logo.png" alt="Physio Island Logo" />
+        <span>Physio Island</span>
+      </a>
+
+      <!-- Mobile burger -->
+      <input id="m" type="checkbox" class="menu-toggle" aria-label="Open menu">
+      <label for="m" class="burger"><span></span><span></span><span></span></label>
+
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+
+        <!-- Services -->
+        <div class="dropdown">
+          <a class="drop-trigger" href="services.html">Services ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="services.html#workplace">Workplace NL</a></li>
+            <li><a href="services.html#mva">MVA</a></li>
+            <li><a href="services.html#veterans">Veteran Affairs Canada</a></li>
+            <li><a href="services.html#physiotherapy">Physiotherapy</a></li>
+            <li><a href="services.html#sports-rehab">Sports Rehabilitation</a></li>
+            <li><a href="services.html#acupuncture">Acupuncture</a></li>
+            <li><a href="services.html#manual">Manual Therapy</a></li>
+            <li><a href="services.html#vestibular">Vestibular / Vertigo Rehab</a></li>
+            <li><a href="services.html#shockwave">Shockwave Therapy</a></li>
+            <li><a href="services.html#concussion">Concussion / Whiplash</a></li>
+            <li><a href="services.html#neuro">Neurological Rehabilitation</a></li>
+            <li><a href="services.html#exercise">Therapeutic Exercising</a></li>
+            <li><a href="techniques.html">More services & techniques →</a></li>
+          </ul>
+        </div>
+
+        <!-- About -->
+        <div class="dropdown">
+          <a class="drop-trigger" href="about.html">About ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="about.html#about-us">About Us</a></li>
+            <li><a href="about.html#team">Our Team</a></li>
+          </ul>
+        </div>
+
+        <a href="careers.html">Careers</a>
+
+        <!-- Learn More -->
+        <div class="dropdown">
+          <a class="drop-trigger" href="learn-more.html">Learn More ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="direct-billing.html">Direct Billing</a></li>
+            <!-- Eğer FAQ’ı Learn More içine taşıdıysan, linki learn-more.html#faq yap -->
+            <!-- <li><a href="learn-more.html#faq">FAQ</a></li> -->
+          </ul>
+        </div>
+
+        <!-- Contact (sadece Location) -->
+        <div class="dropdown">
+          <a class="drop-trigger" href="contact.html">Contact ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="#location">Location</a></li>
+          </ul>
+        </div>
+
+        <a class="btn sm primary" href="index.html#booking">Book Now</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Sayfa başlığı -->
+  <header class="container" style="padding:40px 0 10px">
+    <h1>Contact Us</h1>
+    <p class="muted">Questions? Send us a message or find our clinic details below.</p>
+  </header>
+
+  <!-- İçerik -->
+  <main class="container">
+
+    <!-- Location -->
+    <section id="location">
+      <h2>Location</h2>
+      <p>Marystown, NL — Parking available, wheelchair accessible.</p>
+
+      <!-- Google Maps embed (isteğe bağlı). Kendi konum iframe’inle değiştir -->
+      <div style="border:1px solid #e5e7eb;border-radius:12px;overflow:hidden;margin:12px 0">
+        <iframe
+          title="Map"
+          width="100%" height="320" style="border:0"
+          loading="lazy" allowfullscreen
+          referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d0!2d-52.713!3d47.561!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sSt%20John's%2C%20NL!5e0!3m2!1sen!2sca!4v0000000000">
+        </iframe>
+      </div>
+    </section>
+
+    <!-- Contact info + form -->
+    <section style="margin-top:28px">
+      <div class="grid" style="grid-template-columns:1fr 1fr; gap:24px">
+        <div>
+          <h3>Clinic Details</h3>
+          <p>
+            Email: <a href="mailto:info@physioisland.ca">info@physioisland.ca</a><br>
+            Phone: <a href="tel:+17095550000">(709) 555-0000</a><br>
+            Address: St. John’s, NL
+          </p>
+          <p class="muted">Hours: Mon–Fri 8:00–18:00 (Evening appointments available)</p>
+        </div>
+
+        <form class="contact-form"
+              action="https://formspree.io/f/your-id-here"
+              method="POST">
+          <!-- ⬆️ Formspree ID’ni 'your-id-here' yerine koy -->
+          <label>Name
+            <input name="name" required>
+          </label>
+          <label>Email
+            <input type="email" name="email" required>
+          </label>
+          <label>Message
+            <textarea name="message" rows="5" required></textarea>
+          </label>
+          <button class="btn primary" type="submit">Send Message</button>
+          <small class="muted">We’ll get back to you within one business day.</small>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="y"></span> Physio Island — All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#privacy">Privacy</a>
+        <a href="#terms">Terms</a>
+      </div>
+    </div>
+  </footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
