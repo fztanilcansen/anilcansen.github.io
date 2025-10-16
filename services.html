@@ -2,139 +2,198 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Services | Physio Island</title>
-<link rel="stylesheet" href="styles.css?v=16">
-
-  <style>
-    body {font-family:Inter, Arial, sans-serif; margin:0; padding:0; line-height:1.6;}
-    header {background:#14b8a6; color:white; padding:20px; text-align:center;}
-    nav a {color:white; margin:0 10px; text-decoration:none; font-weight:600;}
-    .container {max-width:1000px; margin:40px auto; padding:0 20px;}
-    .sidebar {background:#ef4444; color:white; padding:20px; border-radius:8px;}
-    .sidebar a {display:block; color:white; margin:10px 0; text-decoration:none; font-weight:500;}
-    .sidebar a:hover {text-decoration:underline;}
-    .grid {display:grid; grid-template-columns:250px 1fr; gap:30px;}
-    @media (max-width:800px){.grid{grid-template-columns:1fr;}}
-    h1 {color:#0f172a;}
-    h2 {margin-top:30px; color:#0b1220;}
-    img {max-width:100%; border-radius:10px; margin:10px 0;}
-    footer {background:#f1f5f9; text-align:center; padding:20px; font-size:14px;}
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Our Services | Physio Island</title>
+  <!-- CSS sürüm parametresi önbelleği kırar -->
+  <link rel="stylesheet" href="styles.css?v=16">
 </head>
 <body>
-  <header>
-    <h1>Our Services</h1>
-    <nav>
-      <a href="services.html">Services</a>
-<a href="about.html">About</a>
-<a href="contact.html">Contact</a>
-<a class="btn sm primary" href="#booking">Book Now</a>
 
-    </nav>
-  </header>
-
-  <div class="nav-links">
-  <!-- Services: üstüne gelince açılır, tıklayınca index'te #services'e iner -->
-  <!-- SERVICES (tek dropdown) -->
-<div class="dropdown">
-  <a class="drop-trigger" href="services.html">Services ▾</a>
-  <ul class="dropdown-menu">
-    <li><a href="services.html#physiotherapy">Physiotherapy</a></li>
-    <li><a href="services.html#workplace">Workplace NL</a></li>
-    <li><a href="services.html#mva">Motor Vehicle Accidents</a></li>
-    <li><a href="services.html#veterans">Veteran Affairs Canada</a></li>
-    <li><a href="services.html#sports-rehab">Advanced Sports Rehabilitation</a></li>
-    <li><a href="services.html#acupuncture">Acupuncture</a></li>
-    <li><a href="services.html#manual">Manual Therapy</a></li>
-    <li><a href="services.html#vestibular">Vestibular Rehab / Vertigo</a></li>
-    <li><a href="services.html#shockwave">Shockwave Therapy</a></li>
-    <li><a href="services.html#klaser">K-laser Grade IV (coming soon)</a></li>
-    <li><a href="services.html#orthotics">Custom Foot Orthotics</a></li>
-    <li><a href="services.html#concussion">Concussion / Whiplash</a></li>
-    <li><a href="services.html#neuro">Neurological Rehab</a></li>
-    <li><a href="services.html#kinesiology">Kinesiology / Exercise Therapy</a></li>
-  </ul>
-</div>
-
-
-  <a href="about.html">About</a>
-  <a href="contact.html">Contact</a>
-  <a class="btn sm primary" href="index.html#booking">Book Now</a>
-</div>
-
-    <!-- Main Content -->
-    <main>
-      <section id="musculoskeletal">
-        <h2>Musculoskeletal Injuries</h2>
-        <img src="images/musculoskeletal.jpg" alt="Musculoskeletal Rehabilitation">
-        <p>We assess and treat muscle, joint, ligament and tendon injuries. Using manual therapy, corrective exercise and education, we help restore mobility, reduce pain and improve performance.</p>
-      </section>
-
-      <section id="advanced-sports">
-        <h2>Advanced Sports Rehabilitation</h2>
-        <img src="images/sports.jpg" alt="Sports Rehabilitation">
-        <p>For athletes and active individuals, our advanced rehab program integrates strength, flexibility, and functional movement retraining tailored to your sport and goals.</p>
-      </section>
-
-      <section id="acupuncture">
-        <h2>Acupuncture</h2>
-        <img src="images/acupuncture.jpg" alt="Acupuncture">
-        <p>We offer evidence-informed acupuncture for pain relief, muscle tension, and inflammation management, safely applied by licensed physiotherapists.</p>
-      </section>
-
-      <section id="manual-therapy">
-        <h2>Manual Therapy</h2>
-        <img src="images/manual-therapy.jpg" alt="Manual Therapy">
-        <p>Joint and soft tissue mobilizations improve range of motion, reduce stiffness and promote recovery. Techniques include Maitland, Mulligan and myofascial release methods.</p>
-      </section>
-
-      <section id="vestibular">
-        <h2>Vestibular Rehabilitation</h2>
-        <img src="images/vestibular.jpg" alt="Vestibular Rehabilitation">
-        <p>Treatment for dizziness, vertigo and balance disorders including BPPV, motion sensitivity, and post-concussion vestibular dysfunction.</p>
-      </section>
-
-      <section id="shockwave">
-        <h2>Shockwave Therapy</h2>
-        <img src="images/shockwave.jpg" alt="Shockwave Therapy">
-        <p>Shockwave therapy accelerates healing for chronic tendon pain, plantar fasciitis, and calcific shoulder tendinopathy. Fast, effective, and non-invasive.</p>
-      </section>
-
-      <section id="orthotics">
-        <h2>Custom Base Orthotics</h2>
-        <img src="images/orthotics.jpg" alt="Custom Orthotics">
-        <p>Custom-made orthotics support proper foot alignment and reduce stress on knees, hips and spine — ideal for work, daily walking or athletic performance.</p>
-      </section>
-
-      <section id="concussion">
-        <h2>Concussion Management</h2>
-        <img src="images/concussion.jpg" alt="Concussion Management">
-        <p>Evidence-based concussion care includes vestibular rehab, vision retraining, and graded return-to-activity programs to restore full function safely.</p>
-      </section>
-
-      <section id="neuro">
-        <h2>Neurological Rehabilitation</h2>
-        <img src="images/neuro.jpg" alt="Neurological Rehabilitation">
-        <p>We help clients with stroke, multiple sclerosis, and Parkinson’s disease improve mobility, coordination, and independence through functional training.</p>
-      </section>
-
-      <section id="workplace">
-        <h2>Workplace NL</h2>
-        <img src="images/workplace.jpg" alt="Workplace NL">
-        <p>We provide Workplace NL-approved physiotherapy for work-related injuries. Return-to-work programs and communication with case managers are included.</p>
-      </section>
-
-      <section id="mva">
-        <h2>MVA (Motor Vehicle Accidents)</h2>
-        <img src="images/mva.jpg" alt="MVA Rehabilitation">
-        <p>We offer rehabilitation programs for whiplash, soft tissue injuries, and pain management following car accidents, ensuring safe return to normal activities.</p>
-      </section>
-    </main>
+  <!-- Topbar (index ile aynı) -->
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <span>Now accepting new patients</span>
+      <a class="topbar-link" href="tel:+17095550000">Call: (709) 555-0000</a>
+    </div>
   </div>
 
-  <footer>
-    <p>© 2025 Physio Island | All Rights Reserved</p>
+  <!-- NAV (index ile aynı) -->
+  <nav class="nav">
+    <div class="container nav-inner">
+      <!-- Logo -->
+      <a class="brand" href="index.html" aria-label="Physio Island Home">
+        <img src="images/logo.png" alt="Physio Island Logo" />
+        <span>Physio Island</span>
+      </a>
+
+      <!-- Mobile burger -->
+      <input id="m" type="checkbox" class="menu-toggle" aria-label="Open menu">
+      <label for="m" class="burger"><span></span><span></span><span></span></label>
+
+      <!-- Links -->
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+
+        <!-- SERVICES (tek dropdown) -->
+        <div class="dropdown">
+          <a class="drop-trigger" href="services.html">Services ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="#physiotherapy">Physiotherapy</a></li>
+            <li><a href="#workplace">Workplace NL</a></li>
+            <li><a href="#mva">Motor Vehicle Accidents</a></li>
+            <li><a href="#veterans">Veteran Affairs Canada</a></li>
+            <li><a href="#sports-rehab">Advanced Sports Rehabilitation</a></li>
+            <li><a href="#acupuncture">Acupuncture</a></li>
+            <li><a href="#manual">Manual Therapy</a></li>
+            <li><a href="#vestibular">Vestibular Rehab / Vertigo</a></li>
+            <li><a href="#shockwave">Shockwave Therapy</a></li>
+            <li><a href="#klaser">K-laser Grade IV (coming soon)</a></li>
+            <li><a href="#orthotics">Custom Foot Orthotics</a></li>
+            <li><a href="#concussion">Concussion / Whiplash</a></li>
+            <li><a href="#neuro">Neurological Rehab</a></li>
+            <li><a href="#kinesiology">Kinesiology / Exercise Therapy</a></li>
+          </ul>
+        </div>
+
+        <!-- ABOUT -->
+        <div class="dropdown">
+          <a class="drop-trigger" href="about.html">About ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="about.html#about-us">About Us</a></li>
+            <li><a href="about.html#team">Our Team</a></li>
+          </ul>
+        </div>
+
+        <a href="careers.html">Careers</a>
+
+        <!-- LEARN MORE -->
+        <div class="dropdown">
+          <a class="drop-trigger" href="learn-more.html">Learn More ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="direct-billing.html">Direct Billing</a></li>
+            <li><a href="contact.html#faq">FAQ</a></li>
+          </ul>
+        </div>
+
+        <!-- CONTACT -->
+        <div class="dropdown">
+          <a class="drop-trigger" href="contact.html">Contact ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="contact.html#location">Location</a></li>
+          </ul>
+        </div>
+
+        <a class="btn sm primary" href="index.html#booking">Book Now</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Sayfa başı (index tarzı) -->
+  <section class="container" style="padding:40px 0 10px">
+    <h1>Our Services</h1>
+    <p class="muted">Personalized assessment, treatment, and progressive loading.</p>
+  </section>
+
+  <!-- İçerik bölümleri -->
+  <main class="container">
+
+    <section id="physiotherapy">
+      <h2>Physiotherapy</h2>
+      <img src="images/musculoskeletal.jpg" alt="Physiotherapy">
+      <p>One-on-one assessment and treatment to improve mobility, reduce pain, and restore function using manual therapy, exercise, and education.</p>
+    </section>
+
+    <section id="workplace">
+      <h2>Workplace NL</h2>
+      <img src="images/workplace.jpg" alt="Workplace NL">
+      <p>Workplace NL–approved physiotherapy for work-related injuries, including return-to-work planning and case manager communication.</p>
+    </section>
+
+    <section id="mva">
+      <h2>Motor Vehicle Accidents</h2>
+      <img src="images/mva.jpg" alt="Motor Vehicle Accidents">
+      <p>Rehabilitation programs for whiplash and soft-tissue injuries following car accidents to help you safely return to normal activities.</p>
+    </section>
+
+    <section id="veterans">
+      <h2>Veteran Affairs Canada</h2>
+      <img src="images/veterans.jpg" alt="Veteran Affairs Canada">
+      <p>Dedicated physiotherapy services for veterans covered under VAC, with individualized plans and clear communication.</p>
+    </section>
+
+    <section id="sports-rehab">
+      <h2>Advanced Sports Rehabilitation</h2>
+      <img src="images/sports.jpg" alt="Sports Rehabilitation">
+      <p>Performance-focused rehab integrating strength, mobility, and movement retraining tailored to your sport and goals.</p>
+    </section>
+
+    <section id="acupuncture">
+      <h2>Acupuncture</h2>
+      <img src="images/acupuncture.jpg" alt="Acupuncture">
+      <p>Evidence-informed acupuncture for pain relief, muscle tension, and inflammation, provided by licensed physiotherapists.</p>
+    </section>
+
+    <section id="manual">
+      <h2>Manual Therapy</h2>
+      <img src="images/manual-therapy.jpg" alt="Manual Therapy">
+      <p>Hands-on joint and soft-tissue techniques (e.g., Maitland, Mulligan, myofascial release) to improve range, reduce stiffness, and promote recovery.</p>
+    </section>
+
+    <section id="vestibular">
+      <h2>Vestibular Rehab / Vertigo</h2>
+      <img src="images/vestibular.jpg" alt="Vestibular Rehab">
+      <p>Treatment for dizziness, vertigo, and balance disorders (including BPPV), with gaze-stabilization and habituation programs.</p>
+    </section>
+
+    <section id="shockwave">
+      <h2>Shockwave Therapy</h2>
+      <img src="images/shockwave.jpg" alt="Shockwave Therapy">
+      <p>Non-invasive modality for chronic tendon pain (e.g., plantar fasciitis, calcific tendinopathy) to stimulate healing.</p>
+    </section>
+
+    <section id="klaser">
+      <h2>K-laser Grade IV (coming soon)</h2>
+      <img src="images/klaser.jpg" alt="K-laser">
+      <p>High-power laser therapy for pain and tissue healing. Availability coming soon.</p>
+    </section>
+
+    <section id="orthotics">
+      <h2>Custom Foot Orthotics</h2>
+      <img src="images/orthotics.jpg" alt="Custom Foot Orthotics">
+      <p>Custom orthotics to support alignment and reduce stress on the feet, knees, hips, and spine — for work, daily walking, or sport.</p>
+    </section>
+
+    <section id="concussion">
+      <h2>Concussion / Whiplash</h2>
+      <img src="images/concussion.jpg" alt="Concussion / Whiplash">
+      <p>Safe, graded rehab including vestibular and vision retraining to restore full function after head and neck injuries.</p>
+    </section>
+
+    <section id="neuro">
+      <h2>Neurological Rehab</h2>
+      <img src="images/neuro.jpg" alt="Neurological Rehab">
+      <p>Programs for stroke, multiple sclerosis, Parkinson’s disease, and other neurological conditions focused on mobility and independence.</p>
+    </section>
+
+    <section id="kinesiology">
+      <h2>Kinesiology / Exercise Therapy</h2>
+      <img src="images/exercise.jpg" alt="Kinesiology / Exercise Therapy">
+      <p>Progressive, goal-based exercise programs to build strength, balance, and endurance — from early rehab to return-to-activity.</p>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="y"></span> Physio Island — All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#privacy">Privacy</a>
+        <a href="#terms">Terms</a>
+      </div>
+    </div>
   </footer>
+
+  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
 </body>
 </html>
