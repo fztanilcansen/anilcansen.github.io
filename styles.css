@@ -69,7 +69,12 @@ a:hover { text-decoration: underline; }
   letter-spacing: 0.2px;
   color: var(--text);
 }
-.brand img { height: 40px; width: auto; display: block; }
+.brand img {
+  height: 48px;      /* logonun yüksekliği */
+  width: auto;       /* oranı korur */
+  object-fit: contain;
+  vertical-align: middle;
+}
 
 /* Links */
 .nav-links {
