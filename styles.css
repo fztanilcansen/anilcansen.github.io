@@ -80,7 +80,18 @@ html{scroll-behavior:smooth}
   text-decoration: none;
 }
 
-/* Book Now butonu - O AYRI KALSIN */
+/* Book Now butonu - Yeşil ve Büyük */
+.btn-primary {
+  background-color: #5cb85c; /* Yeşil renk */
+  border-color: #4cae4c;     /* Koyu yeşil border */
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+  background-color: #4cae4c; /* Hover, focus, active için koyu yeşil */
+  border-color: #398439;      /* Daha koyu yeşil border */
+}
 .nav-links .btn.primary {
   /* Book Now butonu yeşil kalacak */
 }
