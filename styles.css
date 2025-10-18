@@ -163,12 +163,23 @@ html{scroll-behavior:smooth}
   .nav-inner {
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center; /* Ortalamak için */
+    position: relative; /* Burger için pozisyon referansı */
   }
 
-  /* Burger menüsünü mobilde görünür yapmak */
+  /* Burger menüsünü mobilde görünür yapmak - SOLA AL */
   .burger {
     display: flex;
+    position: absolute;
+    left: 20px; /* SOL tarafa al */
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  /* Logoyu ortala */
+  .brand {
+    margin: 0 auto; /* Logoyu ortalar */
+    padding-left: 0; /* Sol padding'i kaldır */
   }
 
   /* Diğer öğelerin görünür olmasını sağla */
@@ -204,9 +215,9 @@ html{scroll-behavior:smooth}
 
   .nav-links a {
     color: #fff;
-    font-size: 18px; /* ANA MENÜ YAZI BOYUTU */
-    font-weight: 600; /* DAHA KALIN YAPAR */
-    padding: 14px 16px; /* DAHA BÜYÜK TIKLAMA ALANI */
+    font-size: 18px;
+    font-weight: 600;
+    padding: 14px 16px;
   }
 
   /* Dropdown menüler mobilde panel içinde akışkan */
@@ -223,9 +234,9 @@ html{scroll-behavior:smooth}
 
   .dropdown-menu a {
     color: #fff;
-    font-size: 20px; /* DROPDOWN YAZI BOYUTU */
-    font-weight: 600; /* DAHA KALIN */
-    padding: 14px 18px; /* DAHA BÜYÜK TIKLAMA ALANI */
+    font-size: 16px;
+    font-weight: 500;
+    padding: 12px 16px;
   }
 }
 /* =========================
