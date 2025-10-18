@@ -66,6 +66,19 @@ html{scroll-behavior:smooth}
   gap: 30px;
   padding-right: 40px;
 }
+/* Ana menü linkleri - BEYAZ YAP */
+.nav-links > a:not(.btn) {
+  color: var(--text) !important; /* Logo ile aynı renk: #E1E5E7 */
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* Dropdown trigger linkleri - BEYAZ YAP */
+.nav-links .drop-trigger {
+  color: var(--text) !important; /* Logo ile aynı renk: #E1E5E7 */
+  font-weight: 600;
+  text-decoration: none;
+}
 
 /* Dropdown Menüler */
 .dropdown {
