@@ -260,15 +260,36 @@
   <script>
     document.getElementById('y').textContent = new Date().getFullYear();
   </script>
+<script>
+  (function () {
+    document.querySelectorAll('.dropdown .drop-trigger').forEach(function (trig) {
+      trig.addEventListener('click', function (e) {
+        e.preventDefault();
+        e.stopPropagation();
 
-  <script>
-  // Burger menüsünü açma ve kapama işlevi
-  document.querySelector('.menu-toggle').addEventListener('change', function() {
-    const navLinks = document.querySelector('.nav-links');
-    if (this.checked) {
-      navLinks.style.display = 'flex';
-    } else {
-      navLinks.style.display = 'none';
-    }
-  });
+        const dd = trig.closest('.dropdown');
+        // Diğer açık olanları kapat
+        document.querySelectorAll('.dropdown.open').forEach(el => {
+          if (el !== dd) el.classList.remove('open');
+        });
+        // Kendisini toggle et (ikinci tıklama ile kapanacak)
+        dd.classList.toggle('open');
+      });
+    });
+
+    // Dışarı tıklayınca kapat
+    document.addEventListener('click', function () {
+      document.querySelectorAll('.dropdown.open').forEach(el => el.classList.remove('open'));
+    });
+
+    // ESC ile kapat
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') {
+        document.querySelectorAll('.dropdown.open').forEach(el => el.classList.remove('open'));
+      }
+    });
+  })();
 </script>
+</body>
+</html>
+
