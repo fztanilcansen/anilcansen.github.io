@@ -245,37 +245,3 @@ h1{font-size:44px;line-height:1.1;color:#0b1220;margin:14px 0 12px}
 .footer-inner{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px}
 .footer-links{display:flex;gap:14px}
 
-<!-- JavaScript Kodu: -->
-  <script>
-    (function () {
-      document.querySelectorAll('.dropdown .drop-trigger').forEach(function (trig) {
-        trig.addEventListener('click', function (e) {
-          e.preventDefault();
-          e.stopPropagation();
-
-          const dd = trig.closest('.dropdown');
-          // Diğer açık olanları kapat
-          document.querySelectorAll('.dropdown.open').forEach(el => {
-            if (el !== dd) el.classList.remove('open');
-          });
-          // Kendisini toggle et (ikinci tıklama ile kapanacak)
-          dd.classList.toggle('open');
-        });
-      });
-
-      // Dışarı tıklayınca kapat
-      document.addEventListener('click', function () {
-        document.querySelectorAll('.dropdown.open').forEach(el => el.classList.remove('open'));
-      });
-
-      // ESC ile kapat
-      document.addEventListener('keydown', function (e) {
-        if (e.key === 'Escape') {
-          document.querySelectorAll('.dropdown.open').forEach(el => el.classList.remove('open'));
-        }
-      });
-    })();
-  </script>
-  
-</body>
-</html>
