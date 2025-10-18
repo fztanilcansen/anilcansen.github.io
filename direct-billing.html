@@ -1,73 +1,40 @@
+<!-- Navigation Bar -->
 <nav class="nav">
   <div class="container nav-inner">
-
-    <!-- LOGO (yazısız) -->
-    <a class="brand" href="index.html" aria-label="Physio Island Home">
+    <!-- Logo -->
+    <a class="brand" href="index.html">
       <img src="images/logo.png" alt="Physio Island Logo">
+      <span>Physio Island</span>
     </a>
 
-    <!-- Mobil burger -->
-    <input id="m" type="checkbox" class="menu-toggle" aria-label="Open menu">
-    <label for="m" class="burger"><span></span><span></span><span></span></label>
-
-    <!-- MENÜ -->
+    <!-- Menu (Masaüstü menüsü) -->
     <div class="nav-links">
       <a href="index.html">Home</a>
-
-      <!-- SERVICES -->
       <div class="dropdown">
-        <a class="drop-trigger" href="#">Services ▾</a>
-        <ul class="dropdown-menu">
-          <li><a href="services.html#physiotherapy">Physiotherapy</a></li>
-          <li><a href="services.html#workplace">Workplace NL</a></li>
-          <li><a href="services.html#mva">Motor Vehicle Accidents</a></li>
-          <li><a href="services.html#veterans">Veteran Affairs Canada</a></li>
-          <li><a href="services.html#sports-rehab">Advanced Sports Rehabilitation</a></li>
-          <li><a href="services.html#acupuncture">Acupuncture</a></li>
-          <li><a href="services.html#manual">Manual Therapy</a></li>
-          <li><a href="services.html#vestibular">Vestibular Rehab / Vertigo</a></li>
-          <li><a href="services.html#shockwave">Shockwave Therapy</a></li>
-          <li><a href="services.html#klaser">K-laser Grade IV (coming soon)</a></li>
-          <li><a href="services.html#orthotics">Custom Foot Orthotics</a></li>
-          <li><a href="services.html#concussion">Concussion / Whiplash</a></li>
-          <li><a href="services.html#neuro">Neurological Rehab</a></li>
-          <li><a href="services.html#kinesiology">Kinesiology / Exercise Therapy</a></li>
-        </ul>
+        <a href="#" class="drop-trigger">Services</a>
+        <div class="dropdown-menu">
+          <a href="#">Physiotherapy</a>
+          <a href="#">Workplace NL</a>
+          <a href="#">Motor Vehicle Accidents</a>
+          <a href="#">Veteran Affairs Canada</a>
+          <a href="#">Advanced Sports Rehabilitation</a>
+          <a href="#">Acupuncture</a>
+          <a href="#">Manual Therapy</a>
+        </div>
       </div>
-
-      <!-- ABOUT -->
-      <div class="dropdown">
-        <a class="drop-trigger" href="about.html">About ▾</a>
-        <ul class="dropdown-menu">
-          <li><a href="about.html#about-us">About Us</a></li>
-          <li><a href="about.html#team">Our Team</a></li>
-        </ul>
-      </div>
-
-      <a href="careers.html">Careers</a>
-
-      <!-- LEARN MORE -->
-      <div class="dropdown">
-        <a class="drop-trigger" href="learn-more.html">Learn More ▾</a>
-        <ul class="dropdown-menu">
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="direct-billing.html">Direct Billing</a></li>
-          <!-- <li><a href="learn-more.html#faq">FAQ</a></li> -->
-        </ul>
-      </div>
-
-      <!-- CONTACT -->
-      <div class="dropdown">
-        <a class="drop-trigger" href="contact.html">Contact ▾</a>
-        <ul class="dropdown-menu">
-          <li><a href="contact.html#location">Location</a></li>
-        </ul>
-      </div>
-
-      <a class="btn primary" href="index.html#booking">Book Now</a>
+      <a href="#">About</a>
+      <a href="#">Careers</a>
+      <a href="#">Contact</a>
     </div>
+
+    <!-- Mobile Burger -->
+    <input id="m" type="checkbox" class="menu-toggle" aria-label="Open menu">
+    <label for="m" class="burger">
+      <span></span><span></span><span></span>
+    </label>
   </div>
 </nav>
+
 
 <section id="direct-billing">
   <h2>Direct Billing</h2>
