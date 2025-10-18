@@ -175,18 +175,17 @@ html{scroll-behavior:smooth}
   .nav-links {
     display: none;
   }
+
+  /* Menü açıldığında görünür olsun */
   .menu-toggle:checked ~ .nav-links {
     display: flex;
   }
-}
-
 
   /* Logo biraz küçülür */
   .brand img {
     height: 100px;
   }
 
-  /* Menü kapalı başlasın, açılınca görünür olsun */
   .nav-links {
     position: absolute;
     right: 20px;
@@ -207,11 +206,6 @@ html{scroll-behavior:smooth}
     color: #fff;
   }
 
-  /* Menü açıldığında görünür olsun */
-  .menu-toggle:checked ~ .nav-links {
-    display: flex;
-  }
-
   /* Dropdown menüler mobilde panel içinde akışkan */
   .dropdown .dropdown-menu {
     position: relative;
@@ -228,7 +222,6 @@ html{scroll-behavior:smooth}
     color: #fff;
   }
 }
-
 
 /* =========================
    MAIN BODY (özet)
