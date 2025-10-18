@@ -26,120 +26,90 @@ html{scroll-behavior:smooth}
 .container{max-width:1100px;margin:0 auto;padding:0 20px}
 
 /* =========================
-   NAVIGATION (Header)
+   MASAÜSTÜ MENÜ: NORMAL MENU
    ========================= */
-.nav{
-  position: static;            /* sticky kapalı */
-  z-index:100;
-  background: var(--bg);       /* HEADER = brand ile aynı renk */
-  border-bottom:1px solid rgba(255,255,255,.10);
-  min-height:150px;            /* büyük header */
-  display:flex;align-items:center;
+.nav {
+  position: static;
+  z-index: 100;
+  background: var(--bg); /* HEADER ARKA PLAN RENGİ = brand */
+  border-bottom: 1px solid rgba(255, 255, 255, .10);
+  min-height: 150px; /* Büyük header */
+  display: flex;
+  align-items: center;
 }
-.nav-inner{
-  display:flex;align-items:center;justify-content:space-between;width:100%;
+.nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
 }
 
 /* Logo */
-.brand{display:flex;align-items:center;justify-content:flex-start;padding-left:20px}
-.brand img{height:140px;width:auto;object-fit:contain}
-
-/* Links */
-.nav-links{
-  display:flex;align-items:center;gap:30px;padding-right:40px
+.brand {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 20px;
 }
-.nav-links a{
-  color:var(--text);
-  font-weight:600;font-size:17px;letter-spacing:.3px;
-  text-decoration:none; transition:color .2s ease, transform .2s ease;
-}
-.nav-links a:hover{color:#BFD8D5;transform:scale(1.06)}
-
-/* =========================
-   DROPDOWN
-   ========================= */
-.dropdown{ position: relative; }
-
-/* Menü kapalı başlasın */
-.dropdown .dropdown-menu{
-  display:none;
-  position:absolute;
-  top:100%; left:0;
-  background: var(--brand-dark);
-  border-radius:10px;
-  padding:10px 0;
-  min-width:260px;
-  box-shadow:0 12px 30px rgba(0,0,0,.25);
-  list-style:none; margin:0;
-  z-index:1000;
+.brand img {
+  height: 140px;
+  width: auto;
+  object-fit: contain;
 }
 
-/* JS ile açıldığında görünür */
-.dropdown.open .dropdown-menu{ display:block; }
-
-/* SADECE DESKTOP’TA hover ile aç (mobilde hover yok) */
-@media (hover:hover){
-  .dropdown:hover .dropdown-menu{ display:block; }
+/* Links (Masaüstü için normal yatay menü) */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding-right: 40px;
 }
-
-/* Hover boşluğu köprüsü (desktop için güvenli geçiş) */
-.dropdown{
-  --hover-bridge:6px;
+.nav-links a {
+  color: var(--text);
+  font-weight: 600;
+  font-size: 17px;
+  letter-spacing: .3px;
+  text-decoration: none;
+  transition: color .2s ease, transform .2s ease;
 }
-@media (hover:hover){
-  .dropdown::after{
-    content:""; position:absolute; left:0; right:0; top:100%;
-    height: var(--hover-bridge);
-  }
+.nav-links a:hover {
+  color: #BFD8D5;
+  transform: scale(1.06);
 }
-
-/* Menü içi linkler */
-.dropdown-menu a{
-  color:#fff; display:block; padding:12px 18px; font-weight:600; white-space:nowrap;
-}
-.dropdown-menu a:hover{ background:rgba(255,255,255,.12) }
 
 /* =========================
-   BUTTONS
+   MOBİL BURGER MENÜ
    ========================= */
-.btn{
-  display:inline-flex;align-items:center;gap:10px;
-  padding:12px 18px;border-radius:12px;font-weight:700;border:2px solid transparent;
-  cursor:pointer;transition:.2s
-}
-/* BOOK NOW – daha parlak gradient, header’dan ayrışır */
-.btn.primary{
-  background: linear-gradient(135deg, #1EC8C1, #119C96);
-  color:#fff;font-size:20px;padding:16px 30px;border-radius:16px;font-weight:800;
-  border:none; box-shadow:0 10px 24px rgba(0,0,0,.28);
-  transition: all .25s ease;
-}
-.btn.primary:hover{
-  background: linear-gradient(135deg, #22D5CE, #0F8E89);
-  transform:scale(1.06);
-  box-shadow:0 14px 32px rgba(0,0,0,.34);
-}
-/* Sekonder */
-.btn.ghost{
-  background:#fff;border:2px solid var(--brand);
-  color:var(--brand-dark);font-weight:700;padding:12px 20px;border-radius:12px
-}
-.btn.ghost:hover{background:var(--brand);color:#fff}
 
-/* =========================
-   MOBILE BURGER MENU
-   ========================= */
-/* Checkbox görünmesin ama erişilebilir olsun */
-.menu-toggle{
-  position:absolute !important; left:-9999px !important;
-  width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)
+/* Burger menüsünü mobilde göstermek için */
+.menu-toggle {
+  position: absolute !important;
+  left: -9999px !important;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
 }
-/* Burger ikon (masaüstünde gizli) */
-.burger{
-  display:none;cursor:pointer;height:26px;width:34px;
-  flex-direction:column;justify-content:center;align-items:center;gap:6px;
+
+/* Burger ikon */
+.burger {
+  display: none;
+  cursor: pointer;
+  height: 26px;
+  width: 34px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
 }
-.burger span{display:block;width:100%;height:3px;background:#E8F2F2;border-radius:2px}
+
+.burger span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background: #E8F2F2;
+  border-radius: 2px;
+}
 
 /* Mobil düzen */
 @media (max-width: 900px) {
@@ -148,13 +118,9 @@ html{scroll-behavior:smooth}
     align-items: center;
     justify-content: space-between;
   }
+
   .burger {
     display: flex;
-  }
-
-  /* Logo biraz küçülür */
-  .brand img {
-    height: 100px;
   }
 
   /* Menü kapalı başlasın, açılınca görünür olsun */
@@ -199,6 +165,7 @@ html{scroll-behavior:smooth}
     color: #fff;
   }
 }
+
 
   .nav-inner{flex-direction:row;align-items:center;justify-content:space-between}
   .burger{display:flex}
