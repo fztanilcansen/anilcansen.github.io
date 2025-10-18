@@ -164,6 +164,7 @@ html{scroll-behavior:smooth}
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+     
   }
 
   /* Burger menüsünü mobilde görünür yapmak */
@@ -200,10 +201,19 @@ html{scroll-behavior:smooth}
     min-width: 220px;
     width: max-content;
     z-index: 1000;
+     
   }
 
   .nav-links a {
     color: #fff;
+    font-size: 18px; /* ← EKLE */
+  }
+
+  .dropdown-menu a {
+    color: #fff;
+    font-size: 16px; /* ← EKLE */
+  }
+}
   }
 
   /* Dropdown menüler mobilde panel içinde akışkan */
