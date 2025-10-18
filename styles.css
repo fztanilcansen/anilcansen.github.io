@@ -26,17 +26,19 @@ html{scroll-behavior:smooth}
 .container{max-width:1100px;margin:0 auto;padding:0 20px}
 
 /* =========================
-   MASAÜSTÜ MENÜ: NORMAL MENU
+   NAVIGATION (Header)
    ========================= */
 .nav {
-  position: static;
+  position: static; /* sticky kapalı */
   z-index: 100;
-  background: var(--bg); /* HEADER ARKA PLAN RENGİ = brand */
-  border-bottom: 1px solid rgba(255, 255, 255, .10);
-  min-height: 150px; /* Büyük header */
+  background: var(--bg); /* HEADER = brand ile aynı renk */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+  min-height: 150px; /* büyük header */
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
+
 .nav-inner {
   display: flex;
   align-items: center;
@@ -57,31 +59,76 @@ html{scroll-behavior:smooth}
   object-fit: contain;
 }
 
-/* Links (Masaüstü için normal yatay menü) */
+/* Links */
 .nav-links {
   display: flex;
   align-items: center;
   gap: 30px;
   padding-right: 40px;
 }
-.nav-links a {
-  color: var(--text);
-  font-weight: 600;
-  font-size: 17px;
-  letter-spacing: .3px;
-  text-decoration: none;
-  transition: color .2s ease, transform .2s ease;
+
+/* Dropdown Menüler */
+.dropdown {
+  position: relative;
 }
-.nav-links a:hover {
-  color: #BFD8D5;
-  transform: scale(1.06);
+
+.dropdown .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: var(--brand-dark);
+  border-radius: 10px;
+  padding: 10px 0;
+  min-width: 260px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+  list-style: none;
+  margin: 0;
+  z-index: 1000;
+}
+
+/* JS ile açıldığında görünür */
+.dropdown.open .dropdown-menu {
+  display: block;
+}
+
+/* SADECE DESKTOP’TA hover ile aç (mobilde hover yok) */
+@media (hover: hover) {
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+}
+
+/* Hover boşluğu köprüsü (desktop için güvenli geçiş) */
+.dropdown {
+  --hover-bridge: 6px;
+}
+@media (hover: hover) {
+  .dropdown::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    height: var(--hover-bridge);
+  }
+}
+
+/* Menü içi linkler */
+.dropdown-menu a {
+  color: #fff;
+  display: block;
+  padding: 12px 18px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.dropdown-menu a:hover {
+  background: rgba(255, 255, 255, 0.12);
 }
 
 /* =========================
-   MOBİL BURGER MENÜ
+   MOBILE BURGER MENU
    ========================= */
-
-/* Burger menüsünü mobilde göstermek için */
 .menu-toggle {
   position: absolute !important;
   left: -9999px !important;
@@ -91,7 +138,7 @@ html{scroll-behavior:smooth}
   clip: rect(0 0 0 0);
 }
 
-/* Burger ikon */
+/* Burger ikon (masaüstünde gizli) */
 .burger {
   display: none;
   cursor: pointer;
@@ -118,9 +165,13 @@ html{scroll-behavior:smooth}
     align-items: center;
     justify-content: space-between;
   }
-
   .burger {
     display: flex;
+  }
+
+  /* Logo biraz küçülür */
+  .brand img {
+    height: 100px;
   }
 
   /* Menü kapalı başlasın, açılınca görünür olsun */
@@ -134,7 +185,7 @@ html{scroll-behavior:smooth}
     padding: 16px;
     background: var(--brand-dark);
     border-radius: 12px;
-    box-shadow: 0 12px 30px rgba(0, 0, 0, .25);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
     min-width: 220px;
     width: max-content;
     z-index: 1000;
@@ -143,6 +194,29 @@ html{scroll-behavior:smooth}
   .nav-links a {
     color: #fff;
   }
+
+  /* Menü açıldığında görünür olsun */
+  .menu-toggle:checked ~ .nav-links {
+    display: flex;
+  }
+
+  /* Dropdown menüler mobilde panel içinde akışkan */
+  .dropdown .dropdown-menu {
+    position: relative;
+    top: 0;
+    left: 0;
+    min-width: unset;
+    box-shadow: none;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 8px;
+    margin-left: 6px;
+  }
+
+  .dropdown-menu a {
+    color: #fff;
+  }
+}
+
 
   /* Menü açıldığında görünür olsun */
   .menu-toggle:checked ~ .nav-links {
