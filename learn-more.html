@@ -17,20 +17,27 @@
     </div>
   </div>
 
-<!-- NAV (index ile aynı) -->
+ <!-- Navigation Bar -->
 <nav class="nav">
   <div class="container nav-inner">
-
-    <!-- LOGO (yazısız) -->
+    <!-- Logo -->
     <a class="brand" href="index.html" aria-label="Physio Island Home">
       <img src="images/logo.png" alt="Physio Island Logo">
     </a>
 
-    <!-- MENÜ -->
+    <!-- Burger Menu Toggle -->
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="burger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+
+    <!-- Menu (Masaüstü menüsü) - MEVCUT MENÜ AYNI KALIYOR -->
     <div class="nav-links">
       <a href="index.html">Home</a>
 
-      <!-- SERVICES -->
+      <!-- Services Dropdown -->
       <div class="dropdown">
         <a class="drop-trigger" href="#">Services ▾</a>
         <ul class="dropdown-menu">
@@ -51,7 +58,7 @@
         </ul>
       </div>
 
-      <!-- ABOUT -->
+      <!-- About Dropdown -->
       <div class="dropdown">
         <a class="drop-trigger" href="about.html">About ▾</a>
         <ul class="dropdown-menu">
@@ -62,17 +69,16 @@
 
       <a href="careers.html">Careers</a>
 
-      <!-- LEARN MORE -->
+      <!-- Learn More Dropdown -->
       <div class="dropdown">
         <a class="drop-trigger" href="learn-more.html">Learn More ▾</a>
         <ul class="dropdown-menu">
           <li><a href="blog.html">Blog</a></li>
           <li><a href="direct-billing.html">Direct Billing</a></li>
-          <!-- <li><a href="learn-more.html#faq">FAQ</a></li> -->
         </ul>
       </div>
 
-      <!-- CONTACT -->
+      <!-- Contact Dropdown -->
       <div class="dropdown">
         <a class="drop-trigger" href="contact.html">Contact ▾</a>
         <ul class="dropdown-menu">
@@ -82,12 +88,6 @@
 
       <a class="btn primary" href="index.html#booking">Book Now</a>
     </div>
-
-    <!-- Mobile Burger -->
-    <input id="m" type="checkbox" class="menu-toggle" aria-label="Open menu">
-    <label for="m" class="burger">
-      <span></span><span></span><span></span>
-    </label>
   </div>
 </nav>
 
