@@ -57,6 +57,8 @@ html{scroll-behavior:smooth}
   height: 140px;
   width: auto;
   object-fit: contain;
+     filter: brightness(1.5); /* 1.2 değeri parlaklık seviyesini artırır, 1.0 normal parlaklık, 2.0 iki kat daha parlak */
+
 }
 
 /* Links */
