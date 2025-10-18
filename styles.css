@@ -131,16 +131,16 @@ html{scroll-behavior:smooth}
    ========================= */
 .menu-toggle {
   position: absolute !important;
-  left: -9999px !important;
+  left: auto !important;  /* Eski left: -9999px özelliği kaldırıldı */
   width: 1px;
   height: 1px;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
+  overflow: visible; /* Gizleme özelliklerini kaldırıyoruz */
+  clip: auto;  /* Eski clip özelliği kaldırıldı */
 }
 
 /* Burger ikon (masaüstünde gizli) */
 .burger {
-  display: none;
+  display: none; /* Masaüstü görünürlüğü */
   cursor: pointer;
   height: 26px;
   width: 34px;
@@ -165,9 +165,21 @@ html{scroll-behavior:smooth}
     align-items: center;
     justify-content: space-between;
   }
+
+  /* Burger menüsünü mobilde görünür yapmak */
   .burger {
     display: flex;
   }
+
+  /* Diğer öğelerin görünür olmasını sağla */
+  .nav-links {
+    display: none;
+  }
+  .menu-toggle:checked ~ .nav-links {
+    display: flex;
+  }
+}
+
 
   /* Logo biraz küçülür */
   .brand img {
