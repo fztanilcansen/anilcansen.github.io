@@ -142,7 +142,64 @@ html{scroll-behavior:smooth}
 .burger span{display:block;width:100%;height:3px;background:#E8F2F2;border-radius:2px}
 
 /* Mobil düzen */
-@media (max-width:900px){
+@media (max-width: 900px) {
+  .nav-inner {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .burger {
+    display: flex;
+  }
+
+  /* Logo biraz küçülür */
+  .brand img {
+    height: 100px;
+  }
+
+  /* Menü kapalı başlasın, açılınca görünür olsun */
+  .nav-links {
+    position: absolute;
+    right: 20px;
+    top: 150px; /* header min-height ile hizalı */
+    display: none;
+    flex-direction: column;
+    gap: 12px;
+    padding: 16px;
+    background: var(--brand-dark);
+    border-radius: 12px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, .25);
+    min-width: 220px;
+    width: max-content;
+    z-index: 1000;
+  }
+
+  .nav-links a {
+    color: #fff;
+  }
+
+  /* Menü açıldığında görünür olsun */
+  .menu-toggle:checked ~ .nav-links {
+    display: flex;
+  }
+
+  /* Dropdown menüler mobilde panel içinde akışkan */
+  .dropdown .dropdown-menu {
+    position: relative;
+    top: 0;
+    left: 0;
+    min-width: unset;
+    box-shadow: none;
+    background: rgba(255, 255, 255, .08);
+    border-radius: 8px;
+    margin-left: 6px;
+  }
+
+  .dropdown-menu a {
+    color: #fff;
+  }
+}
+
   .nav-inner{flex-direction:row;align-items:center;justify-content:space-between}
   .burger{display:flex}
 
@@ -187,3 +244,38 @@ h1{font-size:44px;line-height:1.1;color:#0b1220;margin:14px 0 12px}
 .footer{border-top:1px solid rgba(0,0,0,.08);background:#fff;color:#0b1220;padding:28px 0}
 .footer-inner{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px}
 .footer-links{display:flex;gap:14px}
+
+<!-- JavaScript Kodu: -->
+  <script>
+    (function () {
+      document.querySelectorAll('.dropdown .drop-trigger').forEach(function (trig) {
+        trig.addEventListener('click', function (e) {
+          e.preventDefault();
+          e.stopPropagation();
+
+          const dd = trig.closest('.dropdown');
+          // Diğer açık olanları kapat
+          document.querySelectorAll('.dropdown.open').forEach(el => {
+            if (el !== dd) el.classList.remove('open');
+          });
+          // Kendisini toggle et (ikinci tıklama ile kapanacak)
+          dd.classList.toggle('open');
+        });
+      });
+
+      // Dışarı tıklayınca kapat
+      document.addEventListener('click', function () {
+        document.querySelectorAll('.dropdown.open').forEach(el => el.classList.remove('open'));
+      });
+
+      // ESC ile kapat
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') {
+          document.querySelectorAll('.dropdown.open').forEach(el => el.classList.remove('open'));
+        }
+      });
+    })();
+  </script>
+  
+</body>
+</html>
