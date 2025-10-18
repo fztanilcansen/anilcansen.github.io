@@ -82,8 +82,11 @@ html{scroll-behavior:smooth}
 
 /* Book Now butonu - Yeşil ve Büyük */
 .btn-primary {
-  background-color: #5cb85c; /* Yeşil renk */
-  border-color: #4cae4c;     /* Koyu yeşil border */
+  background-color: #5cb85c !important; /* Yeşil renk */
+  border-color: #4cae4c !important;     /* Koyu yeşil border */
+  font-size: 18px;                      /* Yazı boyutunu büyüt */
+  padding: 15px 30px;                   /* Butonu daha büyük yapmak için iç boşluk */
+  border-radius: 10px;                  /* Köşe yuvarlama */
 }
 
 .btn-primary:hover,
@@ -92,8 +95,14 @@ html{scroll-behavior:smooth}
   background-color: #4cae4c; /* Hover, focus, active için koyu yeşil */
   border-color: #398439;      /* Daha koyu yeşil border */
 }
+
+/* .nav-links içinde Book Now butonu, aynı şekilde büyük ve yeşil olacak */
 .nav-links .btn.primary {
-  /* Book Now butonu yeşil kalacak */
+  background-color: #5cb85c !important; /* Yeşil renk */
+  border-color: #4cae4c !important;     /* Koyu yeşil border */
+  font-size: 18px;                      /* Yazı boyutunu büyüt */
+  padding: 15px 30px;                   /* Butonu daha büyük yapmak için iç boşluk */
+  border-radius: 10px;                  /* Köşe yuvarlama */
 }
 
 /* Dropdown Menüler */
