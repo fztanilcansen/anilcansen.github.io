@@ -131,16 +131,16 @@ html{scroll-behavior:smooth}
    ========================= */
 .menu-toggle {
   position: absolute !important;
-  left: auto !important;  /* Eski left: -9999px özelliği kaldırıldı */
+  left: auto !important;
   width: 1px;
   height: 1px;
-  overflow: visible; /* Gizleme özelliklerini kaldırıyoruz */
-  clip: auto;  /* Eski clip özelliği kaldırıldı */
+  overflow: visible;
+  clip: auto;
 }
 
 /* Burger ikon (masaüstünde gizli) */
 .burger {
-  display: none; /* Masaüstü görünürlüğü */
+  display: none;
   cursor: pointer;
   height: 26px;
   width: 34px;
@@ -164,7 +164,6 @@ html{scroll-behavior:smooth}
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-     
   }
 
   /* Burger menüsünü mobilde görünür yapmak */
@@ -190,7 +189,7 @@ html{scroll-behavior:smooth}
   .nav-links {
     position: absolute;
     right: 20px;
-    top: 150px; /* header min-height ile hizalı */
+    top: 150px;
     display: none;
     flex-direction: column;
     gap: 12px;
@@ -201,19 +200,13 @@ html{scroll-behavior:smooth}
     min-width: 220px;
     width: max-content;
     z-index: 1000;
-     
   }
 
   .nav-links a {
     color: #fff;
-    font-size: 18px; /* ← EKLE */
-  }
-
-  .dropdown-menu a {
-    color: #fff;
-    font-size: 16px; /* ← EKLE */
-  }
-}
+    font-size: 18px; /* ANA MENÜ YAZI BOYUTU */
+    font-weight: 600; /* DAHA KALIN YAPAR */
+    padding: 14px 16px; /* DAHA BÜYÜK TIKLAMA ALANI */
   }
 
   /* Dropdown menüler mobilde panel içinde akışkan */
@@ -230,9 +223,11 @@ html{scroll-behavior:smooth}
 
   .dropdown-menu a {
     color: #fff;
+    font-size: 16px; /* DROPDOWN YAZI BOYUTU */
+    font-weight: 500; /* DAHA KALIN */
+    padding: 12px 16px; /* DAHA BÜYÜK TIKLAMA ALANI */
   }
 }
-
 /* =========================
    MAIN BODY (özet)
    ========================= */
