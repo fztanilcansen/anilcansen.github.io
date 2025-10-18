@@ -103,38 +103,40 @@
       </div>
     </div>
   </footer>
-  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
-  <!-- JavaScript Kodu: -->
-  <script>
-    (function () {
-      document.querySelectorAll('.dropdown .drop-trigger').forEach(function (trig) {
-        trig.addEventListener('click', function (e) {
-          e.preventDefault();
-          e.stopPropagation();
+<!-- JavaScript -->
+<script>
+  document.getElementById('y').textContent = new Date().getFullYear();
+</script>
 
-          const dd = trig.closest('.dropdown');
-          // Diğer açık olanları kapat
-          document.querySelectorAll('.dropdown.open').forEach(el => {
-            if (el !== dd) el.classList.remove('open');
-          });
-          // Kendisini toggle et (ikinci tıklama ile kapanacak)
-          dd.classList.toggle('open');
+<script>
+  (function () {
+    document.querySelectorAll('.dropdown .drop-trigger').forEach(function (trig) {
+      trig.addEventListener('click', function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+
+        const dd = trig.closest('.dropdown');
+        // Diğer açık olanları kapat
+        document.querySelectorAll('.dropdown.open').forEach(el => {
+          if (el !== dd) el.classList.remove('open');
         });
+        // Kendisini toggle et (ikinci tıklama ile kapanacak)
+        dd.classList.toggle('open');
       });
+    });
 
-      // Dışarı tıklayınca kapat
-      document.addEventListener('click', function () {
+    // Dışarı tıklayınca kapat
+    document.addEventListener('click', function () {
+      document.querySelectorAll('.dropdown.open').forEach(el => el.classList.remove('open'));
+    });
+
+    // ESC ile kapat
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') {
         document.querySelectorAll('.dropdown.open').forEach(el => el.classList.remove('open'));
-      });
-
-      // ESC ile kapat
-      document.addEventListener('keydown', function (e) {
-        if (e.key === 'Escape') {
-          document.querySelectorAll('.dropdown.open').forEach(el => el.classList.remove('open'));
-        }
-      });
-    })();
-  </script>
-  
+      }
+    });
+  })();
+</script>
 </body>
 </html>
