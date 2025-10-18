@@ -7,44 +7,6 @@
   <!-- CSS sürüm parametresi önbelleği kırar -->
   <link rel="stylesheet" href="styles.css?v=18.1">
 </head>
-<body>
-<script>
-  (function () {
-    const menuToggle = document.getElementById('m'); // burger checkbox (varsa)
-
-    // Dropdown tetikleyicileri toggle yapsın
-    document.querySelectorAll('.dropdown .drop-trigger').forEach(function (trig) {
-      trig.addEventListener('click', function (e) {
-        e.preventDefault();
-        e.stopPropagation();
-
-        const dd = trig.closest('.dropdown');
-        // önce diğer açıkları kapat
-        document.querySelectorAll('.dropdown.open').forEach(el => {
-          if (el !== dd) el.classList.remove('open');
-        });
-        // kendisini toggle et (ikinci tıkta kapanır)
-        dd.classList.toggle('open');
-      });
-    });
-
-    // Dışarı tıklayınca kapat
-    document.addEventListener('click', function () {
-      document.querySelectorAll('.dropdown.open').forEach(el => el.classList.remove('open'));
-      if (menuToggle && menuToggle.checked) menuToggle.checked = false; // mobilde burger de kapanır
-    });
-
-    // ESC ile kapat
-    document.addEventListener('keydown', function (e) {
-      if (e.key === 'Escape') {
-        document.querySelectorAll('.dropdown.open').forEach(el => el.classList.remove('open'));
-        if (menuToggle && menuToggle.checked) menuToggle.checked = false;
-      }
-    });
-  })();
-</script>
-<body>
-
 
   <!-- Topbar (index ile aynı) -->
   <div class="topbar">
@@ -232,5 +194,41 @@
   </footer>
 
   <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
-</body>
-</html>
+<body>
+<script>
+  (function () {
+    const menuToggle = document.getElementById('m'); // burger checkbox (varsa)
+
+    // Dropdown tetikleyicileri toggle yapsın
+    document.querySelectorAll('.dropdown .drop-trigger').forEach(function (trig) {
+      trig.addEventListener('click', function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+
+        const dd = trig.closest('.dropdown');
+        // önce diğer açıkları kapat
+        document.querySelectorAll('.dropdown.open').forEach(el => {
+          if (el !== dd) el.classList.remove('open');
+        });
+        // kendisini toggle et (ikinci tıkta kapanır)
+        dd.classList.toggle('open');
+      });
+    });
+
+    // Dışarı tıklayınca kapat
+    document.addEventListener('click', function () {
+      document.querySelectorAll('.dropdown.open').forEach(el => el.classList.remove('open'));
+      if (menuToggle && menuToggle.checked) menuToggle.checked = false; // mobilde burger de kapanır
+    });
+
+    // ESC ile kapat
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') {
+        document.querySelectorAll('.dropdown.open').forEach(el => el.classList.remove('open'));
+        if (menuToggle && menuToggle.checked) menuToggle.checked = false;
+      }
+    });
+  })();
+</script>
+<body>
+
