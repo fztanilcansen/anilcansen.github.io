@@ -84,9 +84,9 @@ html{scroll-behavior:smooth}
 .btn-primary {
   background-color: #5cb85c !important; /* Yeşil renk */
   border-color: #4cae4c !important;     /* Koyu yeşil border */
-  font-size: 18px;                      /* Yazı boyutunu büyüt */
-  padding: 15px 30px;                   /* Butonu daha büyük yapmak için iç boşluk */
-  border-radius: 10px;                  /* Köşe yuvarlama */
+  font-size: 36px;                      /* Yazı boyutunu büyüt */
+  padding: 30px 60px;                   /* Butonu daha büyük yapmak için iç boşluk */
+  border-radius: 20px;                  /* Köşe yuvarlama */
 }
 
 .btn-primary:hover,
@@ -100,9 +100,9 @@ html{scroll-behavior:smooth}
 .nav-links .btn.primary {
   background-color: #5cb85c !important; /* Yeşil renk */
   border-color: #4cae4c !important;     /* Koyu yeşil border */
-  font-size: 18px;                      /* Yazı boyutunu büyüt */
-  padding: 15px 30px;                   /* Butonu daha büyük yapmak için iç boşluk */
-  border-radius: 10px;                  /* Köşe yuvarlama */
+  font-size: 36px;                      /* Yazı boyutunu büyüt */
+  padding: 30px 60px;                   /* Butonu daha büyük yapmak için iç boşluk */
+  border-radius: 20px;                  /* Köşe yuvarlama */
 }
 
 /* Dropdown Menüler */
