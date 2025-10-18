@@ -196,24 +196,24 @@
     </div>
   </footer>
 
-  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
-<body>
+<!-- JavaScript -->
+<script>
+  document.getElementById('y').textContent = new Date().getFullYear();
+</script>
+
 <script>
   (function () {
-    const menuToggle = document.getElementById('m'); // burger checkbox (varsa)
-
-    // Dropdown tetikleyicileri toggle yapsın
     document.querySelectorAll('.dropdown .drop-trigger').forEach(function (trig) {
       trig.addEventListener('click', function (e) {
         e.preventDefault();
         e.stopPropagation();
 
         const dd = trig.closest('.dropdown');
-        // önce diğer açıkları kapat
+        // Diğer açık olanları kapat
         document.querySelectorAll('.dropdown.open').forEach(el => {
           if (el !== dd) el.classList.remove('open');
         });
-        // kendisini toggle et (ikinci tıkta kapanır)
+        // Kendisini toggle et (ikinci tıklama ile kapanacak)
         dd.classList.toggle('open');
       });
     });
@@ -221,17 +221,17 @@
     // Dışarı tıklayınca kapat
     document.addEventListener('click', function () {
       document.querySelectorAll('.dropdown.open').forEach(el => el.classList.remove('open'));
-      if (menuToggle && menuToggle.checked) menuToggle.checked = false; // mobilde burger de kapanır
     });
 
     // ESC ile kapat
     document.addEventListener('keydown', function (e) {
       if (e.key === 'Escape') {
         document.querySelectorAll('.dropdown.open').forEach(el => el.classList.remove('open'));
-        if (menuToggle && menuToggle.checked) menuToggle.checked = false;
       }
     });
   })();
 </script>
-<body>
+</body>
+</html>
+
 
