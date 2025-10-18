@@ -15,77 +15,43 @@
     </div>
   </div>
 
-  <!-- NAV (index ile birebir aynı) -->
-  <nav class="nav">
-    <div class="container nav-inner">
+<!-- Navigation Bar -->
+<nav class="nav">
+  <div class="container nav-inner">
+    <!-- Logo -->
+    <a class="brand" href="index.html">
+      <img src="images/logo.png" alt="Physio Island Logo">
+      <span>Physio Island</span>
+    </a>
 
-      <!-- Logo -->
-      <a class="brand" href="index.html" aria-label="Physio Island Home">
-        <img src="images/logo.png" alt="Physio Island Logo" />
-        <span>Physio Island</span>
-      </a>
-
-      <!-- Mobile burger -->
-      <input id="m" type="checkbox" class="menu-toggle" aria-label="Open menu">
-      <label for="m" class="burger"><span></span><span></span><span></span></label>
-
-      <div class="nav-links">
-        <a href="index.html">Home</a>
-
-        <!-- Services -->
-        <div class="dropdown">
-          <a class="drop-trigger" href="services.html">Services ▾</a>
-          <ul class="dropdown-menu">
-            <li><a href="services.html#workplace">Workplace NL</a></li>
-            <li><a href="services.html#mva">MVA</a></li>
-            <li><a href="services.html#veterans">Veteran Affairs Canada</a></li>
-            <li><a href="services.html#physiotherapy">Physiotherapy</a></li>
-            <li><a href="services.html#sports-rehab">Sports Rehabilitation</a></li>
-            <li><a href="services.html#acupuncture">Acupuncture</a></li>
-            <li><a href="services.html#manual">Manual Therapy</a></li>
-            <li><a href="services.html#vestibular">Vestibular / Vertigo Rehab</a></li>
-            <li><a href="services.html#shockwave">Shockwave Therapy</a></li>
-            <li><a href="services.html#concussion">Concussion / Whiplash</a></li>
-            <li><a href="services.html#neuro">Neurological Rehabilitation</a></li>
-            <li><a href="services.html#exercise">Therapeutic Exercising</a></li>
-            <li><a href="techniques.html">More services & techniques →</a></li>
-          </ul>
+    <!-- Menu (Masaüstü menüsü) -->
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <div class="dropdown">
+        <a href="#" class="drop-trigger">Services</a>
+        <div class="dropdown-menu">
+          <a href="#">Physiotherapy</a>
+          <a href="#">Workplace NL</a>
+          <a href="#">Motor Vehicle Accidents</a>
+          <a href="#">Veteran Affairs Canada</a>
+          <a href="#">Advanced Sports Rehabilitation</a>
+          <a href="#">Acupuncture</a>
+          <a href="#">Manual Therapy</a>
         </div>
-
-        <!-- About -->
-        <div class="dropdown">
-          <a class="drop-trigger" href="about.html">About ▾</a>
-          <ul class="dropdown-menu">
-            <li><a href="about.html#about-us">About Us</a></li>
-            <li><a href="about.html#team">Our Team</a></li>
-          </ul>
-        </div>
-
-        <a href="careers.html">Careers</a>
-
-        <!-- Learn More -->
-        <div class="dropdown">
-          <a class="drop-trigger" href="learn-more.html">Learn More ▾</a>
-          <ul class="dropdown-menu">
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="direct-billing.html">Direct Billing</a></li>
-            <!-- Eğer FAQ’ı Learn More içine taşıdıysan, linki learn-more.html#faq yap -->
-            <!-- <li><a href="learn-more.html#faq">FAQ</a></li> -->
-          </ul>
-        </div>
-
-        <!-- Contact (sadece Location) -->
-        <div class="dropdown">
-          <a class="drop-trigger" href="contact.html">Contact ▾</a>
-          <ul class="dropdown-menu">
-            <li><a href="#location">Location</a></li>
-          </ul>
-        </div>
-
-        <a class="btn sm primary" href="index.html#booking">Book Now</a>
       </div>
+      <a href="#">About</a>
+      <a href="#">Careers</a>
+      <a href="#">Contact</a>
     </div>
-  </nav>
+
+    <!-- Mobile Burger -->
+    <input id="m" type="checkbox" class="menu-toggle" aria-label="Open menu">
+    <label for="m" class="burger">
+      <span></span><span></span><span></span>
+    </label>
+  </div>
+</nav>
+
 
   <!-- Sayfa başlığı -->
   <header class="container" style="padding:40px 0 10px">
