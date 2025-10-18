@@ -311,3 +311,20 @@ h1 {
   display: flex;
   gap: 14px;
 }
+/* NAV linklerini logo yazı rengiyle sabitle (tüm durumlar) */
+.nav .nav-links > a:not(.btn),
+.nav .nav-links > a:not(.btn):link,
+.nav .nav-links > a:not(.btn):visited,
+.nav .nav-links > .dropdown > .drop-trigger,
+.nav .nav-links > .dropdown > .drop-trigger:link,
+.nav .nav-links > .dropdown > .drop-trigger:visited {
+  color: var(--text) !important; /* #E1E5E7 */
+}
+
+/* Hover/focus durumda istersen biraz daha beyaza yaklaşsın */
+.nav .nav-links > a:not(.btn):hover,
+.nav .nav-links > .dropdown > .drop-trigger:hover,
+.nav .nav-links > a:not(.btn):focus-visible,
+.nav .nav-links > .dropdown > .drop-trigger:focus-visible {
+  color: #fff !important;
+}
