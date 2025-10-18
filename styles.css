@@ -1,15 +1,15 @@
 /* =========================
-   Physio Island – styles.css (v16)
+   Physio Island – styles.css (v16 → teal themed)
    ========================= */
 
-/* Theme variables */
+/* Theme variables (logo palette) */
 :root {
   --bg: #0f172a;
   --card: #ffffff;
   --muted: #64748b;
-  --brand: #14b8a6;
-  --brand-dark: #0ea5a4;
-  --ring: #99f6e4;
+  --brand: #0E5B59;        /* Logo zeminine uyumlu ana renk */
+  --brand-dark: #0B4442;   /* Hover / koyu ton */
+  --ring: #6BD3CC;         /* Ufak vurgu rengi */
   --text: #0b1220;
 }
 
@@ -52,6 +52,7 @@ a:hover { text-decoration: underline; }
   backdrop-filter: saturate(180%) blur(8px);
   background: rgba(255, 255, 255, 0.85);
   border-bottom: 1px solid #e5e7eb;
+  min-height: 76px;   /* logo 72px için ferahlık */
 }
 .nav-inner {
   display: flex;
@@ -70,8 +71,8 @@ a:hover { text-decoration: underline; }
   color: var(--text);
 }
 .brand img {
-  height: 48px;      /* logonun yüksekliği */
-  width: auto;       /* oranı korur */
+  height: 72px;     /* LOGO 72px */
+  width: auto;
   object-fit: contain;
   vertical-align: middle;
 }
@@ -79,7 +80,7 @@ a:hover { text-decoration: underline; }
 /* Links */
 .nav-links {
   display: flex;
-  gap: 18px;
+  gap: 20px;       /* biraz daha ferah */
   align-items: center;
 }
 .nav-links a {
@@ -102,25 +103,37 @@ a:hover { text-decoration: underline; }
   cursor: pointer;
   transition: 0.2s;
 }
-.btn.primary { background: var(--brand); color: #fff; }
-.btn.primary:hover { background: var(--brand-dark); }
-.btn.ghost { background: #fff; border-color: #e5e7eb; color: var(--text); }
-.btn.sm { padding: 10px 14px; }
-/* Book Now button - larger version */
-.btn.primary {
+
+/* Primary buttons – logo paletine göre büyük ve premium */
+.btn.primary{
+  background: linear-gradient(135deg, var(--brand), #10716E);
+  color: #fff;
   font-size: 18px;
   padding: 16px 28px;
   border-radius: 14px;
+  font-weight: 800;
+  box-shadow: 0 8px 20px rgba(14,91,89,.18);
+  transition: transform .18s ease, box-shadow .18s ease, background .2s ease;
+}
+.btn.primary:hover{
+  background: linear-gradient(135deg, var(--brand-dark), var(--brand));
+  transform: translateY(-1px) scale(1.04);
+  box-shadow: 0 12px 28px rgba(11,68,66,.22);
+}
+
+/* Secondary (ghost) */
+.btn.ghost {
+  background: #fff;
+  border-color: rgba(14,91,89,.22);
+  color: var(--brand-dark);
   font-weight: 700;
 }
-
-/* Hover efekti biraz daha belirgin olsun */
-.btn.primary:hover {
-  background: var(--brand-dark);
-  transform: scale(1.05);
-  transition: all 0.2s ease;
+.btn.ghost:hover{
+  border-color: rgba(14,91,89,.45);
+  color: var(--brand);
 }
 
+.btn.sm { padding: 10px 14px; }
 
 /* Burger (mobile) */
 .burger { display: none; cursor: pointer; }
@@ -140,12 +153,14 @@ a:hover { text-decoration: underline; }
   font-weight: 700;
   cursor: pointer;
 }
+
+/* Menü rengi markaya uyumlu */
 .dropdown-menu {
   display: none;
   position: absolute;
   top: calc(100% + 10px);
   left: 0;
-  background: #ef4444;
+  background: var(--brand);
   border-radius: 8px;
   padding: 8px 0;
   min-width: 260px;
@@ -177,7 +192,7 @@ a:hover { text-decoration: underline; }
   .nav-links {
     position: absolute;
     right: 20px;
-    top: 60px;
+    top: 76px; /* nav min-height ile hizalı */
     background: #fff;
     border: 1px solid #e5e7eb;
     border-radius: 12px;
