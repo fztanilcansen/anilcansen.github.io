@@ -213,7 +213,7 @@ padding: 0px 0;  /* Üst ve alt padding değerini kısaltabilirsiniz */
     display: flex;
     position: absolute;
     left: 0px; /* SOL tarafa al */
-    top: 50%;
+    top: 10px;
     transform: translateY(-50%);
   }
 
