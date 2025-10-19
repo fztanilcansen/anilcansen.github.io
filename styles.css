@@ -33,7 +33,7 @@ html{scroll-behavior:smooth}
   z-index: 100;
   background: var(--bg); /* HEADER = brand ile aynı renk */
   border-bottom: 1px solid rgba(255, 255, 255, 0.10);
-  min-height: 120px; /* büyük header */
+  min-height: 100px; /* büyük header */
   display: flex;
   align-items: center;
   justify-content: space-between;
