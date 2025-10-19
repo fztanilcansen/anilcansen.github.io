@@ -55,8 +55,8 @@ padding: 8px 0;  /* Üst ve alt padding değerini kısaltabilirsiniz */
   padding-left: 15px;
 }
 .brand img {
-  height: 150px;
-  width: 240px;
+  height: auto;
+  width: 170px;
   object-fit: contain;
      filter: brightness(1.9); /* 1.2 değeri parlaklık seviyesini artırır, 1.0 normal parlaklık, 2.0 iki kat daha parlak */
 
