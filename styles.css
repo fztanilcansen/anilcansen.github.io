@@ -55,7 +55,7 @@ html{scroll-behavior:smooth}
 }
 .brand img {
   height: auto;
-  width: 100px;
+  width: 140px;
   object-fit: contain;
      filter: brightness(1.9); /* 1.2 değeri parlaklık seviyesini artırır, 1.0 normal parlaklık, 2.0 iki kat daha parlak */
 
