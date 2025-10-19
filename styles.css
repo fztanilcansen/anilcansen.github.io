@@ -34,7 +34,7 @@ html{scroll-behavior:smooth}
   background: var(--bg); /* HEADER = brand ile aynı renk */
   border-bottom: 1px solid rgba(255, 255, 255, 0.10);
   min-height: 80px; /* büyük header */
-padding: 8px 0;  /* Üst ve alt padding değerini kısaltabilirsiniz */
+padding: 2px 0;  /* Üst ve alt padding değerini kısaltabilirsiniz */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -56,7 +56,7 @@ padding: 8px 0;  /* Üst ve alt padding değerini kısaltabilirsiniz */
 }
 .brand img {
   height: auto;
-  width: 170px;
+  width: 190px;
   object-fit: contain;
      filter: brightness(1.9); /* 1.2 değeri parlaklık seviyesini artırır, 1.0 normal parlaklık, 2.0 iki kat daha parlak */
 
