@@ -204,7 +204,7 @@ padding: 0px 0;  /* Üst ve alt padding değerini kısaltabilirsiniz */
   .nav-inner {
     flex-direction: row;
     align-items: center;
-    justify-content: center; /* Ortalamak için */
+    justify-content: flex-start; /* Ortalamak için */
     position: relative; /* Burger için pozisyon referansı */
   }
 
@@ -212,7 +212,7 @@ padding: 0px 0;  /* Üst ve alt padding değerini kısaltabilirsiniz */
   .burger {
     display: flex;
     position: absolute;
-    left: 20px; /* SOL tarafa al */
+    left: 0px; /* SOL tarafa al */
     top: 50%;
     transform: translateY(-50%);
   }
@@ -240,8 +240,8 @@ padding: 0px 0;  /* Üst ve alt padding değerini kısaltabilirsiniz */
 
   .nav-links {
     position: absolute;
-    right: 20px;
-    top: 150px;
+    left: 0px;
+    top: 50px;
     display: none;
     flex-direction: column;
     gap: 12px;
