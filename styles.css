@@ -34,6 +34,7 @@ html{scroll-behavior:smooth}
   background: var(--bg); /* HEADER = brand ile aynı renk */
   border-bottom: 1px solid rgba(255, 255, 255, 0.10);
   min-height: 100px; /* büyük header */
+padding: 10px 0;  /* Üst ve alt padding değerini kısaltabilirsiniz */
   display: flex;
   align-items: center;
   justify-content: space-between;
