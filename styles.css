@@ -280,11 +280,10 @@ padding: 0px 0;  /* Üst ve alt padding değerini kısaltabilirsiniz */
     padding: 12px 16px;
   }
 }
-/* HERO alanı slider yüksekliğini belirlesin */
+/* HERO yüksekliğini küçült */
 .hero{
-  /* istersen gradienti kaldır: */
-  /* background: none; */
-  min-height: 320px;           /* masaüstü yüksekliği */
+  /* önceki min-height'ı değiştiriyoruz */
+  min-height: clamp(280px, 48vh, 440px);  /* masaüstünde ~%48 ekran, üst sınır 440px */
   overflow: hidden;
 }
 
@@ -297,6 +296,10 @@ padding: 0px 0;  /* Üst ve alt padding değerini kısaltabilirsiniz */
   max-width: none;
   margin: 0;
 }
+/* Görselin kadrajını ayarla (daha iyi odak) */
+.hero .image-slider img{
+  object-fit: cover;        /* dolsun ama taşan kısım kesilsin */
+  object-position: center 35%; /* üstten biraz odakla – isteğe göre oynatabilirsin */
 
 /* Her slide tam alanı kaplasın */
 .hero .image-slider .slide{
@@ -321,10 +324,11 @@ padding: 0px 0;  /* Üst ve alt padding değerini kısaltabilirsiniz */
   transition: opacity .6s ease;
 }
 
-/* Mobilde hero biraz daha kısa olabilir */
+/* Mobilde daha da kısa olsun */
 @media (max-width: 900px){
-  .hero{ min-height: 380px; }
-}
+  .hero{
+    min-height: clamp(220px, 38vh, 340px);
+  }
 
 
 /* Hero Section Başlık */
