@@ -284,7 +284,7 @@ padding: 0px 0;  /* Üst ve alt padding değerini kısaltabilirsiniz */
 .hero{
   /* istersen gradienti kaldır: */
   /* background: none; */
-  min-height: 520px;           /* masaüstü yüksekliği */
+  min-height: 320px;           /* masaüstü yüksekliği */
   overflow: hidden;
 }
 
