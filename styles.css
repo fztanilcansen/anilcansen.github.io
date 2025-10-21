@@ -279,18 +279,17 @@ padding: 0px 0;  /* Üst ve alt padding değerini kısaltabilirsiniz */
     font-weight: 500;
     padding: 12px 16px;
   }
-}/* === HERO – kompakt full-bleed slider === */
+/* === HERO – full-viewport slider, KIRPMADAN === */
 .hero{
   position: relative;
-  /* önceki daha uzun yüksekliği kısaltıyoruz */
-  min-height: clamp(380px, 58vh, 540px);
+  min-height: 100vh;              /* ekranın tamamını kapla */
   overflow: hidden;
 }
 
 /* Slider HERO’nun tamamını kaplasın */
 .hero .image-slider{
   position: absolute;
-  inset: 0;          /* top/right/bottom/left: 0 */
+  inset: 0;                       /* top/right/bottom/left: 0 */
   width: 100%;
   height: 100%;
   margin: 0;
@@ -301,21 +300,27 @@ padding: 0px 0;  /* Üst ve alt padding değerini kısaltabilirsiniz */
 .hero .image-slider .slide{
   position: absolute;
   inset: 0;
-  display: none;     /* JS aktif olanı block yapacak */
+  display: none;                  /* JS aktif olanı block yapacak */
+  background: var(--bg, #0E5B59); /* letterbox alanlar için arkaplan */
 }
 
-/* Görseller taşmadan dolsun; kadrajı biraz yukarı odakla */
+/* Görseller KIRPILMADAN dolsun (contain); merkezde kalsın */
 .hero .image-slider .slide img{
   width: 100%;
   height: 100%;
-  object-fit: cover;         /* alanı doldur, taşanı kes */
-  object-position: center 35%;
+  object-fit: contain;            /* *** TÜM GÖRSEL GÖRÜNSÜN *** */
+  object-position: center center; /* tam ortala */
   border-radius: 0;
   box-shadow: none;
 }
 
+/* (İsteğe bağlı) yumuşak geçiş – keyframes yok */
+.fade{
+  animation: none;
+  transition: opacity .6s ease;
+}
 
-/* Slider arkasına çok hafif koyuluk (metin varsa okunurluk için) */
+/* (İsteğe bağlı) çok hafif koyuluk istiyorsan bırak; istemiyorsan bu bloğu sil */
 .hero::before{
   content:"";
   position: absolute;
@@ -331,11 +336,9 @@ padding: 0px 0;  /* Üst ve alt padding değerini kısaltabilirsiniz */
   z-index: 1;
 }
 
-/* Mobilde biraz daha kısa tut */
+/* Mobilde de tam ekran kalsın; istersen biraz kısaltabilirsin */
 @media (max-width: 900px){
-  .hero{
-    min-height: clamp(220px, 38vh, 340px);
-  }
+  .hero{ min-height: 100vh; }
 }
 
 
