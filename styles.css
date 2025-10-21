@@ -314,11 +314,6 @@ padding: 0px 0;  /* Üst ve alt padding değerini kısaltabilirsiniz */
   box-shadow: none;
 }
 
-/* Fade animasyonu yerine yumuşak geçiş — JS ile uyumlu */
-.fade{
-  animation: none;
-  transition: opacity .6s ease;
-}
 
 /* Slider arkasına çok hafif koyuluk (metin varsa okunurluk için) */
 .hero::before{
