@@ -283,7 +283,7 @@ padding: 0px 0;  /* Üst ve alt padding değerini kısaltabilirsiniz */
 .hero{
   position: relative;
   /* önceki daha uzun yüksekliği kısaltıyoruz */
-  min-height: clamp(280px, 48vh, 440px);
+  min-height: clamp(380px, 58vh, 540px);
   overflow: hidden;
 }
 
