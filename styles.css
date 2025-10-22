@@ -230,7 +230,7 @@ MOBILE BURGER MENU
 
   /* Menü açıldığında görünür olsun */
   .menu-toggle:checked ~ .nav-links {
-    display: flex;
+    display: none;
   }
 
   /* Logo biraz küçülür */
