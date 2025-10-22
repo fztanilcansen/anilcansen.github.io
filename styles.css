@@ -167,8 +167,7 @@ padding: 0px 0;  /* Üst ve alt padding değerini kısaltabilirsiniz */
   background: rgba(255, 255, 255, 0.12);
 }
 
-/* =========================
-   MOBILE BURGER MENU
+MOBILE BURGER MENU
    ========================= */
 .menu-toggle {
   position: absolute !important;
@@ -204,24 +203,23 @@ padding: 0px 0;  /* Üst ve alt padding değerini kısaltabilirsiniz */
   .nav-inner {
     flex-direction: row;
     align-items: center;
-    justify-content: flex-start; /* SOLA YASLA */
-    position: relative;
-    padding-left: 60px; /* Burger için yer aç */
+    justify-content: flex-start; /* Ortalamak için */
+    position: relative; /* Burger için pozisyon referansı */
   }
 
-  /* Burger menüsünü mobilde görünür yapmak - SOL ORTA */
+  /* Burger menüsünü mobilde görünür yapmak - SOLA AL */
   .burger {
     display: flex;
     position: absolute;
-    left: 20px; /* SOL TARAFA AL */
-    top: 50%; /* DIKEY ORTALA */
-    transform: translateY(-50%); /* TAM ORTALAMA */
+    left: 0px; /* SOL tarafa al */
+    top: 10px;
+    transform: translateY(-50%);
   }
 
   /* Logoyu ortala */
   .brand {
     margin: 0 auto; /* Logoyu ortalar */
-    padding-left: 0;
+    padding-left: 0; /* Sol padding'i kaldır */
   }
 
   /* Diğer öğelerin görünür olmasını sağla */
@@ -241,8 +239,8 @@ padding: 0px 0;  /* Üst ve alt padding değerini kısaltabilirsiniz */
 
   .nav-links {
     position: absolute;
-    left: 20px; /* SOL TARAFA AL */
-    top: 150px; /* AŞAĞI İNDİR */
+    left: 0px;
+    top: 50px;
     display: none;
     flex-direction: column;
     gap: 12px;
@@ -280,25 +278,7 @@ padding: 0px 0;  /* Üst ve alt padding değerini kısaltabilirsiniz */
     font-weight: 500;
     padding: 12px 16px;
   }
-}
-  /* Dropdown menüler mobilde panel içinde akışkan */
-  .dropdown .dropdown-menu {
-    position: relative;
-    top: 0;
-    left: 0;
-    min-width: unset;
-    box-shadow: none;
-    background: rgba(255, 255, 255, 0.08);
-    border-radius: 8px;
-    margin-left: 6px;
-  }
 
-  .dropdown-menu a {
-    color: #fff;
-    font-size: 16px;
-    font-weight: 500;
-    padding: 12px 16px;
-  }
 }/* === HERO – kompakt full-bleed slider === */
 .hero{
   position: relative;
@@ -315,7 +295,6 @@ padding: 0px 0;  /* Üst ve alt padding değerini kısaltabilirsiniz */
   height: 100%;
   margin: 0;
   max-width: none;
-sen bunu al bana cevir gerekli kisim ile gereksiz silme yapma. ayni zamanda butun sayfayi kaplat ve resmin butun hepsi gozuksun
 }
 
 /* Her slide tüm alanı kaplasın (JS görünürlüğü yönetiyor) */
