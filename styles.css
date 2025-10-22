@@ -204,23 +204,24 @@ padding: 0px 0;  /* Üst ve alt padding değerini kısaltabilirsiniz */
   .nav-inner {
     flex-direction: row;
     align-items: center;
-    justify-content: flex-start; /* Ortalamak için */
-    position: relative; /* Burger için pozisyon referansı */
+    justify-content: flex-start; /* SOLA YASLA */
+    position: relative;
+    padding-left: 60px; /* Burger için yer aç */
   }
 
-  /* Burger menüsünü mobilde görünür yapmak - SOLA AL */
+  /* Burger menüsünü mobilde görünür yapmak - SOL ORTA */
   .burger {
     display: flex;
     position: absolute;
-    left: 0px; /* SOL tarafa al */
-    top: 10px;
-    transform: translateY(-50%);
+    left: 20px; /* SOL TARAFA AL */
+    top: 50%; /* DIKEY ORTALA */
+    transform: translateY(-50%); /* TAM ORTALAMA */
   }
 
   /* Logoyu ortala */
   .brand {
     margin: 0 auto; /* Logoyu ortalar */
-    padding-left: 0; /* Sol padding'i kaldır */
+    padding-left: 0;
   }
 
   /* Diğer öğelerin görünür olmasını sağla */
@@ -240,8 +241,8 @@ padding: 0px 0;  /* Üst ve alt padding değerini kısaltabilirsiniz */
 
   .nav-links {
     position: absolute;
-    left: 0px;
-    top: 50px;
+    left: 20px; /* SOL TARAFA AL */
+    top: 150px; /* AŞAĞI İNDİR */
     display: none;
     flex-direction: column;
     gap: 12px;
@@ -261,6 +262,25 @@ padding: 0px 0;  /* Üst ve alt padding değerini kısaltabilirsiniz */
     padding: 14px 16px;
   }
 
+  /* Dropdown menüler mobilde panel içinde akışkan */
+  .dropdown .dropdown-menu {
+    position: relative;
+    top: 0;
+    left: 0;
+    min-width: unset;
+    box-shadow: none;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 8px;
+    margin-left: 6px;
+  }
+
+  .dropdown-menu a {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 12px 16px;
+  }
+}
   /* Dropdown menüler mobilde panel içinde akışkan */
   .dropdown .dropdown-menu {
     position: relative;
