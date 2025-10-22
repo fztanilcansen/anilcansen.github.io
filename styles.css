@@ -170,12 +170,7 @@ padding: 0px 0;  /* Üst ve alt padding değerini kısaltabilirsiniz */
 MOBILE BURGER MENU
    ========================= */
 .menu-toggle {
-  position: absolute !important;
-  left: auto !important;
-  width: 1px;
-  height: 1px;
-  overflow: visible;
-  clip: auto;
+display: none; 
 }
 
 /* Burger ikon (masaüstünde gizli) */
@@ -230,7 +225,7 @@ MOBILE BURGER MENU
 
   /* Menü açıldığında görünür olsun */
   .menu-toggle:checked ~ .nav-links {
-    display: none;
+    display: flex;
   }
 
   /* Logo biraz küçülür */
