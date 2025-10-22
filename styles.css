@@ -204,7 +204,8 @@ MOBILE BURGER MENU
     flex-direction: row;
     align-items: center;
     justify-content: flex-start; /* Ortalamak için */
-    position: relative; /* Burger için pozisyon referansı */
+    position: relative; /* Burger için pozisyon referansı
+     padding-top: 20px; */
   }
 
   /* Burger menüsünü mobilde görünür yapmak - SOLA AL */
@@ -212,7 +213,7 @@ MOBILE BURGER MENU
     display: flex;
     position: absolute;
     left: 0px; /* SOL tarafa al */
-    top: 10px;
+    top: 50%;
     transform: translateY(-50%);
   }
 
