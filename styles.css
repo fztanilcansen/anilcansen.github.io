@@ -283,13 +283,15 @@ MOBILE BURGER MENU
   }
 
 }/* === HERO – kompakt full-bleed slider === */
+/* === HERO – full-bleed slider (masaüstünde tam ekran) === */
 .hero{
   position: relative;
-  /* önceki daha uzun yüksekliği kısaltıyoruz */
-  min-height: clamp(380px, 58vh, 540px);
+  height: 100svh;                /* tam ekran */
+  width: 100vw;                  /* container sınırını kır */
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
   overflow: hidden;
 }
-
 /* Slider HERO’nun tamamını kaplasın */
 .hero .image-slider{
   position: absolute;
