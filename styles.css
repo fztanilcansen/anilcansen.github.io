@@ -369,21 +369,19 @@ h1 {
 .image-slider {
   position: relative;
   width: 100%;
-  max-width: 1200px;
+  max-width: none;
   margin: auto;
   overflow: hidden;
 }
 
 .slide {
   display: none;
-  text-align: center;
+  text-align: initial;
 }
 
 .slide img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 0px;
+  box-shadow: none;
 }
 
 /* Footer */
