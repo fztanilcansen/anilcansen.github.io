@@ -285,8 +285,8 @@ MOBILE BURGER MENU
 /* === HERO – full-bleed slider (masaüstünde tam ekran) === */
 .hero{
   position: relative;
-  height: 100svh;                /* tam ekran */
-  width: 100%;                  /* container sınırını kır */
+  height: 70svh;                /* tam ekran */
+  width: 70svh;                  /* container sınırını kır */
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
   overflow: hidden;
