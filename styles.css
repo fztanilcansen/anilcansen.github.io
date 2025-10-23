@@ -171,6 +171,13 @@ MOBILE BURGER MENU
    ========================= */
 .menu-toggle {
 display: none; 
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
 }
 
 /* Burger ikon (masaüstünde gizli) */
