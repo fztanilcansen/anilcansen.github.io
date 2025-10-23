@@ -170,11 +170,13 @@ padding: 0px 0;  /* Üst ve alt padding değerini kısaltabilirsiniz */
 MOBILE BURGER MENU
    ========================= */
 .menu-toggle {
-  position: absolute;
-  left: -9999px; /* ekran dışına atar */
-  opacity: 0; /* görünmez yapar */
-     appearance: none;
-  -webkit-appearance: none;
+   position: absolute !important;
+  left: auto !important;
+  width: 1px;
+  height: 1px;
+  overflow: visible;
+  clip: auto;
+
 }
 
 /* Burger ikon (masaüstünde gizli) */
@@ -204,7 +206,6 @@ MOBILE BURGER MENU
     align-items: center;
     justify-content: flex-start; /* Ortalamak için */
     position: relative; /* Burger için pozisyon referansı
-     padding-top: 20px; */
   }
 
   /* Burger menüsünü mobilde görünür yapmak - SOLA AL */
