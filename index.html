@@ -151,18 +151,16 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
     :root{
-      --bg: #f5f7f9;
+      --bg: #ffffff; /* pure white background */
       --card:#ffffff;
-      --muted:#374151; /* slate-700 */
-      --text:#0b1214;  /* near-black */
+      --muted:#374151;
+      --text:#0b1214;
       --accent:#20bfc6;
       --accent-2:#7adfe3;
       --ring: 0 0 0 3px rgba(32,191,198,.25);
     }
     *{box-sizing:border-box}
-    html,body{
-      margin:0; font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif; color:var(--text); background:var(--bg);
-    }
+    html,body{ margin:0; font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif; color:var(--text); background:#fff !important; }
     body{
       margin:0; font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif; color:var(--text); background:linear-gradient(180deg,#0b1214,#0a0f10);
     }
@@ -207,6 +205,10 @@
     .btn{display:inline-flex; align-items:center; gap:8px; padding:10px 14px; border-radius:999px; background:linear-gradient(135deg,var(--accent),var(--accent-2)); color:#042a2b; font-weight:700; border:1px solid rgba(255,255,255,.18); box-shadow:0 6px 20px rgba(52,195,201,.25); transition:transform .15s ease, box-shadow .15s ease}
     .btn:hover{transform:translateY(-1px); box-shadow:0 10px 28px rgba(52,195,201,.35)}
     .btn:focus-visible{outline:none; box-shadow: var(--ring)}
+      /* Force light surface in case a global dark theme leaks in */
+    html{ background:#fff !important; }
+    html,body,.container,header,section,main{ background:#fff; }
+    @media (prefers-color-scheme: dark){ body{ background:#fff !important; color:#0b1214; } }
   </style>
 </head>
 <body>
@@ -216,7 +218,7 @@
         <span class="logo" aria-hidden="true"></span>
         <h1>Our Services</h1>
       </div>
-    </header><p class="lead">The sections below are clickable cards. Each card opens its own service page. Add your images later under <code>/images/</code> as <code>images11.jpg</code> – <code>images20.jpg</code>.</p>
+    </header>
 
     <section class="grid" aria-label="Services grid">
       <!-- 1: Physiotherapy -->
@@ -336,6 +338,7 @@
   </div>
 </body>
 </html>
+
 
   <!-- About -->
   <section id="about" class="alt">
