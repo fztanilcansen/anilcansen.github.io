@@ -79,8 +79,8 @@ padding: 0px 0;  /* Üst ve alt padding değerini kısaltabilirsiniz */
 
 /* Book Now butonu için stil */
 .btn-primary {
-  background-color: var(--brand, #20bfc6) !important; /* logo rengi */
-  border-color: var(--brand, #20bfc6) !important;
+  background-color: var(--brand, #0E5B59)  !important; /* logo rengi */
+  border-color: var(--brand, #0E5B59)  !important;
   font-size: 18px;
   padding: 15px 30px;
   border-radius: 10px;
@@ -95,8 +95,8 @@ padding: 0px 0;  /* Üst ve alt padding değerini kısaltabilirsiniz */
 
 /* .nav-links içinde Book Now butonu, aynı şekilde büyük ve yeşil olacak */
 .nav-links .btn.primary {
-  background-color: #5cb85c !important; /* Yeşil renk */
-  border-color: #4cae4c !important;     /* Koyu yeşil border */
+  background-color: var(--brand, #0E5B59) !important; /* Yeşil renk */
+  border-color:var(--brand, #0E5B59) !important;     /* Koyu yeşil border */
   font-size: 18px;                      /* Yazı boyutunu büyüt */
   padding: 15px 30px;                   /* Butonu daha büyük yapmak için iç boşluk */
   border-radius: 10px;                  /* Köşe yuvarlama */
@@ -104,7 +104,7 @@ padding: 0px 0;  /* Üst ve alt padding değerini kısaltabilirsiniz */
 
 /* Dropdown trigger linkleri - BEYAZ YAP */
 .nav-links .drop-trigger {
-  color: var(--text-nav) !important; 
+  color:#0b1214 !important; 
   font-weight: 600;
   text-decoration: none;
 }
@@ -119,10 +119,11 @@ padding: 0px 0;  /* Üst ve alt padding değerini kısaltabilirsiniz */
   position: absolute;
   top: 100%;
   left: 0;
-  background: var(--brand);
+  background: #568C8B; /* fallback ~ 70/30 karışım */
+  background: color-mix(in srgb, var(--brand, #0E5B59) 70%, white);
   border-radius: 10px;
   padding: 10px 0;
-  min-width: 260px;
+  min-width: 220px;
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
   list-style: none;
   margin: 0;
