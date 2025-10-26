@@ -1,5 +1,5 @@
 /* =========================
-   Physio Island – styles.css (v19)
+   Physio Island – styles.css (v20)
    ========================= */
 
 /* Theme variables (logo palette) */
@@ -460,4 +460,10 @@ h1 {
 }
 /* Nav'dan sonra gelen ilk blok (hero vb.) yukarı yapışsın */
 .nav + *{ margin-top: 0 !important; }
+/* (Üstte duyuru/announcement varsa fazladan boşluk olmasın) */
+.topbar, .announcement, .notice-bar{
+  margin:0 !important;
+  padding:4px 0 !important;
+  line-height:1.2 !important;
+}
 
