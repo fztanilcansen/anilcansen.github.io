@@ -71,25 +71,26 @@ padding: 0px 0;  /* Üst ve alt padding değerini kısaltabilirsiniz */
 }
 /* Ana menü linkleri - BEYAZ YAP */
 .nav-links > a:not(.btn) {
-  color: var(--text) !important; /* Logo ile aynı renk: #E1E5E7 */
+  color: #fff !important;      /* was: var(--text) */
   font-weight: 600;
   text-decoration: none;
 }
 
 /* Book Now butonu için stil */
 .btn-primary {
-  background-color: #5cb85c !important; /* Yeşil renk */
-  border-color: #4cae4c !important;     /* Koyu yeşil border */
-  font-size: 18px;                      /* Yazı boyutunu büyüt */
-  padding: 15px 30px;                   /* Butonu daha büyük yapmak için iç boşluk */
-  border-radius: 10px;                  /* Köşe yuvarlama */
+  background-color: var(--brand, #20bfc6) !important; /* logo rengi */
+  border-color: var(--brand, #20bfc6) !important;
+  font-size: 24px;
+  padding: 15px 30px;
+  border-radius: 10px;
 }
 
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active {
-  background-color: #4cae4c; /* Hover, focus, active için koyu yeşil */
-  border-color: #398439;      /* Daha koyu yeşil border */
+  background-color: var(--brand, #20bfc6) !important;
+  filter: brightness(.9);
+  border-color: var(--brand, #20bfc6) !important;
 }
 
 /* .nav-links içinde Book Now butonu, aynı şekilde büyük ve yeşil olacak */
@@ -103,7 +104,7 @@ padding: 0px 0;  /* Üst ve alt padding değerini kısaltabilirsiniz */
 
 /* Dropdown trigger linkleri - BEYAZ YAP */
 .nav-links .drop-trigger {
-  color: var(--text) !important; /* Logo ile aynı renk: #E1E5E7 */
+  color: var(--brand, #20bfc6) !important; /* Logo ile aynı renk: #20bfc6 */
   font-weight: 600;
   text-decoration: none;
 }
