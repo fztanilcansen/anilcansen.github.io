@@ -168,6 +168,14 @@ padding: 0px 0;  /* Üst ve alt padding değerini kısaltabilirsiniz */
 .dropdown-menu a:hover {
   background: rgba(255, 255, 255, 0.12);
 }
+/* === NAV link font size (desktop) === */
+@media (min-width: 901px){
+  .nav .nav-links > a:not(.btn),
+  .nav .nav-links > .dropdown > .drop-trigger{
+    font-size: 19px;     /* 16–18 arası deneyebilirsin */
+    line-height: 1.2;    /* dikey hizayı korur */
+  }
+}
 
 MOBILE BURGER MENU
    ========================= */
