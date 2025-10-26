@@ -77,29 +77,32 @@ padding: 0px 0;  /* Üst ve alt padding değerini kısaltabilirsiniz */
   text-decoration: none;
 }
 
-/* Book Now butonu için stil */
+/* Book Now butonu için stil — HER YERDE MAVİ (#20bfc6) */
 .btn-primary {
-  background-color: var(--brand, #0E5B59)  !important; /* logo rengi */
-  border-color: var(--brand, #0E5B59)  !important;
+  background-color: #20bfc6 !important;   /* mavi taban */
+  border-color:     #20bfc6 !important;
+  color: #fff !important;                 /* metin hep beyaz */
   font-size: 18px;
   padding: 15px 30px;
-  border-radius: 10px;
+  border-radius: 10px;                    /* istersen 999px yapıp pill görünüm ver */
 }
 
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active {
-  background-color: var(--brand, #20bfc6) !important;
-  border-color: var(--brand, #20bfc6) !important;
+  background-color: #1bb3ba !important;   /* mavi koyusu (hover) */
+  border-color:     #1bb3ba !important;
+  color:#fff !important;
 }
 
-/* .nav-links içinde Book Now butonu, aynı şekilde büyük ve yeşil olacak */
+/* Nav içindeki Book Now da aynı mavi olsun (önceden #568C8B idi) */
 .nav-links .btn.primary {
-  background-color: var(--brand, #568C8B) !important;  
-  border-color:var(--brand, #568C8B) !important;      
-  font-size: 18px;                      /* Yazı boyutunu büyüt */
-  padding: 15px 30px;                   /* Butonu daha büyük yapmak için iç boşluk */
-  border-radius: 10px;                  /* Köşe yuvarlama */
+  background-color: #20bfc6 !important;
+  border-color:     #20bfc6 !important;
+  color:#fff !important;
+  font-size: 18px;
+  padding: 15px 30px;
+  border-radius: 10px;
 }
 
 /* Dropdown trigger linkleri - BEYAZ YAP */
