@@ -82,7 +82,7 @@ padding: 0px 0;  /* Üst ve alt padding değerini kısaltabilirsiniz */
   background-color: #20bfc6 !important;   /* mavi taban */
   border-color:     #20bfc6 !important;
   color: #fff !important;                 /* metin hep beyaz */
-  font-size: 18px;
+  font-size: 23px;
   padding: 15px 30px;
   border-radius: 10px;                    /* istersen 999px yapıp pill görünüm ver */
 }
@@ -100,7 +100,7 @@ padding: 0px 0;  /* Üst ve alt padding değerini kısaltabilirsiniz */
   background-color: #20bfc6 !important;
   border-color:     #20bfc6 !important;
   color:#fff !important;
-  font-size: 18px;
+  font-size: 23px;
   padding: 15px 30px;
   border-radius: 10px;
 }
