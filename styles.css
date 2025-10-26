@@ -458,4 +458,6 @@ h1 {
 .nav .nav-links > .dropdown > .drop-trigger:focus-visible {
   color: #fff !important;
 }
+/* Nav'dan sonra gelen ilk blok (hero vb.) yukarı yapışsın */
+.nav + *{ margin-top: 0 !important; }
 
