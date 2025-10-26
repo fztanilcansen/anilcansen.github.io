@@ -4,13 +4,14 @@
 
 /* Theme variables (logo palette) */
 :root{
-  --bg: #0E5B59;        /* HEADER ARKA PLAN RENGİ = brand (Book Now tabanı) */
+  --bg: #ffffff;        /* BEYAZ ARKA PLAN - DEĞİŞTİ */
   --card: #ffffff;
   --muted: #94A3B8;
-  --brand: #0E5B59;     /* Ana marka tonu — header ve temel buton tabanı */
+  --brand: #0E5B59;     /* Ana marka tonu */
   --brand-dark: #0B4442;/* Koyu ton / hover */
   --ring: #6BD3CC;
-  --text: #E1E5E7;      /* Menü yazıları için gümüş-açık gri */
+  --text: #0E5B59;      /* Menü yazıları LOGO RENGİ - DEĞİŞTİ */
+  --text-nav: #0E5B59;  /* Navigasyon yazıları LOGO RENGİ - DEĞİŞTİ */
 }
 
 /* Reset & base */
@@ -58,7 +59,7 @@ padding: 0px 0;  /* Üst ve alt padding değerini kısaltabilirsiniz */
   height: auto;
   width: 200px;
   object-fit: contain;
-     filter: brightness(1.9); /* 1.2 değeri parlaklık seviyesini artırır, 1.0 normal parlaklık, 2.0 iki kat daha parlak */
+     filter: brightness(1.2); /* 1.2 değeri parlaklık seviyesini artırır, 1.0 normal parlaklık, 2.0 iki kat daha parlak */
 
 }
 
