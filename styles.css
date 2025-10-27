@@ -86,8 +86,8 @@ padding: 0 !important;  border-bottom:none !important; position:relative;
   border-color:     #20bfc6 !important;
   color: #fff !important;                 /* metin hep beyaz */
   font-size: 23px;
-  padding: 15px 30px;
-  border-radius: 30px;                    /* istersen 999px yapıp pill görünüm ver */
+  padding: 16px 38px;
+  border-radius: 999px;                    /* istersen 999px yapıp pill görünüm ver */
 }
 
 .btn-primary:hover,
@@ -104,6 +104,10 @@ padding: 0 !important;  border-bottom:none !important; position:relative;
   border-color:     #20bfc6 !important;
   color:#fff !important;
   font-size: 23px;
+     display: inline-flex;           /* dikey hizayı sabitler */
+  align-items: center;
+  white-space: nowrap;            /* satır kırılmasın */
+
    line-height: 1.2
   padding: 16px 38px;
   border-radius: 999px ;
