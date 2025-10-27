@@ -59,8 +59,8 @@ padding: 0 !important;  border-bottom:none !important; position:relative;
 }
 .brand img {
   display: block;
-   height: auto;
-  width: 200px;
+   height: 120px;
+  width: 300px;
   object-fit: contain;
      filter: brightness(1.2); /* 1.2 değeri parlaklık seviyesini artırır, 1.0 normal parlaklık, 2.0 iki kat daha parlak */
 
