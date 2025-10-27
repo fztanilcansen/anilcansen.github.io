@@ -46,6 +46,8 @@ padding: 0 !important;  border-bottom:none !important; position:relative;
   align-items: center;
   justify-content: space-between;
   width: 100%;
+     padding: 4px 0;
+
 }
 
 /* Logo */
@@ -68,8 +70,8 @@ padding: 0 !important;  border-bottom:none !important; position:relative;
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 30px;
-  padding-right: 40px;
+  gap: 24px;
+  padding-right: 20px;
 }
 /* Ana menü linkleri - BEYAZ YAP */
 .nav-links a:not(.btn) {
@@ -85,7 +87,7 @@ padding: 0 !important;  border-bottom:none !important; position:relative;
   color: #fff !important;                 /* metin hep beyaz */
   font-size: 23px;
   padding: 15px 30px;
-  border-radius: 10px;                    /* istersen 999px yapıp pill görünüm ver */
+  border-radius: 30px;                    /* istersen 999px yapıp pill görünüm ver */
 }
 
 .btn-primary:hover,
@@ -102,9 +104,9 @@ padding: 0 !important;  border-bottom:none !important; position:relative;
   border-color:     #20bfc6 !important;
   color:#fff !important;
   font-size: 23px;
-   line-height: 1.1
+   line-height: 1.2
   padding: 15px 30px;
-  border-radius: 10px;
+  border-radius: 30px;
 }
 
 /* Dropdown trigger linkleri - BEYAZ YAP */
