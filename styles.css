@@ -34,8 +34,8 @@ html{scroll-behavior:smooth}
   z-index: 100;
   background: var(--bg); /* HEADER = brand ile aynı renk */
   border-bottom: 1px solid rgba(255, 255, 255, 0.10);
-  min-height: 50px; /* büyük header */
-padding: 2px 0 !important; border-bottom:none !important; position:relative;
+  min-height: 30px; /* büyük header */
+padding: 0 !important;  border-bottom:none !important; position:relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
