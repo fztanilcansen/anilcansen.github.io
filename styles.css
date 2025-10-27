@@ -472,4 +472,56 @@ h1 {
   padding:4px 0 !important;
   line-height:1.2 !important;
 }
+/* =========================
+   HOME PAGE TRANSPARENT NAV
+   ========================= */
 
+/* Hide navigation bar on desktop only for home page */
+.home-page .nav {
+    background: transparent !important;
+    border-bottom: none !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+/* Make nav links visible on desktop for home page */
+.home-page .nav-links a:not(.btn),
+.home-page .nav-links .drop-trigger {
+    color: rgba(255, 255, 255, 0.9) !important;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.5);
+}
+
+/* Make dropdown menus work with transparent nav for home page */
+.home-page .dropdown .dropdown-menu {
+    background: rgba(86, 140, 139, 0.95);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.2);
+}
+
+/* Make hero images start from top */
+.home-page .hero {
+    margin-top: 0;
+}
+
+/* Ensure mobile nav stays normal */
+@media (max-width: 900px) {
+    .home-page .nav {
+        background: var(--bg) !important;
+        position: static;
+        border-bottom: 1px solid rgba(0,0,0,0.1) !important;
+    }
+    
+    .home-page .nav-links a:not(.btn),
+    .home-page .nav-links .drop-trigger {
+        color: var(--text-nav) !important;
+        text-shadow: none;
+    }
+    
+    .home-page .dropdown .dropdown-menu {
+        background: #568C8B;
+        backdrop-filter: none;
+    }
+}
