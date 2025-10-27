@@ -504,6 +504,9 @@ h1 {
 /* Make hero images start from top */
 .home-page .hero {
     margin-top: 0;
+       position: relative;
+    z-index: 1; /* Lower than nav z-index */
+
 }
 
 /* Ensure mobile nav stays normal */
