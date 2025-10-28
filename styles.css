@@ -325,14 +325,13 @@ MOBILE BURGER MENU
   position: relative;
   height: 70svh;                /* tam ekran */
   width: 100vw;                  /* container sınırını kır */
-     max-width: min(96vw, 1200px);
+  max-width: min(96vw, 1200px);
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
   overflow: hidden;
-   
 }
 
-/* Slider HERO’nun tamamını kaplasın */
+/* Slider HERO'nun tamamını kaplasın */
 .hero .image-slider{
   position: absolute;
   inset: 0;
@@ -342,10 +341,12 @@ MOBILE BURGER MENU
   max-width: min(96vw, 1200px);
   max-height: min(80vh, 800px); /* Add this line */
   overflow: hidden;
-}.
-   hero img{ 
+}
+
+/* Remove this duplicate rule - it's too generic and may affect other images */
+/* .hero img{ 
    width:100%; height:auto; object-fit:contain; 
-} /* contain için sabit yükseklik gerekmez */
+} */
 
 /* Her slide tüm alanı kaplasın (JS görünürlüğü yönetiyor) */
 .hero .image-slider .slide{
@@ -361,8 +362,7 @@ MOBILE BURGER MENU
   object-fit: contain; /* Shows entire image without cropping */
   object-position: center center;
   background-color: #f5f5f5; /* Neutral background for any empty space */
-     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
-
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
 }
 
 
