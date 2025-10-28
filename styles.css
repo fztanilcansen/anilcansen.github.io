@@ -343,10 +343,6 @@ MOBILE BURGER MENU
   overflow: hidden;
 }
 
-/* Remove this duplicate rule - it's too generic and may affect other images */
-/* .hero img{ 
-   width:100%; height:auto; object-fit:contain; 
-} */
 
 /* Her slide tüm alanı kaplasın (JS görünürlüğü yönetiyor) */
 .hero .image-slider .slide{
