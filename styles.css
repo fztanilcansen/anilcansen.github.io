@@ -341,6 +341,9 @@ MOBILE BURGER MENU
   margin: 0;
   max-width: min(96vw, 1200px);
 }
+.hero img{ 
+   width:100%; height:auto; object-fit:contain; 
+} /* contain için sabit yükseklik gerekmez */
 
 /* Her slide tüm alanı kaplasın (JS görünürlüğü yönetiyor) */
 .hero .image-slider .slide{
