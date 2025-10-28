@@ -324,12 +324,12 @@ MOBILE BURGER MENU
 .hero{
   position: relative;
   height: 70svh;                /* tam ekran */
-  width: 100%;                  /* container sınırını kır */
+  width: 100vw;                  /* container sınırını kır */
      max-width: min(96vw, 1200px);
-  margin-inline: auto;
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
   overflow: hidden;
+   
 }
 
 /* Slider HERO’nun tamamını kaplasın */
