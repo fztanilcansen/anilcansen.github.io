@@ -286,7 +286,7 @@ MOBILE BURGER MENU
     flex-direction: column;
     gap: 12px;
     padding: 16px;
-    background: var(--brand-dark);
+    background: #1bb3ba;
     border-radius: 12px;
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
     min-width: 220px;
@@ -308,16 +308,20 @@ MOBILE BURGER MENU
     left: 0;
     min-width: unset;
     box-shadow: none;
-    background: #568C8B;
+    background:color-mix(in srgb, var(--brand, #0E5B59) 70%, white);
     border-radius: 8px;
     margin-left: 6px;
   }
 
   .dropdown-menu a {
-    color: #fff;
+    color: var(--text-nav);
     font-size: 16px;
     font-weight: 500;
     padding: 12px 16px;
+  }
+  .dropdown-menu a:hover {
+    background: rgba(255, 255, 255, 0.12);
+    color: #fff;
   }
 
 /* === HERO – full-bleed slider (masaüstünde tam ekran) === */
