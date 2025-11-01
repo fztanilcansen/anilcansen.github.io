@@ -93,8 +93,8 @@ padding: 0 !important;  border-bottom:none !important; position:relative;
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active {
-  background-color: #1bb3ba !important;   /* mavi koyusu (hover) */
-  border-color:     #1bb3ba !important;
+  background-color: #E55A3A !important;   /* turuncu koyusu (hover) */
+  border-color:     #E55A3A !important;
   color:#fff !important;
 }
 
