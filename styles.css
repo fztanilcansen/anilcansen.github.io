@@ -338,10 +338,12 @@ MOBILE BURGER MENU
 /* === HERO – full-bleed slider (masaüstünde tam ekran) === */
 .hero{
   position: relative;
-  height: 55svh;                /* tam ekran */
-  width: 100vw;                  /* container sınırını kır */
-     max-width: min(96vw, 1200px);
+  height: 45svh;                /* tam ekran */
+  width: 100%;                  /* container sınırını kır */
+     max-width:1200px;
   overflow: hidden;
+     border-radius: 12px;
+
    
 }
 
@@ -352,7 +354,9 @@ MOBILE BURGER MENU
   width: 100%;
   height: 100%;
   margin: 0;
-  max-width: min(96vw, 1200px);
+  max-width: 100%;
+     border-radius: 12px;
+
 }
 
 /* Her slide tüm alanı kaplasın (JS görünürlüğü yönetiyor) */
@@ -364,11 +368,11 @@ MOBILE BURGER MENU
 
 /* Görseller taşmadan dolsun; kadrajı biraz yukarı odakla */
 .hero .image-slider .slide img{
-  width: auto;
+  width: 100%;
   height: 100%;
   display: block;
-  object-fit: contain;
-  object-position: center;
+  object-fit: cover; /* Tam kaplasın */
+  object-position: center 30%; /* Baş kısmı göstersin */
   border-radius: 12px;
   box-shadow: none;
 }
@@ -387,6 +391,8 @@ MOBILE BURGER MENU
   background: radial-gradient(ellipse at center, rgba(0,0,0,.10), rgba(0,0,0,.18));
   pointer-events: none;
   z-index: 0;
+     border-radius: 12px;
+
 }
 
 /* Slider dışındaki içerik üste gelsin */
