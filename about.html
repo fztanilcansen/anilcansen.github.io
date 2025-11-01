@@ -182,6 +182,7 @@
 <!-- JavaScript -->
 <script>
   (function () {
+    // DROPDOWN FUNCTIONS
     document.querySelectorAll('.dropdown .drop-trigger').forEach(function (trig) {
       trig.addEventListener('click', function (e) {
         e.preventDefault();
@@ -197,7 +198,18 @@
       });
     });
 
-    // Dışarı tıklayınca kapat - BURGER MENÜYÜ DE KAPATACAK ŞEKİLDE GÜNCELLENDİ
+    // BURGER MENÜ TOGGLE - YENİ EKLENDİ
+    const burger = document.querySelector('.burger');
+    const menuToggle = document.getElementById('menu-toggle');
+    
+    if (burger && menuToggle) {
+      burger.addEventListener('click', function(e) {
+        e.stopPropagation(); // Tıklamanın yayılmasını durdur
+        menuToggle.checked = !menuToggle.checked;
+      });
+    }
+
+    // DIŞARI TIKLAYINCA KAPAT
     document.addEventListener('click', function (e) {
       // Eğer tıklanan element burger veya nav-links içinde DEĞİLSE
       if (!e.target.closest('.burger') && !e.target.closest('.nav-links')) {
@@ -205,20 +217,18 @@
         document.querySelectorAll('.dropdown.open').forEach(el => el.classList.remove('open'));
         
         // Burger menüyü de kapat (mobilde)
-        const menuToggle = document.getElementById('menu-toggle');
         if (menuToggle && menuToggle.checked && window.innerWidth <= 900) {
           menuToggle.checked = false;
         }
       }
     });
 
-    // ESC ile kapat - BURGER MENÜYÜ DE KAPATACAK ŞEKİLDE GÜNCELLENDİ
+    // ESC İLE KAPAT
     document.addEventListener('keydown', function (e) {
       if (e.key === 'Escape') {
         document.querySelectorAll('.dropdown.open').forEach(el => el.classList.remove('open'));
         
         // Burger menüyü de kapat (mobilde)
-        const menuToggle = document.getElementById('menu-toggle');
         if (menuToggle && menuToggle.checked && window.innerWidth <= 900) {
           menuToggle.checked = false;
         }
