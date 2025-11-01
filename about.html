@@ -181,10 +181,6 @@
 
 <!-- JavaScript -->
 <script>
-  document.getElementById('y').textContent = new Date().getFullYear();
-</script>
-
-<script>
   (function () {
     document.querySelectorAll('.dropdown .drop-trigger').forEach(function (trig) {
       trig.addEventListener('click', function (e) {
@@ -201,15 +197,31 @@
       });
     });
 
-    // Dışarı tıklayınca kapat
-    document.addEventListener('click', function () {
-      document.querySelectorAll('.dropdown.open').forEach(el => el.classList.remove('open'));
+    // Dışarı tıklayınca kapat - BURGER MENÜYÜ DE KAPATACAK ŞEKİLDE GÜNCELLENDİ
+    document.addEventListener('click', function (e) {
+      // Eğer tıklanan element burger veya nav-links içinde DEĞİLSE
+      if (!e.target.closest('.burger') && !e.target.closest('.nav-links')) {
+        // Dropdown menüleri kapat
+        document.querySelectorAll('.dropdown.open').forEach(el => el.classList.remove('open'));
+        
+        // Burger menüyü de kapat (mobilde)
+        const menuToggle = document.getElementById('menu-toggle');
+        if (menuToggle && menuToggle.checked && window.innerWidth <= 900) {
+          menuToggle.checked = false;
+        }
+      }
     });
 
-    // ESC ile kapat
+    // ESC ile kapat - BURGER MENÜYÜ DE KAPATACAK ŞEKİLDE GÜNCELLENDİ
     document.addEventListener('keydown', function (e) {
       if (e.key === 'Escape') {
         document.querySelectorAll('.dropdown.open').forEach(el => el.classList.remove('open'));
+        
+        // Burger menüyü de kapat (mobilde)
+        const menuToggle = document.getElementById('menu-toggle');
+        if (menuToggle && menuToggle.checked && window.innerWidth <= 900) {
+          menuToggle.checked = false;
+        }
       }
     });
   })();
