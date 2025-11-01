@@ -338,7 +338,7 @@ MOBILE BURGER MENU
 /* === HERO – full-bleed slider (masaüstünde tam ekran) === */
 .hero{
   position: relative;
-  height: 70svh;                /* tam ekran */
+  height: 55svh;                /* tam ekran */
   width: 100vw;                  /* container sınırını kır */
      max-width: min(96vw, 1200px);
   margin-left: calc(50% - 50vw);
@@ -400,7 +400,7 @@ MOBILE BURGER MENU
 /* Mobilde biraz daha kısa tut */
 @media (max-width: 900px){
   .hero{
-    min-height: clamp(220px, 38vh, 340px);
+min-height: clamp(200px, 35vh, 300px)
   }
 }
 
