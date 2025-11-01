@@ -292,6 +292,9 @@ MOBILE BURGER MENU
     min-width: 220px;
     width: max-content;
     z-index: 1000;
+         text-align: left;
+    align-items: flex-start;
+
   }
 
   .nav-links a {
@@ -299,6 +302,10 @@ MOBILE BURGER MENU
     font-size: 18px;
     font-weight: 600;
     padding: 14px 16px;
+         width: 100%; /* Tüm genişliği kaplasın */
+    text-align: left; /* Metni sola hizala */
+    padding-left: 20px; /* Soldan 20px boşluk */
+
   }
 
   /* Dropdown menüler mobilde panel içinde akışkan */
@@ -311,6 +318,8 @@ MOBILE BURGER MENU
     background:color-mix(in srgb, var(--brand, #0E5B59) 70%, white);
     border-radius: 8px;
     margin-left: 6px;
+         width: 100%; /* Dropdown'ın genişliği parent'ı kadar olsun */
+
   }
 
   .dropdown-menu a {
@@ -318,6 +327,8 @@ MOBILE BURGER MENU
     font-size: 16px;
     font-weight: 500;
     padding: 12px 16px;
+         padding-left: 30px; /* Dropdown item'ları biraz daha içerden başlasın */
+
   }
   .dropdown-menu a:hover {
     background: rgba(255, 255, 255, 0.12);
