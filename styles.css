@@ -82,10 +82,10 @@ padding: 0 !important;  border-bottom:none !important; position:relative;
 
 /* Book Now butonu için stil — HER YERDE MAVİ (#20bfc6) */
 .btn-primary {
-  background-color: #20bfc6 !important;   /* mavi taban */
-  border-color:     #20bfc6 !important;
+  background-color: #FF6B4A !important;   /* mavi taban */
+  border-color:     #FF6B4A !important;
   color: #fff !important;                 /* metin hep beyaz */
-  font-size: 23px;
+  font-size: 25px;
   padding: 16px 38px;
   border-radius: 999px;                    /* istersen 999px yapıp pill görünüm ver */
 }
@@ -100,10 +100,10 @@ padding: 0 !important;  border-bottom:none !important; position:relative;
 
 /* Nav içindeki Book Now da aynı mavi olsun (önceden #568C8B idi) */
 .nav-links .btn.primary {
-  background-color: #20bfc6 !important;
-  border-color:     #20bfc6 !important;
+  background-color: #FF6B4A !important;
+  border-color:     #FF6B4A !important;
   color:#fff !important;
-  font-size: 23px;
+  font-size: 25px;
      display: inline-flex;           /* dikey hizayı sabitler */
   align-items: center;
   white-space: nowrap;            /* satır kırılmasın */
