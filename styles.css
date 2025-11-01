@@ -366,7 +366,7 @@ MOBILE BURGER MENU
 
 /* Görseller taşmadan dolsun; kadrajı biraz yukarı odakla */
 .hero .image-slider .slide img{
-  width: 100%;
+  width: auto;
   height: 100%;
   display: block;
   object-fit: contain;
