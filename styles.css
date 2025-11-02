@@ -338,7 +338,7 @@ padding: 0 !important;  border-bottom:none !important; position:relative;
 /* === HERO – full-bleed slider (masaüstünde tam ekran) === */
 .hero{
   position: relative;
-  height: 45svh;                /* tam ekran */
+  height: 65svh;                /* tam ekran */
   width: 100%;                  /* container sınırını kır */
      max-width:1200px;
   overflow: hidden;
