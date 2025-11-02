@@ -401,11 +401,22 @@ padding: 0 !important;  border-bottom:none !important; position:relative;
   position: relative;
   z-index: 1;
 }
-
-/* Mobilde biraz daha kısa tut */
+/* Mobilde resmi orta boy yap */
 @media (max-width: 900px){
   .hero{
-min-height: clamp(200px, 35vh, 300px)
+    height: 42vh;              /* orta boy */
+    min-height: 240px;         /* çok küçük telefonlar için */
+    max-height: 360px;         /* aşırı büyümesin */
+  }
+
+  .hero-content{
+    padding: 26px 16px;
+    max-width: 100%;
+  }
+
+  .hero-actions{
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
 
