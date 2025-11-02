@@ -205,7 +205,7 @@ padding: 0 !important;  border-bottom:none !important; position:relative;
   }
 }
 
-MOBILE BURGER MENU
+/* MOBILE BURGER MENU
    ========================= */
 .menu-toggle {
   position: absolute !important;
@@ -334,7 +334,7 @@ MOBILE BURGER MENU
     background: rgba(255, 255, 255, 0.12);
     color: #fff;
   }
-
+  }
 /* === HERO – full-bleed slider (masaüstünde tam ekran) === */
 .hero{
   position: relative;
