@@ -438,6 +438,30 @@ padding: 0 !important;  border-bottom:none !important; position:relative;
     object-position: center;
     border-radius: 12px;
   }
+  
+  /* Hero başlık mobil */
+  h1 {
+    font-size: 28px;
+    margin: 10px 0 8px;
+  }
+  
+  .lead {
+    font-size: 16px;
+    max-width: 100%; /* ch yerine % */
+  }
+  
+  /* Slider mobil - genel slider için */
+  .image-slider {
+    max-width: 100%; /* 1200px kısıtlamasını kaldır */
+  }
+  
+  /* EĞER hero dışında da .slide img kullanıyorsan */
+  /*
+  .slide img {
+    height: 100%;
+    object-fit: cover;
+  }
+  */
 }
 
 
