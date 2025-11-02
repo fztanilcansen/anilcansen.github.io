@@ -343,6 +343,7 @@ MOBILE BURGER MENU
      max-width:1200px;
   overflow: hidden;
      border-radius: 12px;
+  margin: 0 auto; /* ← BU SATIRI EKLE! */
 
    
 }
