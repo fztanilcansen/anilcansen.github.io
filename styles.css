@@ -404,7 +404,7 @@ padding: 0 !important;  border-bottom:none !important; position:relative;
 /* Mobilde resmi orta boy yap */
 @media (max-width: 900px){
   .hero{
-    height: 42vh;              /* orta boy */
+    height: 71vh;              /* orta boy */
     min-height: 240px;         /* çok küçük telefonlar için */
     max-height: 360px;         /* aşırı büyümesin */
   }
