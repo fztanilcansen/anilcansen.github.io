@@ -401,10 +401,42 @@ padding: 0 !important;  border-bottom:none !important; position:relative;
   position: relative;
   z-index: 1;
 }
-/* Mobilde resmi orta boy yap */
-@media (max-width: 900px){
-  .hero{
-min-height: clamp(200px, 35vh, 300px)
+/* =========================
+   MOBILE STYLES (900px and below)
+   ========================= */
+@media (max-width: 900px) {
+  
+  /* Hero Mobile Styles - Image Fix */
+  .hero {
+    min-height: clamp(200px, 35vh, 300px);
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 12px;
+    position: relative;
+  }
+
+  .hero .image-slider {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 12px;
+  }
+
+  .hero .image-slider .slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .hero .image-slider .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 12px;
   }
 }
 
