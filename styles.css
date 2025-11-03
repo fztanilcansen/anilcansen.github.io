@@ -542,8 +542,10 @@ padding: 0 !important;  border-bottom:none !important; position:relative;
   
  /* ← BURADAN İTİBAREN YAZI İÇİN MOBİL */
   .hero-content{
-    padding: 24px 14px 18px;
+    padding: 20px 14px 16px;
     max-width: 100%;
+         margin-top: clamp(24px, 22vh, 120px); /* ekran boyuna göre aşağı iner */
+
   }
 
   .hero-content h1{
