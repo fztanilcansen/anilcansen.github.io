@@ -405,6 +405,11 @@ padding: 0 !important;  border-bottom:none !important; position:relative;
 .hero-content{
   position: relative;
        margin-top: clamp(80px, 18vh, 220px);
+     background: rgba(14,91,89,.08);       /* brand’ın çok hafifi */
+  border:1px solid rgba(255,255,255,.22);
+  backdrop-filter: blur(6px);
+  border-radius: 14px;
+
 
   z-index: 2;
   max-width: 540px;
@@ -429,13 +434,14 @@ padding: 0 !important;  border-bottom:none !important; position:relative;
   font-size: clamp(30px, 4vw, 46px);
   line-height: 1.05;
   margin: 6px 0 4px;
-  color: #fff;
+  color:#fff;
+   text-shadow:0 2px 6px rgba(0,0,0,.35); 
 }
 
 .hero-content .subtitle{
   font-size: 16px;
   line-height: 1.4;
-  color: rgba(255,255,255,.9);
+  color: color:rgba(255,255,255,.92);
   max-width: 46ch;
 }
 
@@ -523,11 +529,21 @@ padding: 0 !important;  border-bottom:none !important; position:relative;
     object-position: center;
     border-radius: 12px;
   }
-  
+    .hero-content{
+    position: absolute;
+    left: 14px;        /* yan boşluklar */
+    right: 14px;
+    bottom: 16px;      /* NE KADAR AŞAĞI? buradan ayarla */
+    margin: 0;         /* margin-top'u iptal et */
+    padding: 20px 14px 16px;  /* senin mevcut padding'in */
+    max-width: none;   /* genişliği özgür bırak */
+       margin-top: clamp(24px, 22vh, 120px); /* ekran boyuna göre aşağı iner */
+  }
+
   /* Hero başlık mobil */
   .hero-content h1{
-    font-size: 28px;
-    margin: 10px 0 8px;
+    font-size: 26px;
+    margin: 8px 0 6px;
   }
   
   .hero-content .subtitle{
@@ -540,17 +556,10 @@ padding: 0 !important;  border-bottom:none !important; position:relative;
     max-width: 100%; /* 1200px kısıtlamasını kaldır */
   }
   
- /* ← BURADAN İTİBAREN YAZI İÇİN MOBİL */
-  .hero-content{
-    padding: 20px 14px 16px;
-    max-width: 100%;
-         margin-top: clamp(24px, 22vh, 120px); /* ekran boyuna göre aşağı iner */
+         
 
   }
 
-  .hero-content h1{
-    font-size: 26px;  /* desktop’tan biraz küçük */
-  }
 
   .hero-actions{
     flex-direction: column;
