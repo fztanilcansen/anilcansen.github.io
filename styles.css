@@ -404,6 +404,8 @@ padding: 0 !important;  border-bottom:none !important; position:relative;
 /* === HERO YAZI BLOĞU – resmin üstünde === */
 .hero-content{
   position: relative;
+       margin-top: clamp(80px, 18vh, 220px);
+
   z-index: 2;
   max-width: 540px;
   padding: 56px 32px 42px;
