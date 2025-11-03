@@ -401,6 +401,89 @@ padding: 0 !important;  border-bottom:none !important; position:relative;
   position: relative;
   z-index: 1;
 }
+/* === HERO YAZI BLOĞU – resmin üstünde === */
+.hero-content{
+  position: relative;
+  z-index: 2;
+  max-width: 540px;
+  padding: 56px 32px 42px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.hero-content .topline{
+  display: inline-block;
+  background: rgba(14, 91, 89, 0.55);
+  padding: 6px 16px;
+  border-radius: 999px;
+  font-size: 13px;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+
+.hero-content h1{
+  font-size: clamp(30px, 4vw, 46px);
+  line-height: 1.05;
+  margin: 6px 0 4px;
+  color: #fff;
+}
+
+.hero-content .subtitle{
+  font-size: 16px;
+  line-height: 1.4;
+  color: rgba(255,255,255,.9);
+  max-width: 46ch;
+}
+
+.hero-actions{
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 4px;
+  margin-bottom: 2px;
+}
+
+.hero .btn-primary,
+.hero .btn-call{
+  background-color: #FF6B4A !important;
+  border-color:     #FF6B4A !important;
+  color: #fff !important;
+  padding: 12px 26px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.hero-actions .btn-call{
+  padding-inline: 20px;
+}
+
+.hero-content .billing{
+  font-size: 14px;
+  color: rgba(255,255,255,.75);
+}
+
+.hero-pills{
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 4px 0 0;
+}
+.hero-pills li{
+  background: rgba(255,255,255,.16);
+  border: 1px solid rgba(255,255,255,.25);
+  border-radius: 999px;
+  padding: 6px 14px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #fff;
+}
+
 /* =========================
    MOBILE STYLES (900px and below)
    ========================= */
@@ -455,14 +538,29 @@ padding: 0 !important;  border-bottom:none !important; position:relative;
     max-width: 100%; /* 1200px kısıtlamasını kaldır */
   }
   
-  /* EĞER hero dışında da .slide img kullanıyorsan */
-  /*
-  .slide img {
-    height: 100%;
-    object-fit: cover;
+ /* ← BURADAN İTİBAREN YAZI İÇİN MOBİL */
+  .hero-content{
+    padding: 24px 14px 18px;
+    max-width: 100%;
   }
-  */
+
+  .hero-content h1{
+    font-size: 26px;  /* desktop’tan biraz küçük */
+  }
+
+  .hero-actions{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .hero .btn-primary,
+  .hero .btn-call{
+    width: auto;   /* istersen 100% de yaparız */
+  }
 }
+
+
 
 
 
