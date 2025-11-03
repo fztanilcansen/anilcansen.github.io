@@ -405,12 +405,7 @@ padding: 0 !important;  border-bottom:none !important; position:relative;
 .hero-content{
   position: relative;
        margin-top: clamp(80px, 18vh, 220px);
-     background: rgba(14,91,89,.08);       /* brand’ın çok hafifi */
-  border:1px solid rgba(255,255,255,.22);
-  backdrop-filter: blur(6px);
   border-radius: 14px;
-
-
   z-index: 2;
   max-width: 540px;
   padding: 56px 32px 42px;
@@ -428,6 +423,7 @@ padding: 0 !important;  border-bottom:none !important; position:relative;
   font-size: 13px;
   letter-spacing: .04em;
   text-transform: uppercase;
+   text-shadow: 0 2px 12px rgba(0,0,0,.45), 0 1px 2px rgba(0,0,0,.35);
 }
 
 .hero-content h1{
@@ -435,14 +431,14 @@ padding: 0 !important;  border-bottom:none !important; position:relative;
   line-height: 1.05;
   margin: 6px 0 4px;
   color:#fff;
-   text-shadow:0 2px 6px rgba(0,0,0,.35); 
-}
+text-shadow: 0 2px 12px rgba(0,0,0,.45), 0 1px 2px rgba(0,0,0,.35);}
 
 .hero-content .subtitle{
   font-size: 16px;
   line-height: 1.4;
   color: color:rgba(255,255,255,.92);
   max-width: 46ch;
+   text-shadow: 0 2px 12px rgba(0,0,0,.45), 0 1px 2px rgba(0,0,0,.35);
 }
 
 .hero-actions{
@@ -472,6 +468,7 @@ padding: 0 !important;  border-bottom:none !important; position:relative;
 .hero-content .billing{
   font-size: 14px;
   color: rgba(255,255,255,.75);
+   text-shadow: 0 2px 12px rgba(0,0,0,.45), 0 1px 2px rgba(0,0,0,.35);
 }
 
 .hero-pills{
