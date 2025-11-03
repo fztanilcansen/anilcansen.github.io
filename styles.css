@@ -523,12 +523,12 @@ padding: 0 !important;  border-bottom:none !important; position:relative;
   }
   
   /* Hero başlık mobil */
-  h1 {
+  .hero-content h1{
     font-size: 28px;
     margin: 10px 0 8px;
   }
   
-  .lead {
+  .hero-content .subtitle{
     font-size: 16px;
     max-width: 100%; /* ch yerine % */
   }
