@@ -4,186 +4,388 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Our Services | Physio Island</title>
-  <!-- CSS sürüm parametresi önbelleği kırar -->
   <link rel="stylesheet" href="styles.css?v=20">
 </head>
 
-   <!-- Top bar -->
+<body>
+  <!-- Top bar -->
   <div class="topbar">
     <div class="container topbar-inner">
       <span>Coming soon in Burin NL by late 2025</span>
       <a class="topbar-link" href="tel:+">Call: (</a>
     </div>
   </div>
- <!-- Navigation Bar -->
-<nav class="nav">
-  <div class="container nav-inner">
-    <!-- Logo -->
-    <a class="brand" href="index.html" aria-label="Physio Island Home">
-      <img src="images/logo.png" alt="Physio Island Logo">
-    </a>
 
-    <!-- Burger Menu Toggle -->
-    <input type="checkbox" id="menu-toggle" class="menu-toggle">
-    <label for="menu-toggle" class="burger">
-      <span></span>
-      <span></span>
-      <span></span>
-    </label>
+  <!-- Navigation Bar -->
+  <nav class="nav">
+    <div class="container nav-inner">
+      <!-- Logo -->
+      <a class="brand" href="index.html" aria-label="Physio Island Home">
+        <img src="images/logo.png" alt="Physio Island Logo">
+      </a>
 
-    <!-- Menu (Masaüstü menüsü) - MEVCUT MENÜ AYNI KALIYOR -->
-    <div class="nav-links">
-      <a href="index.html">Home</a>
+      <!-- Burger Menu Toggle -->
+      <input type="checkbox" id="menu-toggle" class="menu-toggle">
+      <label for="menu-toggle" class="burger"><span></span><span></span><span></span></label>
 
-      <!-- Services Dropdown -->
-      <div class="dropdown">
-        <a class="drop-trigger" href="#">Services ▾</a>
-        <ul class="dropdown-menu">
-          <li><a href="services.html#physiotherapy">Physiotherapy</a></li>
-          <li><a href="services.html#workplace">Workplace NL</a></li>
-          <li><a href="services.html#mva">Motor Vehicle Accidents</a></li>
-          <li><a href="services.html#veterans">Veteran Affairs Canada</a></li>
-          <li><a href="services.html#sports-rehab">Advanced Sports Rehabilitation</a></li>
-          <li><a href="services.html#acupuncture">Acupuncture</a></li>
-          <li><a href="services.html#manual">Manual Therapy</a></li>
-          <li><a href="services.html#vestibular">Vestibular Rehab / Vertigo</a></li>
-          <li><a href="services.html#shockwave">Shockwave Therapy</a></li>
-          <li><a href="services.html#klaser">K-laser Grade IV (coming soon)</a></li>
-          <li><a href="services.html#orthotics">Custom Foot Orthotics</a></li>
-          <li><a href="services.html#concussion">Concussion / Whiplash</a></li>
-          <li><a href="services.html#neuro">Neurological Rehab</a></li>
-          <li><a href="services.html#kinesiology">Kinesiology / Exercise Therapy</a></li>
-        </ul>
+      <!-- Menu -->
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+
+        <!-- Services Dropdown -->
+        <div class="dropdown">
+          <a class="drop-trigger" href="#">Services ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="services.html#physiotherapy">Physiotherapy</a></li>
+            <li><a href="services.html#workplace">Workplace NL</a></li>
+            <li><a href="services.html#mva">Motor Vehicle Accidents</a></li>
+            <li><a href="services.html#veterans">Veteran Affairs Canada</a></li>
+            <li><a href="services.html#sports-rehab">Advanced Sports Rehabilitation</a></li>
+            <li><a href="services.html#acupuncture">Acupuncture</a></li>
+            <li><a href="services.html#manual">Manual Therapy</a></li>
+            <li><a href="services.html#vestibular">Vestibular Rehab / Vertigo</a></li>
+            <li><a href="services.html#shockwave">Shockwave Therapy</a></li>
+            <li><a href="services.html#klaser">K-laser Grade IV (coming soon)</a></li>
+            <li><a href="services.html#orthotics">Custom Foot Orthotics</a></li>
+            <li><a href="services.html#concussion">Concussion / Whiplash</a></li>
+            <li><a href="services.html#neuro">Neurological Rehab</a></li>
+            <li><a href="services.html#kinesiology">Kinesiology / Exercise Therapy</a></li>
+          </ul>
+        </div>
+
+        <!-- About Dropdown -->
+        <div class="dropdown">
+          <a class="drop-trigger" href="about.html">About ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="about.html#about-us">About Us</a></li>
+            <li><a href="about.html#team">Our Team</a></li>
+          </ul>
+        </div>
+
+        <a href="careers.html">Careers</a>
+
+        <!-- Learn More Dropdown -->
+        <div class="dropdown">
+          <a class="drop-trigger" href="learn-more.html">Learn More ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="direct-billing.html">Direct Billing</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Dropdown -->
+        <div class="dropdown">
+          <a class="drop-trigger" href="contact.html">Contact ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="contact.html#location">Location</a></li>
+          </ul>
+        </div>
+
+        <a href="contact.html#book" class="btn btn-primary btn-lg">Book Now</a>
       </div>
-
-      <!-- About Dropdown -->
-      <div class="dropdown">
-        <a class="drop-trigger" href="about.html">About ▾</a>
-        <ul class="dropdown-menu">
-          <li><a href="about.html#about-us">About Us</a></li>
-          <li><a href="about.html#team">Our Team</a></li>
-        </ul>
-      </div>
-
-      <a href="careers.html">Careers</a>
-
-      <!-- Learn More Dropdown -->
-      <div class="dropdown">
-        <a class="drop-trigger" href="learn-more.html">Learn More ▾</a>
-        <ul class="dropdown-menu">
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="direct-billing.html">Direct Billing</a></li>
-        </ul>
-      </div>
-
-      <!-- Contact Dropdown -->
-      <div class="dropdown">
-        <a class="drop-trigger" href="contact.html">Contact ▾</a>
-        <ul class="dropdown-menu">
-          <li><a href="contact.html#location">Location</a></li>
-        </ul>
-      </div>
-
-      <a href="#book-now" class="btn btn-primary btn-lg">Book Now</a>
-
     </div>
-  </div>
-</nav>
+  </nav>
 
-
-  <!-- Sayfa başı (index tarzı) -->
+  <!-- Page header -->
   <section class="container" style="padding:40px 0 10px">
     <h1>Our Services</h1>
-    <p class="muted">Personalized assessment, treatment, and progressive loading.</p>
+    <p class="muted">Personalized assessment, hands-on care, and simple plans that fit your day.</p>
   </section>
 
-  <!-- İçerik bölümleri -->
+  <!-- Services grid (vitrin) -->
   <main class="container">
+    <section class="card">
+      <div class="service-grid">
 
-    <section id="physiotherapy">
-      <h2>Physiotherapy</h2>
-      <img src="images/musculoskeletal.jpg" alt="Physiotherapy">
-      <p>One-on-one assessment and treatment to improve mobility, reduce pain, and restore function using manual therapy, exercise, and education.</p>
+        <!-- Physiotherapy -->
+        <article id="physiotherapy" class="service-card">
+          <a class="media" href="service-physiotherapy.html" aria-label="Physiotherapy">
+            <img src="images/musculoskeletal.jpg" alt="One-on-one physiotherapy session" loading="lazy">
+          </a>
+          <div class="content">
+            <h3><a href="service-physiotherapy.html">Physiotherapy</a></h3>
+            <p>Clear assessment, calm hands-on treatment, and short exercise plans to reduce pain and restore confident movement.</p>
+            <ul class="mini">
+              <li>Manual + exercise</li>
+              <li>Weekly progress</li>
+              <li>Home & work tips</li>
+            </ul>
+            <div class="actions">
+              <a class="btn btn-outline" href="service-physiotherapy.html">Learn more</a>
+              <a class="btn btn-primary" href="contact.html#book">Book</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- WorkplaceNL -->
+        <article id="workplace" class="service-card">
+          <a class="media" href="service-workplacenl.html" aria-label="WorkplaceNL">
+            <img src="images/workplace.jpg" alt="Work-related injury rehab" loading="lazy">
+          </a>
+          <div class="content">
+            <h3><a href="service-workplacenl.html">WorkplaceNL</a></h3>
+            <p>Approved care for work injuries with objective updates and practical return-to-work planning.</p>
+            <ul class="mini">
+              <li>Case coordination</li>
+              <li>Clear documentation</li>
+              <li>Job-specific goals</li>
+            </ul>
+            <div class="actions">
+              <a class="btn btn-outline" href="service-workplacenl.html">Learn more</a>
+              <a class="btn btn-primary" href="contact.html#book">Book</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- MVA -->
+        <article id="mva" class="service-card">
+          <a class="media" href="service-mva.html" aria-label="Motor Vehicle Accidents">
+            <img src="images/mva.jpg" alt="Car accident rehabilitation" loading="lazy">
+          </a>
+          <div class="content">
+            <h3><a href="service-mva.html">Motor Vehicle Accidents</a></h3>
+            <p>Evidence-based rehab after a collision. We keep the plan simple and the communication with insurers clear.</p>
+            <ul class="mini">
+              <li>Hands-on + exercise</li>
+              <li>Vestibular/headache screen</li>
+              <li>Updates with consent</li>
+            </ul>
+            <div class="actions">
+              <a class="btn btn-outline" href="service-mva.html">Learn more</a>
+              <a class="btn btn-primary" href="contact.html#book">Book</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Orthotics & Bracing -->
+        <article id="orthotics" class="service-card">
+          <a class="media" href="service-orthotics.html" aria-label="Custom Orthotics & Bracing">
+            <img src="images/orthotics.jpg" alt="Custom orthotics and bracing" loading="lazy">
+          </a>
+          <div class="content">
+            <h3><a href="service-orthotics.html">Custom Orthotics & Bracing</a></h3>
+            <p>Custom foot orthotics, compression stockings, and DonJoy knee braces with precise fitting and follow-up.</p>
+            <ul class="mini">
+              <li>3D/foam casting</li>
+              <li>Professional fitting</li>
+              <li>Break-in plan</li>
+            </ul>
+            <div class="actions">
+              <a class="btn btn-outline" href="service-orthotics.html">Learn more</a>
+              <a class="btn btn-primary" href="contact.html#book">Book</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Sports Rehab -->
+        <article id="sports-rehab" class="service-card">
+          <a class="media" href="service-sports.html" aria-label="Advanced Sports Rehabilitation">
+            <img src="images/sports.jpg" alt="Sports rehabilitation" loading="lazy">
+          </a>
+          <div class="content">
+            <h3><a href="service-sports.html">Advanced Sports Rehabilitation</a></h3>
+            <p>Strength, mobility, and movement retraining tailored to your sport and return-to-play timeline.</p>
+            <ul class="mini">
+              <li>Load progression</li>
+              <li>Technique cues</li>
+              <li>Performance goals</li>
+            </ul>
+            <div class="actions">
+              <a class="btn btn-outline" href="service-sports.html">Learn more</a>
+              <a class="btn btn-primary" href="contact.html#book">Book</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Acupuncture -->
+        <article id="acupuncture" class="service-card">
+          <a class="media" href="service-acupuncture.html" aria-label="Acupuncture">
+            <img src="images/acupuncture.jpg" alt="Acupuncture treatment" loading="lazy">
+          </a>
+          <div class="content">
+            <h3><a href="service-acupuncture.html">Acupuncture</a></h3>
+            <p>Evidence-informed needling to calm pain and muscle tension and support rehab.</p>
+            <ul class="mini">
+              <li>Pain modulation</li>
+              <li>Muscle tone</li>
+              <li>Adjunct to exercise</li>
+            </ul>
+            <div class="actions">
+              <a class="btn btn-outline" href="service-acupuncture.html">Learn more</a>
+              <a class="btn btn-primary" href="contact.html#book">Book</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Manual Therapy -->
+        <article id="manual" class="service-card">
+          <a class="media" href="service-manual.html" aria-label="Manual Therapy">
+            <img src="images/manual-therapy.jpg" alt="Manual therapy" loading="lazy">
+          </a>
+          <div class="content">
+            <h3><a href="service-manual.html">Manual Therapy</a></h3>
+            <p>Joint and soft-tissue techniques (Maitland, Mulligan, myofascial) to reduce pain and improve range.</p>
+            <ul class="mini">
+              <li>Mobilizations</li>
+              <li>Soft-tissue work</li>
+              <li>Pain relief</li>
+            </ul>
+            <div class="actions">
+              <a class="btn btn-outline" href="service-manual.html">Learn more</a>
+              <a class="btn btn-primary" href="contact.html#book">Book</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Vestibular -->
+        <article id="vestibular" class="service-card">
+          <a class="media" href="service-vestibular.html" aria-label="Vestibular Rehab / Vertigo">
+            <img src="images/vestibular.jpg" alt="Vestibular rehab" loading="lazy">
+          </a>
+          <div class="content">
+            <h3><a href="service-vestibular.html">Vestibular Rehab / Vertigo</a></h3>
+            <p>Care for dizziness and balance issues, including BPPV maneuvers and gaze stability training.</p>
+            <ul class="mini">
+              <li>BPPV</li>
+              <li>Gaze stability</li>
+              <li>Habituation</li>
+            </ul>
+            <div class="actions">
+              <a class="btn btn-outline" href="service-vestibular.html">Learn more</a>
+              <a class="btn btn-primary" href="contact.html#book">Book</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Shockwave -->
+        <article id="shockwave" class="service-card">
+          <a class="media" href="service-shockwave.html" aria-label="Shockwave Therapy">
+            <img src="images/shockwave.jpg" alt="Shockwave therapy" loading="lazy">
+          </a>
+          <div class="content">
+            <h3><a href="service-shockwave.html">Shockwave Therapy</a></h3>
+            <p>Non-invasive option for chronic tendon pain and plantar fasciitis within a progressive loading plan.</p>
+            <ul class="mini">
+              <li>Tendinopathy</li>
+              <li>Short protocols</li>
+              <li>Return-to-activity</li>
+            </ul>
+            <div class="actions">
+              <a class="btn btn-outline" href="service-shockwave.html">Learn more</a>
+              <a class="btn btn-primary" href="contact.html#book">Book</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- K-Laser (coming soon) -->
+        <article id="klaser" class="service-card">
+          <a class="media" href="service-klaser.html" aria-label="K-Laser Grade IV (coming soon)">
+            <img src="images/klaser.jpg" alt="K-Laser therapy" loading="lazy">
+          </a>
+          <div class="content">
+            <h3><a href="service-klaser.html">K-laser Grade IV (coming soon)</a></h3>
+            <p>High-power laser therapy for pain and tissue healing. Availability coming soon.</p>
+            <ul class="mini">
+              <li>Pain relief</li>
+              <li>Tissue healing</li>
+              <li>Adjunct option</li>
+            </ul>
+            <div class="actions">
+              <a class="btn btn-outline" href="service-klaser.html">Learn more</a>
+              <a class="btn btn-primary" href="contact.html#book">Book</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Concussion / Whiplash -->
+        <article id="concussion" class="service-card">
+          <a class="media" href="service-concussion.html" aria-label="Concussion / Whiplash">
+            <img src="images/concussion.jpg" alt="Concussion and whiplash rehab" loading="lazy">
+          </a>
+          <div class="content">
+            <h3><a href="service-concussion.html">Concussion / Whiplash</a></h3>
+            <p>Safe, graded rehab including vestibular/ocular work and headache management to restore function.</p>
+            <ul class="mini">
+              <li>Graded loading</li>
+              <li>Vision/vestibular</li>
+              <li>Pacing strategies</li>
+            </ul>
+            <div class="actions">
+              <a class="btn btn-outline" href="service-concussion.html">Learn more</a>
+              <a class="btn btn-primary" href="contact.html#book">Book</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Neurological Rehab -->
+        <article id="neuro" class="service-card">
+          <a class="media" href="service-neuro.html" aria-label="Neurological Rehab">
+            <img src="images/neuro.jpg" alt="Neurological rehabilitation" loading="lazy">
+          </a>
+          <div class="content">
+            <h3><a href="service-neuro.html">Neurological Rehab</a></h3>
+            <p>Programs for stroke, MS, Parkinson’s, and more—focused on mobility, balance, and independence.</p>
+            <ul class="mini">
+              <li>Functional goals</li>
+              <li>Balance & gait</li>
+              <li>Home strategies</li>
+            </ul>
+            <div class="actions">
+              <a class="btn btn-outline" href="service-neuro.html">Learn more</a>
+              <a class="btn btn-primary" href="contact.html#book">Book</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Kinesiology / Exercise Therapy -->
+        <article id="kinesiology" class="service-card">
+          <a class="media" href="service-kinesiology.html" aria-label="Kinesiology / Exercise Therapy">
+            <img src="images/exercise.jpg" alt="Exercise therapy" loading="lazy">
+          </a>
+          <div class="content">
+            <h3><a href="service-kinesiology.html">Kinesiology / Exercise Therapy</a></h3>
+            <p>Goal-based programs to build strength, balance, and endurance—from early rehab to return-to-activity.</p>
+            <ul class="mini">
+              <li>Strength & balance</li>
+              <li>Endurance work</li>
+              <li>Simple home plans</li>
+            </ul>
+            <div class="actions">
+              <a class="btn btn-outline" href="service-kinesiology.html">Learn more</a>
+              <a class="btn btn-primary" href="contact.html#book">Book</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Veteran Affairs Canada (if you keep a detail page) -->
+        <article id="veterans" class="service-card">
+          <a class="media" href="service-vac.html" aria-label="Veteran Affairs Canada">
+            <img src="images/veterans.jpg" alt="Veteran Affairs Canada rehab" loading="lazy">
+          </a>
+          <div class="content">
+            <h3><a href="service-vac.html">Veteran Affairs Canada</a></h3>
+            <p>Dedicated care and clear documentation for VAC clients with practical, goal-based plans.</p>
+            <ul class="mini">
+              <li>Coordination</li>
+              <li>Objective updates</li>
+              <li>Simple plans</li>
+            </ul>
+            <div class="actions">
+              <a class="btn btn-outline" href="service-vac.html">Learn more</a>
+              <a class="btn btn-primary" href="contact.html#book">Book</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
     </section>
 
-    <section id="workplace">
-      <h2>Workplace NL</h2>
-      <img src="images/workplace.jpg" alt="Workplace NL">
-      <p>Workplace NL–approved physiotherapy for work-related injuries, including return-to-work planning and case manager communication.</p>
+    <!-- Bottom CTA -->
+    <section class="card cta-center">
+      <h2>Not sure where to start?</h2>
+      <p>Book a one-on-one assessment. We’ll explain what’s going on and build a plan that fits your life.</p>
+      <a class="btn btn-primary btn-lg" href="contact.html#book">Book Now</a>
     </section>
-
-    <section id="mva">
-      <h2>Motor Vehicle Accidents</h2>
-      <img src="images/mva.jpg" alt="Motor Vehicle Accidents">
-      <p>Rehabilitation programs for whiplash and soft-tissue injuries following car accidents to help you safely return to normal activities.</p>
-    </section>
-
-    <section id="veterans">
-      <h2>Veteran Affairs Canada</h2>
-      <img src="images/veterans.jpg" alt="Veteran Affairs Canada">
-      <p>Dedicated physiotherapy services for veterans covered under VAC, with individualized plans and clear communication.</p>
-    </section>
-
-    <section id="sports-rehab">
-      <h2>Advanced Sports Rehabilitation</h2>
-      <img src="images/sports.jpg" alt="Sports Rehabilitation">
-      <p>Performance-focused rehab integrating strength, mobility, and movement retraining tailored to your sport and goals.</p>
-    </section>
-
-    <section id="acupuncture">
-      <h2>Acupuncture</h2>
-      <img src="images/acupuncture.jpg" alt="Acupuncture">
-      <p>Evidence-informed acupuncture for pain relief, muscle tension, and inflammation, provided by licensed physiotherapists.</p>
-    </section>
-
-    <section id="manual">
-      <h2>Manual Therapy</h2>
-      <img src="images/manual-therapy.jpg" alt="Manual Therapy">
-      <p>Hands-on joint and soft-tissue techniques (e.g., Maitland, Mulligan, myofascial release) to improve range, reduce stiffness, and promote recovery.</p>
-    </section>
-
-    <section id="vestibular">
-      <h2>Vestibular Rehab / Vertigo</h2>
-      <img src="images/vestibular.jpg" alt="Vestibular Rehab">
-      <p>Treatment for dizziness, vertigo, and balance disorders (including BPPV), with gaze-stabilization and habituation programs.</p>
-    </section>
-
-    <section id="shockwave">
-      <h2>Shockwave Therapy</h2>
-      <img src="images/shockwave.jpg" alt="Shockwave Therapy">
-      <p>Non-invasive modality for chronic tendon pain (e.g., plantar fasciitis, calcific tendinopathy) to stimulate healing.</p>
-    </section>
-
-    <section id="klaser">
-      <h2>K-laser Grade IV (coming soon)</h2>
-      <img src="images/klaser.jpg" alt="K-laser">
-      <p>High-power laser therapy for pain and tissue healing. Availability coming soon.</p>
-    </section>
-
-    <section id="orthotics">
-      <h2>Custom Foot Orthotics</h2>
-      <img src="images/orthotics.jpg" alt="Custom Foot Orthotics">
-      <p>Custom orthotics to support alignment and reduce stress on the feet, knees, hips, and spine — for work, daily walking, or sport.</p>
-    </section>
-
-    <section id="concussion">
-      <h2>Concussion / Whiplash</h2>
-      <img src="images/concussion.jpg" alt="Concussion / Whiplash">
-      <p>Safe, graded rehab including vestibular and vision retraining to restore full function after head and neck injuries.</p>
-    </section>
-
-    <section id="neuro">
-      <h2>Neurological Rehab</h2>
-      <img src="images/neuro.jpg" alt="Neurological Rehab">
-      <p>Programs for stroke, multiple sclerosis, Parkinson’s disease, and other neurological conditions focused on mobility and independence.</p>
-    </section>
-
-    <section id="kinesiology">
-      <h2>Kinesiology / Exercise Therapy</h2>
-      <img src="images/exercise.jpg" alt="Kinesiology / Exercise Therapy">
-      <p>Progressive, goal-based exercise programs to build strength, balance, and endurance — from early rehab to return-to-activity.</p>
-    </section>
-
   </main>
 
   <footer class="footer">
@@ -196,42 +398,29 @@
     </div>
   </footer>
 
-<!-- JavaScript -->
-<script>
-  document.getElementById('y').textContent = new Date().getFullYear();
-</script>
-
-<script>
-  (function () {
-    document.querySelectorAll('.dropdown .drop-trigger').forEach(function (trig) {
-      trig.addEventListener('click', function (e) {
-        e.preventDefault();
-        e.stopPropagation();
-
-        const dd = trig.closest('.dropdown');
-        // Diğer açık olanları kapat
-        document.querySelectorAll('.dropdown.open').forEach(el => {
-          if (el !== dd) el.classList.remove('open');
+  <!-- JavaScript -->
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+  <script>
+    (function () {
+      document.querySelectorAll('.dropdown .drop-trigger').forEach(function (trig) {
+        trig.addEventListener('click', function (e) {
+          e.preventDefault(); e.stopPropagation();
+          const dd = trig.closest('.dropdown');
+          document.querySelectorAll('.dropdown.open').forEach(el => { if (el !== dd) el.classList.remove('open'); });
+          dd.classList.toggle('open');
         });
-        // Kendisini toggle et (ikinci tıklama ile kapanacak)
-        dd.classList.toggle('open');
       });
-    });
-
-    // Dışarı tıklayınca kapat
-    document.addEventListener('click', function () {
-      document.querySelectorAll('.dropdown.open').forEach(el => el.classList.remove('open'));
-    });
-
-    // ESC ile kapat
-    document.addEventListener('keydown', function (e) {
-      if (e.key === 'Escape') {
+      document.addEventListener('click', function () {
         document.querySelectorAll('.dropdown.open').forEach(el => el.classList.remove('open'));
-      }
-    });
-  })();
-</script>
+      });
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') {
+          document.querySelectorAll('.dropdown.open').forEach(el => el.classList.remove('open'));
+        }
+      });
+    })();
+  </script>
 </body>
 </html>
-
-
