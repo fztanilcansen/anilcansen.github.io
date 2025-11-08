@@ -862,3 +862,28 @@ h1 {
 @media (min-width: 1024px){
   .eswt-hero .hero-square{ width: clamp(300px, 38vw, 560px); }
 }
+.service-grid{
+  display:grid; gap:20px;
+  grid-template-columns: repeat(3, minmax(0,1fr));
+}
+@media (max-width:980px){
+  .service-grid{ grid-template-columns:1fr; }
+}
+.service-card{
+  display:flex; flex-direction:column;
+  border:1px solid rgba(0,0,0,.08);
+  border-radius:12px; overflow:hidden; background:#fff;
+}
+.service-card .media{
+  display:block; aspect-ratio:4/3; background:#eef2f5; overflow:hidden;
+}
+.service-card .media img{ width:100%; height:100%; object-fit:cover; display:block; }
+.service-card .content{ padding:16px; display:flex; flex-direction:column; gap:10px; }
+.service-card h3{ margin:0; font-size:1.1rem; }
+.service-card .mini{ list-style:none; margin:0; padding:0; display:flex; flex-wrap:wrap; gap:10px; }
+.service-card .mini li{
+  font-size:.9rem; color:#64748b; background:#f8fafc;
+  border:1px solid rgba(0,0,0,.06); border-radius:999px; padding:4px 10px;
+}
+.service-card .actions{ display:flex; gap:10px; margin-top:6px; }
+.service-card .btn{ padding:9px 14px; }
