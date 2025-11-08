@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Custom Orthotics, Compression Stockings & Knee Braces | Physio Island</title>
+  <meta name="description" content="Custom-made foot orthotics, medical-grade compression stockings, and DonJoy knee braces in Burin. Assessment, 3D/foam casting, precise fitting, and follow-up to keep you moving confidently." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=20">
+  <link rel="icon" href="favicon.ico">
+  <style>
+    :root{ --brand:#0E5B59; --soft:rgba(14,91,89,.06); --ink:#253237; --muted:#64748b; }
+    body{ background:#f5f7fa; color:#333; }
+    section.card{ background:#fff; border-radius:12px; padding:26px; box-shadow:0 5px 15px rgba(0,0,0,.06); margin-bottom:24px; }
+    .grid{ display:grid; gap:20px; }
+    .grid-2{ grid-template-columns: 1.2fr 1fr; }
+    .grid-3{ grid-template-columns: repeat(3, minmax(0,1fr)); }
+    @media (max-width:980px){ .grid-2,.grid-3{ grid-template-columns:1fr; } }
+    h2.section-title{ color:var(--brand); font-size:1.6rem; margin:0 0 12px; border-bottom:2px solid var(--soft); padding-bottom:8px; }
+    h3{ color:var(--ink); margin:10px 0; font-size:1.12rem; }
+    p{ line-height:1.65; }
+    ul.clean{ margin:10px 0 0 0; padding:0; list-style:none; }
+    ul.clean li{ margin:8px 0; padding-left:14px; position:relative; }
+    ul.clean li::before{ content:"—"; position:absolute; left:0; color:#94a3b8; }
+    ul.check{ margin:10px 0 0 0; list-style:none; padding:0; }
+    ul.check li{ margin:8px 0; padding-left:24px; position:relative; }
+    ul.check li::before{ content:"✓"; position:absolute; left:0; color:var(--brand); }
+    .note{ background:#f8fafc; border-left:4px solid var(--brand); padding:12px 14px; border-radius:8px; color:#334155; }
+    .warn{ background:#fff9e6; border-left:4px solid #f59e0b; }
+    .cta-center{ text-align:center; padding:28px 0; }
+    .btn{ display:inline-flex; align-items:center; gap:8px; border-radius:999px; padding:11px 20px; font-weight:700; text-decoration:none; }
+    .btn-primary{ background:var(--brand); color:#fff; }
+    .btn-primary:hover{ filter:brightness(.95); }
+    .btn-outline{ border:1px solid rgba(0,0,0,.14); color:var(--brand); background:#fff; }
+
+    /* Product cards */
+    .product-grid{ display:grid; gap:16px; grid-template-columns: repeat(3, minmax(0,1fr)); }
+    @media (max-width:980px){ .product-grid{ grid-template-columns:1fr; } }
+    .product{ border:1px solid rgba(0,0,0,.06); border-radius:12px; overflow:hidden; background:#fff; display:flex; flex-direction:column; }
+    .product .media{ aspect-ratio:4/3; background:#eef2f5; display:block; overflow:hidden; }
+    .product .media img{ width:100%; height:100%; object-fit:cover; display:block; }
+    .product .content{ padding:14px 16px; display:flex; flex-direction:column; gap:6px; }
+    .badge{ position:absolute; top:10px; left:10px; background:#fff; color:var(--brand); border:1px solid rgba(0,0,0,.06); border-radius:999px; padding:4px 10px; font-weight:700; font-size:12px; }
+    .media-wrap{ position:relative; }
+
+    /* Process steps */
+    .steps{ display:grid; gap:14px; grid-template-columns: repeat(4, minmax(0,1fr)); }
+    @media (max-width:980px){ .steps{ grid-template-columns:1fr; } }
+    .step{ background:#f8fafc; border:1px solid rgba(0,0,0,.06); border-radius:12px; padding:14px; }
+    .step b{ color:var(--brand); }
+  </style>
+</head>
+
+<body>
+  <!-- Top bar -->
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <span>Coming soon in Burin NL by late 2025</span>
+      <a class="topbar-link" href="tel:+17095550000">Call: (709) 555-0000</a>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html" aria-label="Physio Island Home">
+        <img src="images/logo.png" alt="Physio Island Logo">
+      </a>
+      <input type="checkbox" id="menu-toggle" class="menu-toggle">
+      <label for="menu-toggle" class="burger"><span></span><span></span><span></span></label>
+
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+
+        <div class="dropdown">
+          <a class="drop-trigger" href="#">Services ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="services.html#physiotherapy">Physiotherapy</a></li>
+            <li><a href="services.html#workplace">Workplace NL</a></li>
+            <li><a href="services.html#mva">Motor Vehicle Accidents</a></li>
+            <li><a href="services.html#veterans">Veteran Affairs Canada</a></li>
+            <li><a href="services.html#sports-rehab">Advanced Sports Rehabilitation</a></li>
+            <li><a href="services.html#acupuncture">Acupuncture</a></li>
+            <li><a href="services.html#manual">Manual Therapy</a></li>
+            <li><a href="services.html#vestibular">Vestibular Rehab / Vertigo</a></li>
+            <li><a href="services.html#shockwave">Shockwave Therapy</a></li>
+            <li><a href="services.html#klaser">K-laser Grade IV (coming soon)</a></li>
+            <li><a href="services.html#orthotics">Custom Foot Orthotics</a></li>
+            <li><a href="services.html#concussion">Concussion / Whiplash</a></li>
+            <li><a href="services.html#neuro">Neurological Rehab</a></li>
+            <li><a href="services.html#kinesiology">Kinesiology / Exercise Therapy</a></li>
+          </ul>
+        </div>
+
+        <div class="dropdown">
+          <a class="drop-trigger" href="about.html">About ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="about.html#about-us">About Us</a></li>
+            <li><a href="about.html#team">Our Team</a></li>
+          </ul>
+        </div>
+
+        <a href="careers.html">Careers</a>
+
+        <div class="dropdown">
+          <a class="drop-trigger" href="learn-more.html">Learn More ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="direct-billing.html">Direct Billing</a></li>
+          </ul>
+        </div>
+
+        <div class="dropdown">
+          <a class="drop-trigger" href="contact.html">Contact ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="contact.html#location">Location</a></li>
+          </ul>
+        </div>
+
+        <a href="#book-now" class="btn btn-primary btn-lg">Book Now</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO (square template) -->
+  <header class="eswt-hero hero--square">
+    <div class="container hero-inner">
+      <div class="hero-square">
+        <img
+          src="images/orthotics-960.jpg"
+          srcset="images/orthotics-480.jpg 480w,
+                  images/orthotics-960.jpg 960w,
+                  images/orthotics-1200.jpg 1200w"
+          sizes="(max-width: 980px) 80vw, 520px"
+          alt="Custom orthotics and bracing fitting"
+          loading="eager" decoding="async">
+      </div>
+
+      <div class="hero-copy">
+        <h1>Custom Orthotics & Bracing</h1>
+        <p>Measured, fitted, and followed up—custom foot orthotics, compression stockings, and DonJoy knee braces for comfortable, confident movement.</p>
+        <a href="contact.html#book" class="btn btn-primary btn-lg">Book Now</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <!-- WHAT WE OFFER -->
+    <section class="card">
+      <h2 class="section-title">What we offer</h2>
+      <div class="product-grid">
+        <div class="product">
+          <div class="media-wrap">
+            <span class="badge">Custom</span>
+            <div class="media">
+              <img src="images/orthotics-foot.jpg" alt="Custom foot orthotics pair on a bench" loading="lazy">
+            </div>
+          </div>
+          <div class="content">
+            <h3>Custom Foot Orthotics</h3>
+            <p>Built from your foot shape to improve comfort and loading for walking, work, and sport. Options for dress, athletic, and safety footwear.</p>
+            <ul class="clean">
+              <li>3D scan or foam box casting</li>
+              <li>Shell/material matched to your shoes</li>
+              <li>Break-in plan and fit follow-up</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="product">
+          <div class="media-wrap">
+            <span class="badge">Medical-grade</span>
+            <div class="media">
+              <img src="images/orthotics-compression.jpg" alt="Compression stockings folded neatly" loading="lazy">
+            </div>
+          </div>
+          <div class="content">
+            <h3>Compression Stockings</h3>
+            <p>Graduated compression (various mmHg) for swelling, venous support, and long-day comfort. Everyday, travel, and work styles.</p>
+            <ul class="clean">
+              <li>Precise measurement & size fitting</li>
+              <li>Knee-high, thigh-high, pantyhose</li>
+              <li>Simple wear & care instructions</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="product">
+          <div class="media-wrap">
+            <span class="badge">DonJoy</span>
+            <div class="media">
+              <img src="images/orthotics-kneebrace.jpg" alt="DonJoy knee brace fitting" loading="lazy">
+            </div>
+          </div>
+          <div class="content">
+            <h3>Knee Braces (DonJoy)</h3>
+            <p>Stability for ACL, MCL/LCL, meniscus, or osteoarthritis. Off-the-shelf and custom options sized and tuned to your activity.</p>
+            <ul class="clean">
+              <li>Activity-matched brace selection</li>
+              <li>Professional fitting & adjustments</li>
+              <li>Return-to-work/sport guidance</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHO BENEFITS -->
+    <section class="card">
+      <h2 class="section-title">Who can benefit</h2>
+      <div class="grid grid-3">
+        <div>
+          <h3>Foot & Ankle</h3>
+          <ul class="clean">
+            <li>Plantar fasciitis & heel pain</li>
+            <li>Over-pronation/flat feet, high arches</li>
+            <li>Metatarsalgia, Achilles irritation</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Knee</h3>
+          <ul class="clean">
+            <li>Osteoarthritis unloading</li>
+            <li>ACL/MCL/LCL support</li>
+            <li>Patellofemoral pain</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Swelling & Standing</h3>
+          <ul class="clean">
+            <li>Leg fatigue on long shifts</li>
+            <li>Mild edema/venous support</li>
+            <li>Travel & prolonged sitting</li>
+          </ul>
+        </div>
+      </div>
+      <p class="note" style="margin-top:12px"><strong>Important:</strong> Devices work best with a short exercise plan and footwear tips. We keep it practical and easy.</p>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="card">
+      <h2 class="section-title">How it works</h2>
+      <div class="steps">
+        <div class="step"><b>1) Assessment</b><br>Foot/ankle/knee and gait review; footwear check; job/sport goals.</div>
+        <div class="step"><b>2) Casting/Measurement</b><br>3D scan or foam box for orthotics; precise limb measures for stockings/braces.</div>
+        <div class="step"><b>3) Fabrication & Fitting</b><br>Fit to your shoe/leg, comfort check, wear & care plan.</div>
+        <div class="step"><b>4) Follow-up</b><br>Fine-tuning after break-in; exercises to keep you moving comfortably.</div>
+      </div>
+    </section>
+
+    <!-- WHAT TO EXPECT -->
+    <section class="card">
+      <h2 class="section-title">What to expect</h2>
+      <div class="grid grid-2">
+        <div>
+          <ul class="check">
+            <li>Orthotic break-in over 1–2 weeks</li>
+            <li>Compression wear schedule & skin checks</li>
+            <li>Knee brace don/doff & strap sequence</li>
+            <li>2–4 simple exercises that support results</li>
+          </ul>
+        </div>
+        <div class="note">
+          <strong>Insurance & Direct Billing</strong>
+          <p>Many plans reimburse orthotics, compression, or bracing. Bring your policy; we’ll guide receipts/documentation. We offer <a href="direct-billing.html">Direct Billing</a> where available.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="card">
+      <h2 class="section-title">FAQ</h2>
+      <details class="faq">
+        <summary>Do I need a doctor’s prescription?</summary>
+        <p>You can be assessed without a prescription. Some plans require a physician prescription for reimbursement—check your policy.</p>
+      </details>
+      <details class="faq">
+        <summary>How long do custom orthotics last?</summary>
+        <p>Often 2–3 years with regular use. Footwear, body weight, and activity affect lifespan. We can assess wear annually.</p>
+      </details>
+      <details class="faq">
+        <summary>Custom vs off-the-shelf—how do I choose?</summary>
+        <p>Custom is built from your measurements for precise, targeted support. Off-the-shelf can suit some needs; we’ll recommend what fits your goals and budget.</p>
+      </details>
+      <details class="faq">
+        <summary>Do you carry DonJoy knee braces?</summary>
+        <p>Yes—sized and fitted in clinic. We match the model to your condition and activity (daily life, work, or sport).</p>
+      </details>
+      <details class="faq">
+        <summary>Will I still need exercises?</summary>
+        <p>Usually yes. Short, targeted strength/mobility helps comfort last. We keep programs simple and practical.</p>
+      </details>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-center">
+      <h2>Ready for a comfortable step forward?</h2>
+      <p>Book your orthotics/bracing assessment. Simple, precise, and tailored to your shoes, work, and sport.</p>
+      <a href="contact.html#book" class="btn btn-primary btn-lg">Book Now</a>
+    </section>
+  </div>
+
+  <!-- JS: dropdowns -->
+  <script>
+    (function () {
+      document.querySelectorAll('.dropdown .drop-trigger').forEach(function (trig) {
+        trig.addEventListener('click', function (e) {
+          e.preventDefault(); e.stopPropagation();
+          const dd = trig.closest('.dropdown');
+          document.querySelectorAll('.dropdown.open').forEach(el => { if (el !== dd) el.classList.remove('open'); });
+          dd.classList.toggle('open');
+        });
+      });
+      document.addEventListener('click', () => document.querySelectorAll('.dropdown.open').forEach(el => el.classList.remove('open')));
+      document.addEventListener('keydown', e => { if (e.key === 'Escape') document.querySelectorAll('.dropdown.open').forEach(el => el.classList.remove('open')); });
+    })();
+  </script>
+</body>
+</html>
