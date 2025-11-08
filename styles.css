@@ -763,4 +763,54 @@ h1 {
   .team-head img{ width:160px; height:160px; margin:0 auto; }
   .bio-toggle{ margin-inline:auto; }
 }
+/* Nav ile araya nefes */
+.nav + .eswt-hero { margin-top: 12px; }
+
+/* Contained hero: taşma yok, header içinde kalır */
+.eswt-hero.hero--image{
+  position: relative;
+  border-radius: 14px;
+  overflow: hidden;            /* köşeleri korur */
+  margin: 0 0 40px;
+  background: #0E5B59;        /* yedek zemin rengi */
+}
+
+/* Görsel akışta, yüksekliği aspect-ratio ile kontrollü */
+.eswt-hero .hero-media img{
+  width: 100%;
+  aspect-ratio: 21 / 9;        /* geniş hero oranı; istersen 16/9 yap */
+  object-fit: cover;
+  display: block;
+  filter: contrast(.98) saturate(.98);
+}
+
+/* Metin katmanı: header içinde, NAV'A TAŞMAZ */
+.eswt-hero .hero-content{
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 28px 16px;
+  color: #fff;
+
+  /* Yumuşak degrade: üstten belirgin, altta saydamlaşır */
+  background: linear-gradient(
+    180deg,
+    rgba(14,91,89,.55),
+    rgba(14,91,89,.25) 55%,
+    rgba(14,91,89,0)
+  );
+}
+
+/* Başlık ve alt başlık aralıkları (göz yormasın) */
+.eswt-hero .hero-content h1{ margin: 0 0 8px; }
+.eswt-hero .hero-content p{ margin: 0 0 14px; color: rgba(255,255,255,.95); }
+
+/* Mobil ayar: oranı biraz yükselt, metin pedini küçült */
+@media (max-width: 600px){
+  .eswt-hero .hero-media img{ aspect-ratio: 16 / 9; }
+  .eswt-hero .hero-content{ padding: 22px 12px; }
+}
 
