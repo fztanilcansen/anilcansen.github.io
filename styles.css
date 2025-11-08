@@ -766,25 +766,31 @@ h1 {
 /* Nav ile araya nefes */
 .nav + .eswt-hero { margin-top: 12px; }
 
-/* Contained hero: taşma yok, header içinde kalır */
+/* Contained hero: header içinde kalsın, taşmasın */
 .eswt-hero.hero--image{
   position: relative;
   border-radius: 14px;
-  overflow: hidden;            /* köşeleri korur */
-  margin: 0 0 40px;
-  background: #0E5B59;        /* yedek zemin rengi */
+  overflow: hidden;
+  margin: 0 0 36px;
+  background: #0E5B59; /* yedek zemin */
 }
 
-/* Görsel akışta, yüksekliği aspect-ratio ile kontrollü */
+/* Görsel alanı: yükseklik clamp ile makul tutulur */
+.eswt-hero .hero-media{
+  height: clamp(240px, 34vh, 420px);  /* min 240, tipik 34vh, max 420 */
+}
+
+/* Görsel: alanı taşmadan doldur */
 .eswt-hero .hero-media img{
   width: 100%;
-  aspect-ratio: 21 / 9;        /* geniş hero oranı; istersen 16/9 yap */
+  height: 100%;
   object-fit: cover;
+  object-position: center;   /* gerekirse: center 35% */
   display: block;
   filter: contrast(.98) saturate(.98);
 }
 
-/* Metin katmanı: header içinde, NAV'A TAŞMAZ */
+/* Metin katmanı (okunabilirlik için yumuşak degrade) */
 .eswt-hero .hero-content{
   position: absolute;
   inset: 0;
@@ -794,8 +800,6 @@ h1 {
   text-align: center;
   padding: 28px 16px;
   color: #fff;
-
-  /* Yumuşak degrade: üstten belirgin, altta saydamlaşır */
   background: linear-gradient(
     180deg,
     rgba(14,91,89,.55),
@@ -804,13 +808,11 @@ h1 {
   );
 }
 
-/* Başlık ve alt başlık aralıkları (göz yormasın) */
+/* Başlık/alt başlık aralıkları */
 .eswt-hero .hero-content h1{ margin: 0 0 8px; }
-.eswt-hero .hero-content p{ margin: 0 0 14px; color: rgba(255,255,255,.95); }
+.eswt-hero .hero-content p { margin: 0 0 14px; color: rgba(255,255,255,.95); }
 
-/* Mobil ayar: oranı biraz yükselt, metin pedini küçült */
+/* Mobil ayarları */
 @media (max-width: 600px){
-  .eswt-hero .hero-media img{ aspect-ratio: 16 / 9; }
   .eswt-hero .hero-content{ padding: 22px 12px; }
 }
-
