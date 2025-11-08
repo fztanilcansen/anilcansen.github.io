@@ -1,1 +1,292 @@
 
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Acupuncture | Physio Island</title>
+  <meta name="description" content="Medical acupuncture by physiotherapists: safe, evidence-informed needling to calm pain, improve circulation, and restore movement—paired with simple exercises for lasting results." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=20">
+  <link rel="icon" href="favicon.ico">
+  <style>
+    :root{ --brand:#0E5B59; --soft:rgba(14,91,89,.06); --ink:#253237; --muted:#64748b; }
+    body{ background:#f5f7fa; color:#333; }
+    section.card{ background:#fff; border-radius:12px; padding:26px; box-shadow:0 5px 15px rgba(0,0,0,.06); margin-bottom:24px; }
+    .grid{ display:grid; gap:20px; }
+    .grid-2{ grid-template-columns: 1.2fr 1fr; }
+    .grid-3{ grid-template-columns: repeat(3, minmax(0,1fr)); }
+    @media (max-width:980px){ .grid-2,.grid-3{ grid-template-columns:1fr; } }
+    h2.section-title{ color:var(--brand); font-size:1.6rem; margin:0 0 12px; border-bottom:2px solid var(--soft); padding-bottom:8px; }
+    h3{ color:var(--ink); margin:10px 0; font-size:1.12rem; }
+    p{ line-height:1.65; }
+    ul.clean{ margin:10px 0 0 0; padding:0; list-style:none; }
+    ul.clean li{ margin:8px 0; padding-left:14px; position:relative; }
+    ul.clean li::before{ content:"—"; position:absolute; left:0; color:#94a3b8; }
+    ul.check{ margin:10px 0 0 0; list-style:none; padding:0; }
+    ul.check li{ margin:8px 0; padding-left:24px; position:relative; }
+    ul.check li::before{ content:"✓"; position:absolute; left:0; color:var(--brand); }
+    .note{ background:#f8fafc; border-left:4px solid var(--brand); padding:12px 14px; border-radius:8px; color:#334155; }
+    .warn{ background:#fff9e6; border-left:4px solid #f59e0b; }
+    .pill-row{ display:flex; flex-wrap:wrap; gap:10px; margin-top:10px; }
+    .pill{ background:#eef7f7; color:var(--brand); padding:6px 10px; border-radius:999px; font-weight:600; font-size:12px; border:1px solid rgba(0,0,0,.06); }
+    details.faq{ background:#fff; border:1px solid rgba(0,0,0,.08); border-radius:10px; padding:14px 16px; margin:12px 0; }
+    details.faq > summary{ cursor:pointer; font-weight:600; }
+    details.faq > summary::-webkit-details-marker{ display:none; }
+    details.faq[open]{ border-color: rgba(14,91,89,.25); }
+    .cta-center{ text-align:center; padding:28px 0; }
+    .btn{ display:inline-flex; align-items:center; gap:8px; border-radius:999px; padding:11px 20px; font-weight:700; text-decoration:none; }
+    .btn-primary{ background:var(--brand); color:#fff; }
+    .btn-primary:hover{ filter:brightness(.95); }
+    .btn-outline{ border:1px solid rgba(0,0,0,.14); color:var(--brand); background:#fff; }
+  </style>
+</head>
+
+<body>
+  <!-- Top bar -->
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <span>Coming soon in Burin NL by late 2025</span>
+      <a class="topbar-link" href="tel:+17095550000">Call: (709) 555-0000</a>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html" aria-label="Physio Island Home">
+        <img src="images/logo.png" alt="Physio Island Logo">
+      </a>
+      <input type="checkbox" id="menu-toggle" class="menu-toggle">
+      <label for="menu-toggle" class="burger"><span></span><span></span><span></span></label>
+
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+
+        <div class="dropdown">
+          <a class="drop-trigger" href="#">Services ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="services.html#physiotherapy">Physiotherapy</a></li>
+            <li><a href="services.html#workplace">Workplace NL</a></li>
+            <li><a href="services.html#mva">Motor Vehicle Accidents</a></li>
+            <li><a href="services.html#veterans">Veteran Affairs Canada</a></li>
+            <li><a href="services.html#sports-rehab">Advanced Sports Rehabilitation</a></li>
+            <li><a href="services.html#acupuncture">Acupuncture</a></li>
+            <li><a href="services.html#manual">Manual Therapy</a></li>
+            <li><a href="services.html#vestibular">Vestibular Rehab / Vertigo</a></li>
+            <li><a href="services.html#shockwave">Shockwave Therapy</a></li>
+            <li><a href="services.html#klaser">K-laser Grade IV (coming soon)</a></li>
+            <li><a href="services.html#orthotics">Custom Foot Orthotics</a></li>
+            <li><a href="services.html#concussion">Concussion / Whiplash</a></li>
+            <li><a href="services.html#neuro">Neurological Rehab</a></li>
+            <li><a href="services.html#kinesiology">Kinesiology / Exercise Therapy</a></li>
+          </ul>
+        </div>
+
+        <div class="dropdown">
+          <a class="drop-trigger" href="about.html">About ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="about.html#about-us">About Us</a></li>
+            <li><a href="about.html#team">Our Team</a></li>
+          </ul>
+        </div>
+
+        <a href="careers.html">Careers</a>
+
+        <div class="dropdown">
+          <a class="drop-trigger" href="learn-more.html">Learn More ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="direct-billing.html">Direct Billing</a></li>
+          </ul>
+        </div>
+
+        <div class="dropdown">
+          <a class="drop-trigger" href="contact.html">Contact ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="contact.html#location">Location</a></li>
+          </ul>
+        </div>
+
+        <a href="#book-now" class="btn btn-primary btn-lg">Book Now</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO (square template) -->
+  <header class="eswt-hero hero--square">
+    <div class="container hero-inner">
+      <div class="hero-square">
+        <img
+          src="images/acupuncture-960.jpg"
+          srcset="images/acupuncture-480.jpg 480w,
+                  images/acupuncture-960.jpg 960w,
+                  images/acupuncture-1200.jpg 1200w"
+          sizes="(max-width: 980px) 80vw, 520px"
+          alt="Medical acupuncture performed by a physiotherapist"
+          loading="eager" decoding="async">
+      </div>
+
+      <div class="hero-copy">
+        <h1>Acupuncture (by Physiotherapists)</h1>
+        <p>Fine, sterile needles placed at specific points to calm pain, improve local circulation, and normalize muscle tone—always paired with simple exercises so gains last.</p>
+        <a href="contact.html#book" class="btn btn-primary btn-lg">Book Now</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <!-- WHAT & WHY -->
+    <section class="card">
+      <h2 class="section-title">What acupuncture is & why we use it</h2>
+      <div class="grid grid-2">
+        <div>
+          <p>Our therapists provide medical acupuncture within physiotherapy care. Very thin, single-use needles are inserted into carefully chosen points to reduce pain, decrease protective muscle guarding, and stimulate the body’s self-healing processes.</p>
+          <ul class="check">
+            <li>Drug-free, minimally invasive pain control</li>
+            <li>Improves blood flow and modulates pain signalling</li>
+            <li>Reduces trigger point sensitivity and muscle tension</li>
+            <li>Works best combined with education and progressive exercise</li>
+          </ul>
+        </div>
+        <div class="note">
+          <strong>What to expect</strong>
+          <ul class="clean" style="margin-top:8px">
+            <li>Most feel a dull ache/heaviness for a few seconds; many relax</li>
+            <li>Typical session: 10–20 minutes of needling within your visit</li>
+            <li>Mild soreness or fatigue for 24–48 h can be normal</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONDITIONS -->
+    <section class="card">
+      <h2 class="section-title">Common conditions helped by acupuncture</h2>
+      <div class="grid grid-3">
+        <div>
+          <h3>Spine & Head</h3>
+          <ul class="clean">
+            <li>Neck pain, tension headaches</li>
+            <li>Low back pain, muscle spasm</li>
+            <li>Whiplash-related pain</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Upper Limb</h3>
+          <ul class="clean">
+            <li>Shoulder impingement / rotator cuff pain</li>
+            <li>Tennis & golfer’s elbow</li>
+            <li>Wrist/hand overuse pain</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Lower Limb</h3>
+          <ul class="clean">
+            <li>Knee pain (patellofemoral, tendinopathy)</li>
+            <li>Hip/gluteal pain, bursitis</li>
+            <li>Shin/ankle muscle tightness</li>
+          </ul>
+        </div>
+      </div>
+      <div class="pill-row">
+        <span class="pill">Pain Modulation</span>
+        <span class="pill">Muscle Relaxation</span>
+        <span class="pill">Circulation</span>
+      </div>
+    </section>
+
+    <!-- FIRST VISIT -->
+    <section class="card">
+      <h2 class="section-title">Is it right for me? (first visit & safety)</h2>
+      <div class="grid grid-2">
+        <div>
+          <p>We always complete a full assessment first. If acupuncture is appropriate, your therapist will review benefits, risks, and alternatives and ask for your written consent. You can stop at any time—your plan will simply use other physiotherapy options.</p>
+          <a class="btn btn-outline" href="contact.html#book">Ask a physiotherapist</a>
+        </div>
+        <div class="warn">
+          <strong>Who should avoid it or get medical clearance</strong>
+          <ul class="clean" style="margin-top:8px">
+            <li>Bleeding disorders or strong anticoagulants</li>
+            <li>Pregnancy: some points avoided; discuss with your therapist</li>
+            <li>Skin infection, open wounds, or active cancer over the area</li>
+            <li>Pacemaker (if electrical stimulation is considered)</li>
+            <li>Severe needle phobia or fainting history—tell us in advance</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW WE DELIVER -->
+    <section class="card">
+      <h2 class="section-title">How we use acupuncture in your plan</h2>
+      <div class="grid grid-2">
+        <div>
+          <ul class="check">
+            <li>Clean technique with single-use, pre-sterilized needles</li>
+            <li>Targeted points based on your assessment and goals</li>
+            <li>May be paired with gentle electrical stimulation (TENS/IMS)</li>
+            <li>Followed by 2–4 simple exercises to lock in the change</li>
+            <li>Education on pacing, posture, and flare-up prevention</li>
+          </ul>
+        </div>
+        <div class="note">
+          <strong>Plan of care</strong>
+          <p>Usually added to early sessions to settle pain, then tapered as exercise takes over. Frequency and total number of sessions vary with the condition and your response.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- INSURANCE -->
+    <section class="card">
+      <h2 class="section-title">Insurance & Direct Billing</h2>
+      <p>Acupuncture provided by licensed physiotherapists is billed as a physiotherapy service. In NL, no referral is required to be seen; some plans may request a physician’s referral for reimbursement. We offer <a href="direct-billing.html">Direct Billing</a> to many insurers and provide detailed receipts for others.</p>
+    </section>
+
+    <!-- FAQ -->
+    <section class="card">
+      <h2 class="section-title">FAQ</h2>
+      <details class="faq">
+        <summary>Is acupuncture painful?</summary>
+        <p>Most feel a brief dull ache or heaviness. We adjust technique to keep you comfortable and can stop anytime.</p>
+      </details>
+      <details class="faq">
+        <summary>Is it safe?</summary>
+        <p>Yes when performed by trained clinicians using sterile, single-use needles. We screen for contraindications and obtain consent.</p>
+      </details>
+      <details class="faq">
+        <summary>How many sessions will I need?</summary>
+        <p>It varies. Many notice change within 2–4 sessions; best results come when combined with progressive exercise.</p>
+      </details>
+      <details class="faq">
+        <summary>Do you do dry needling/IMS?</summary>
+        <p>We can use trigger-point dry needling when appropriate. Your therapist will explain the approach and how it fits your program.</p>
+      </details>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-center">
+      <h2>Ready to try acupuncture?</h2>
+      <p>Book your one-on-one assessment. We’ll confirm if acupuncture is a good fit and build a plan that suits your goals.</p>
+      <a href="contact.html#book" class="btn btn-primary btn-lg">Book Now</a>
+    </section>
+  </div>
+
+  <!-- JS: dropdowns -->
+  <script>
+    (function () {
+      document.querySelectorAll('.dropdown .drop-trigger').forEach(function (trig) {
+        trig.addEventListener('click', function (e) {
+          e.preventDefault(); e.stopPropagation();
+          const dd = trig.closest('.dropdown');
+          document.querySelectorAll('.dropdown.open').forEach(el => { if (el !== dd) el.classList.remove('open'); });
+          dd.classList.toggle('open');
+        });
+      });
+      document.addEventListener('click', () => document.querySelectorAll('.dropdown.open').forEach(el => el.classList.remove('open')));
+      document.addEventListener('keydown', e => { if (e.key === 'Escape') document.querySelectorAll('.dropdown.open').forEach(el => el.classList.remove('open')); });
+    })();
+  </script>
+</body>
+</html>
