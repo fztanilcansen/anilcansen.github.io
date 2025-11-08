@@ -1,1 +1,336 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WorkplaceNL Injury Rehab | Physio Island</title>
+  <meta name="description" content="Newfoundland & Labrador WorkplaceNL rehab in Burin: fast assessment, one-on-one physiotherapy, active rehab, and coordinated Early & Safe Return to Work (ESRTW) with clear reporting to employers and WorkplaceNL." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=20">
+  <link rel="icon" href="favicon.ico">
+  <style>
+    :root{ --brand:#0E5B59; --soft:rgba(14,91,89,.06); --ink:#253237; --muted:#64748b; }
+    body{ background:#f5f7fa; color:#333; }
+    section.card{ background:#fff; border-radius:12px; padding:26px; box-shadow:0 5px 15px rgba(0,0,0,.06); margin-bottom:24px; }
+    .grid{ display:grid; gap:20px; }
+    .grid-2{ grid-template-columns: 1.2fr 1fr; }
+    .grid-3{ grid-template-columns: repeat(3, minmax(0,1fr)); }
+    @media (max-width:980px){ .grid-2,.grid-3{ grid-template-columns:1fr; } }
+    h2.section-title{ color:var(--brand); font-size:1.6rem; margin:0 0 12px; border-bottom:2px solid var(--soft); padding-bottom:8px; }
+    h3{ color:var(--ink); margin:10px 0; font-size:1.12rem; }
+    p{ line-height:1.65; }
+    ul.clean{ margin:10px 0 0 0; padding:0; list-style:none; }
+    ul.clean li{ margin:8px 0; padding-left:14px; position:relative; }
+    ul.clean li::before{ content:"—"; position:absolute; left:0; color:#94a3b8; }
+    ul.check{ margin:10px 0 0 0; list-style:none; padding:0; }
+    ul.check li{ margin:8px 0; padding-left:24px; position:relative; }
+    ul.check li::before{ content:"✓"; position:absolute; left:0; color:var(--brand); }
+    .note{ background:#f8fafc; border-left:4px solid var(--brand); padding:12px 14px; border-radius:8px; color:#334155; }
+    .warn{ background:#fff9e6; border-left:4px solid #f59e0b; }
+    .cta-center{ text-align:center; padding:28px 0; }
+    .btn{ display:inline-flex; align-items:center; gap:8px; border-radius:999px; padding:11px 20px; font-weight:700; text-decoration:none; }
+    .btn-primary{ background:var(--brand); color:#fff; }
+    .btn-primary:hover{ filter:brightness(.95); }
+    .btn-outline{ border:1px solid rgba(0,0,0,.14); color:var(--brand); background:#fff; }
+    .hero-badge{ display:inline-block; background:#eaf7f6; color:var(--brand); border:1px solid rgba(0,0,0,.08); padding:6px 10px; border-radius:999px; font-weight:600; font-size:12px; }
+    .inline-actions{ display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+  </style>
+</head>
+
+<body>
+  <!-- Top bar -->
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <span>Coming soon in Burin NL by late 2025</span>
+      <a class="topbar-link" href="tel:+17095550000">Call: (709) 555-0000</a>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html" aria-label="Physio Island Home">
+        <img src="images/logo.png" alt="Physio Island Logo">
+      </a>
+      <input type="checkbox" id="menu-toggle" class="menu-toggle">
+      <label for="menu-toggle" class="burger"><span></span><span></span><span></span></label>
+
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+
+        <div class="dropdown">
+          <a class="drop-trigger" href="#">Services ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="services.html#physiotherapy">Physiotherapy</a></li>
+            <li><a href="services.html#workplace">Workplace NL</a></li>
+            <li><a href="services.html#mva">Motor Vehicle Accidents</a></li>
+            <li><a href="services.html#sports-rehab">Advanced Sports Rehabilitation</a></li>
+            <li><a href="services.html#vestibular">Vestibular Rehab / Vertigo</a></li>
+            <li><a href="services.html#manual">Manual Therapy</a></li>
+            <li><a href="services.html#concussion">Concussion / Whiplash</a></li>
+            <li><a href="services.html#kinesiology">Kinesiology / Exercise Therapy</a></li>
+          </ul>
+        </div>
+
+        <div class="dropdown">
+          <a class="drop-trigger" href="about.html">About ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="about.html#about-us">About Us</a></li>
+            <li><a href="about.html#team">Our Team</a></li>
+          </ul>
+        </div>
+
+        <a href="careers.html">Careers</a>
+
+        <div class="dropdown">
+          <a class="drop-trigger" href="learn-more.html">Learn More ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="direct-billing.html">Direct Billing</a></li>
+          </ul>
+        </div>
+
+        <div class="dropdown">
+          <a class="drop-trigger" href="contact.html">Contact ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="contact.html#location">Location</a></li>
+          </ul>
+        </div>
+
+        <a href="#book-now" class="btn btn-primary btn-lg">Book Now</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="eswt-hero hero--square">
+    <div class="container hero-inner">
+      <div class="hero-square">
+        <img
+          src="images/workplacenl-960.jpg"
+          srcset="images/workplacenl-480.jpg 480w,
+                  images/workplacenl-960.jpg 960w,
+                  images/workplacenl-1200.jpg 1200w"
+          sizes="(max-width: 980px) 80vw, 520px"
+          alt="Physiotherapy and active rehab for work injuries"
+          loading="eager" decoding="async">
+      </div>
+
+      <div class="hero-copy">
+        <span class="hero-badge">Fast assessment • Direct Billing for approved claims</span>
+        <h1>WorkplaceNL Injury Rehab</h1>
+        <p>One-on-one physiotherapy and active rehab with a clear, safe plan to get you back to work and everyday life.</p>
+        <div class="inline-actions">
+          <a href="contact.html#book" class="btn btn-primary btn-lg">Book WorkplaceNL Assessment</a>
+          <a href="tel:+17095550000" class="btn btn-outline">Call Now</a>
+        </div>
+        <p style="margin-top:8px;font-size:.95rem;color:#334155;">
+          <b>Workplace injury today?</b> Call us. We prioritize <b>same/next-business-day assessments</b> for WorkplaceNL cases.
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <!-- WHAT WE DO -->
+    <section class="card">
+      <h2 class="section-title">Our approach (Newfoundland & Labrador)</h2>
+      <div class="grid grid-2">
+        <div>
+          <p>Early assessment and active rehab are key. Your physiotherapist identifies the main drivers of pain and limitation, treats what’s modifiable, and builds a simple program you can follow at work and at home—so you can return safely and confidently.</p>
+          <ul class="check">
+            <li>Objective baseline (pain, ROM, strength, function) to track progress</li>
+            <li>Manual therapy for pain/stiffness + progressive exercise loading</li>
+            <li>Job-specific drills (lifting, pushing/pulling, kneeling, reaching)</li>
+            <li>Stepwise plan toward regular duties and hours</li>
+          </ul>
+        </div>
+        <div class="note">
+          <strong>ESRTW (Early & Safe Return to Work)</strong>
+          <ul class="clean" style="margin-top:8px">
+            <li>Modified duties and hours as needed</li>
+            <li>Gradual increases guided by symptoms and objective change</li>
+            <li>Regular updates to you, your employer, and WorkplaceNL</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUICK START / FAST BOOKING -->
+    <section class="card">
+      <h2 class="section-title">Hurt at work? Start here</h2>
+      <div class="grid grid-2">
+        <div>
+          <h3>Fast track (what you do)</h3>
+          <ul class="check">
+            <li><b>Tell your employer</b> about the injury as soon as possible.</li>
+            <li><b>Submit your Worker’s Report</b> to WorkplaceNL (online or by form).</li>
+            <li><b>Book your assessment with us</b> — bring any letters/emails you’ve received.</li>
+          </ul>
+          <div class="inline-actions">
+            <a href="contact.html#book" class="btn btn-primary">Book Now</a>
+            <a href="mailto:physioislandburin@gmail.com?subject=WorkplaceNL%20Assessment%20Request&body=Hi%20Physio%20Island%2C%0A%0AI%20was%20injured%20at%20work%20on%3A%20_____%0AMy%20job%20duties%3A%20_____%0AMain%20symptoms%3A%20_____%0AWorkplaceNL%20claim%20number%20(if%20known)%3A%20_____%0A%0APlease%20offer%20the%20earliest%20assessment%20time.%0AThanks." class="btn btn-outline">Email Us</a>
+          </div>
+        </div>
+        <div class="note">
+          <strong>What we do for you</strong>
+          <ul class="clean" style="margin-top:8px">
+            <li><b>Assess & treat</b>: pain relief + active rehab matched to your job</li>
+            <li><b>Provider reports</b>: we submit initial/progress reports to WorkplaceNL</li>
+            <li><b>Direct Billing</b> for approved claims (no out-of-pocket on approved services)</li>
+            <li><b>ESRTW</b>: clear abilities/limitations to guide modified duties</li>
+          </ul>
+          <p style="margin-top:8px"><b>No claim number yet?</b> Book anyway—we’ll treat, document, and update your file once it arrives.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FIRST VISIT -->
+    <section class="card">
+      <h2 class="section-title">Your first visit</h2>
+      <div class="grid grid-2">
+        <div>
+          <h3>Assessment</h3>
+          <ul class="clean">
+            <li>History of injury, job demands, red-flag screen</li>
+            <li>Movement, joint and soft-tissue testing; strength and endurance</li>
+            <li>Functional/job-specific tasks (as appropriate)</li>
+          </ul>
+          <h3>Treatment & plan</h3>
+          <ul class="clean">
+            <li>Pain-modulating techniques (e.g., manual therapy) as indicated</li>
+            <li>Starter program: 2–4 exercises you can do at work/home</li>
+            <li>Clear restrictions/abilities for modified duties</li>
+          </ul>
+        </div>
+        <div class="note">
+          <strong>What to bring</strong>
+          <ul class="clean" style="margin-top:8px">
+            <li>WorkplaceNL claim number (if available)</li>
+            <li>Any forms or letters you’ve received</li>
+            <li>Comfortable clothing for movement testing</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CLAIMS & FORMS -->
+    <section class="card">
+      <h2 class="section-title">Claims & forms (how it works)</h2>
+      <div class="grid grid-2">
+        <div>
+          <ul class="check">
+            <li><b>Worker’s Report:</b> you (or your representative) submit to WorkplaceNL.</li>
+            <li><b>Employer’s Report:</b> your employer submits to WorkplaceNL.</li>
+            <li><b>Physiotherapy Reports:</b> we submit initial and progress reports to WorkplaceNL with objective measures and RTW recommendations.</li>
+          </ul>
+          <p>We coordinate documentation, track progress, and outline abilities/limitations to support a safe, graded return.</p>
+        </div>
+        <div class="note">
+          <strong>Billing & approvals</strong>
+          <ul class="clean" style="margin-top:8px">
+            <li><b>Direct Billing</b> for approved claims</li>
+            <li>We explain what’s covered and any limits</li>
+            <li>If approvals are pending, we’ll guide your options</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ACTIVE REHAB -->
+    <section class="card">
+      <h2 class="section-title">Active rehab plan</h2>
+      <div class="grid grid-2">
+        <div>
+          <ul class="check">
+            <li>Manual therapy for pain and mobility when indicated</li>
+            <li>Task-based strengthening (hinge, squat, carry, overhead reach)</li>
+            <li>Work-simulation drills (lifting, stairs, floor-to-waist, awkward loads)</li>
+            <li>Posture/ergonomics coaching and pacing at work</li>
+            <li>Self-management toolkit (breaks, symptom monitors, flare strategies)</li>
+          </ul>
+        </div>
+        <div class="note">
+          <strong>Typical ranges</strong>
+          <p><b>Acute strains/sprains:</b> 3–6 visits across 3–5 weeks.</p>
+          <p><b>Back/neck + deconditioning:</b> 6–10 visits across 6–10 weeks.</p>
+          <p><b>Complex cases:</b> 8–12+ visits with graded RTW progression.</p>
+          <p style="margin-top:6px">We reassess every session and adjust the plan to your goals and job demands.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMMUNICATION -->
+    <section class="card">
+      <h2 class="section-title">Communication & documentation</h2>
+      <div class="grid grid-2">
+        <div>
+          <ul class="clean">
+            <li>Clear abilities/limitations for modified duties</li>
+            <li>Objective progress metrics in each report</li>
+            <li>Coordination with your physician and employer as needed</li>
+          </ul>
+        </div>
+        <div class="warn">
+          <strong>When we pause or redirect</strong>
+          <ul class="clean" style="margin-top:8px">
+            <li>Red-flag symptoms (fracture, infection, progressive neurological signs)</li>
+            <li>Non-work-tolerant flares requiring medical review</li>
+            <li>Plateaus needing re-assessment of goals/diagnosis</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="card">
+      <h2 class="section-title">FAQ</h2>
+      <details class="faq">
+        <summary>Do I need a doctor’s referral?</summary>
+        <p>No referral is required to be assessed by a physiotherapist. WorkplaceNL may still request medical documentation for claims decisions.</p>
+      </details>
+      <details class="faq">
+        <summary>Can I start physio before my claim number arrives?</summary>
+        <p>Yes. We can assess and treat, help with forms, and add your claim number to the file once it’s issued.</p>
+      </details>
+      <details class="faq">
+        <summary>Can I work while I’m in treatment?</summary>
+        <p>Often yes—with modified duties or hours. Graduated RTW is part of ESRTW and usually supports recovery when planned safely.</p>
+      </details>
+      <details class="faq">
+        <summary>What if my pain increases at work?</summary>
+        <p>We’ll adjust loads, change duties, or re-evaluate before advancing. Pacing and task modification are built into your plan.</p>
+      </details>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-center">
+      <h2>Ready to return to work—safely?</h2>
+      <p>Book your WorkplaceNL assessment now. We’ll build a practical, job-focused plan and keep everyone informed.</p>
+      <a href="contact.html#book" class="btn btn-primary btn-lg">Book WorkplaceNL Assessment</a>
+      <div class="inline-actions" style="justify-content:center;margin-top:10px;">
+        <a href="tel:+17095550000" class="btn btn-outline">Call (709) 555-0000</a>
+        <a href="mailto:physioislandburin@gmail.com?subject=WorkplaceNL%20Assessment%20Request&body=Hi%20Physio%20Island%2C%0A%0AI%20was%20injured%20at%20work%20on%3A%20_____%0AMy%20job%20duties%3A%20_____%0AMain%20symptoms%3A%20_____%0AWorkplaceNL%20claim%20number%20(if%20known)%3A%20_____%0A%0APlease%20offer%20the%20earliest%20assessment%20time.%0AThanks." class="btn btn-outline">Email Us</a>
+      </div>
+    </section>
+  </div>
+
+  <!-- JS: dropdowns -->
+  <script>
+    (function () {
+      document.querySelectorAll('.dropdown .drop-trigger').forEach(function (trig) {
+        trig.addEventListener('click', function (e) {
+          e.preventDefault(); e.stopPropagation();
+          const dd = trig.closest('.dropdown');
+          document.querySelectorAll('.dropdown.open').forEach(el => { if (el !== dd) el.classList.remove('open'); });
+          dd.classList.toggle('open');
+        });
+      });
+      document.addEventListener('click', () => document.querySelectorAll('.dropdown.open').forEach(el => el.classList.remove('open')));
+      document.addEventListener('keydown', e => { if (e.key === 'Escape') document.querySelectorAll('.dropdown.open').forEach(el => el.classList.remove('open')); });
+    })();
+  </script>
+</body>
+</html>
 
