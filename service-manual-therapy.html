@@ -1,1 +1,501 @@
 
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Manual Therapy | Physio Island</title>
+  <meta name="description" content="Hands-on physiotherapy: joint and soft-tissue techniques (mobilizations, Mulligan/Maitland), IASTM/Graston, cupping, taping—always paired with exercise for durable results." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=20">
+  <link rel="icon" href="favicon.ico">
+  <style>
+    :root{ --brand:#0E5B59; --soft:rgba(14,91,89,.06); --ink:#253237; --muted:#64748b; }
+    body{ background:#f5f7fa; color:#333; }
+    section.card{ background:#fff; border-radius:12px; padding:26px; box-shadow:0 5px 15px rgba(0,0,0,.06); margin-bottom:24px; }
+    .grid{ display:grid; gap:20px; }
+    .grid-2{ grid-template-columns: 1.2fr 1fr; }
+    .grid-3{ grid-template-columns: repeat(3, minmax(0,1fr)); }
+    @media (max-width:980px){ .grid-2,.grid-3{ grid-template-columns:1fr; } }
+    h2.section-title{ color:var(--brand); font-size:1.6rem; margin:0 0 12px; border-bottom:2px solid var(--soft); padding-bottom:8px; }
+    h3{ color:var(--ink); margin:10px 0; font-size:1.12rem; }
+    p{ line-height:1.65; }
+    ul.clean{ margin:10px 0 0 0; padding:0; list-style:none; }
+    ul.clean li{ margin:8px 0; padding-left:14px; position:relative; }
+    ul.clean li::before{ content:"—"; position:absolute; left:0; color:#94a3b8; }
+    ul.check{ margin:10px 0 0 0; list-style:none; padding:0; }
+    ul.check li{ margin:8px 0; padding-left:24px; position:relative; }
+    ul.check li::before{ content:"✓"; position:absolute; left:0; color:var(--brand); }
+    .note{ background:#f8fafc; border-left:4px solid var(--brand); padding:12px 14px; border-radius:8px; color:#334155; }
+    .warn{ background:#fff9e6; border-left:4px solid #f59e0b; }
+    .pill-row{ display:flex; flex-wrap:wrap; gap:10px; margin-top:10px; }
+    .pill{ background:#eef7f7; color:var(--brand); padding:6px 10px; border-radius:999px; font-weight:600; font-size:12px; border:1px solid rgba(0,0,0,.06); }
+    details.faq{ background:#fff; border:1px solid rgba(0,0,0,.08); border-radius:10px; padding:14px 16px; margin:12px 0; }
+    details.faq > summary{ cursor:pointer; font-weight:600; }
+    details.faq > summary::-webkit-details-marker{ display:none; }
+    details.faq[open]{ border-color: rgba(14,91,89,.25); }
+    .cta-center{ text-align:center; padding:28px 0; }
+    .btn{ display:inline-flex; align-items:center; gap:8px; border-radius:999px; padding:11px 20px; font-weight:700; text-decoration:none; }
+    .btn-primary{ background:var(--brand); color:#fff; }
+    .btn-primary:hover{ filter:brightness(.95); }
+    .btn-outline{ border:1px solid rgba(0,0,0,.14); color:var(--brand); background:#fff; }
+
+    /* === Technique mini-cards (image + blurb) === */
+    .tech-grid{ display:grid; gap:18px; }
+    .tech-grid.cols-3{ grid-template-columns: repeat(3, minmax(0,1fr)); }
+    @media (max-width:980px){ .tech-grid.cols-3{ grid-template-columns: 1fr; } }
+
+    .tech-card{
+      background:#fff;
+      border:1px solid rgba(0,0,0,.08);
+      border-radius:12px;
+      overflow:hidden;
+      box-shadow:0 4px 12px rgba(0,0,0,.04);
+      display:grid;
+      grid-template-rows: auto 1fr;
+    }
+    .tech-card .media{
+      aspect-ratio: 16/9;       /* Use 1/1 for square if you prefer */
+      overflow:hidden;
+      background:#f1f5f9;
+    }
+    .tech-card .media img{
+      width:100%; height:100%;
+      object-fit:cover; object-position:center;
+      display:block;
+    }
+    .tech-card .content{ padding:16px 16px 18px; }
+    .tech-card h3{ margin:0 0 8px; font-size:1.08rem; color:var(--ink); }
+    .tech-card p{ margin:0 0 10px; color:#334155; line-height:1.55; }
+    .tech-card ul{ margin:8px 0 0; padding:0; list-style:none; }
+    .tech-card ul li{ margin:6px 0; padding-left:14px; position:relative; }
+    .tech-card ul li::before{ content:"–"; position:absolute; left:0; color:#94a3b8; }
+  </style>
+</head>
+
+<body>
+  <!-- Top bar -->
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <span>Coming soon in Burin NL by late 2025</span>
+      <a class="topbar-link" href="tel:+17095550000">Call: (709) 555-0000</a>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html" aria-label="Physio Island Home">
+        <img src="images/logo.png" alt="Physio Island Logo">
+      </a>
+      <input type="checkbox" id="menu-toggle" class="menu-toggle">
+      <label for="menu-toggle" class="burger"><span></span><span></span><span></span></label>
+
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+
+        <div class="dropdown">
+          <a class="drop-trigger" href="#">Services ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="services.html#physiotherapy">Physiotherapy</a></li>
+            <li><a href="services.html#workplace">Workplace NL</a></li>
+            <li><a href="services.html#mva">Motor Vehicle Accidents</a></li>
+            <li><a href="services.html#veterans">Veterans Affairs Canada</a></li>
+            <li><a href="services.html#sports-rehab">Advanced Sports Rehabilitation</a></li>
+            <li><a href="services.html#acupuncture">Acupuncture</a></li>
+            <li><a href="services.html#manual">Manual Therapy</a></li>
+            <li><a href="services.html#vestibular">Vestibular Rehab / Vertigo</a></li>
+            <li><a href="services.html#shockwave">Shockwave Therapy</a></li>
+            <li><a href="services.html#klaser">K-laser Grade IV (coming soon)</a></li>
+            <li><a href="services.html#orthotics">Custom Foot Orthotics</a></li>
+            <li><a href="services.html#concussion">Concussion / Whiplash</a></li>
+            <li><a href="services.html#neuro">Neurological Rehab</a></li>
+            <li><a href="services.html#kinesiology">Kinesiology / Exercise Therapy</a></li>
+          </ul>
+        </div>
+
+        <div class="dropdown">
+          <a class="drop-trigger" href="about.html">About ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="about.html#about-us">About Us</a></li>
+            <li><a href="about.html#team">Our Team</a></li>
+          </ul>
+        </div>
+
+        <a href="careers.html">Careers</a>
+
+        <div class="dropdown">
+          <a class="drop-trigger" href="learn-more.html">Learn More ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="direct-billing.html">Direct Billing</a></li>
+          </ul>
+        </div>
+
+        <div class="dropdown">
+          <a class="drop-trigger" href="contact.html">Contact ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="contact.html#location">Location</a></li>
+          </ul>
+        </div>
+
+        <a href="#book-now" class="btn btn-primary btn-lg">Book Now</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="eswt-hero hero--square">
+    <div class="container hero-inner">
+      <div class="hero-square">
+        <img
+          src="images/manual-960.jpg"
+          srcset="images/manual-480.jpg 480w,
+                  images/manual-960.jpg 960w,
+                  images/manual-1200.jpg 1200w"
+          sizes="(max-width: 980px) 80vw, 520px"
+          alt="Manual therapy: joint and soft-tissue techniques by a physiotherapist"
+          loading="eager" decoding="async">
+      </div>
+
+      <div class="hero-copy">
+        <h1>Manual Therapy</h1>
+        <p>Hands-on techniques for joints, muscles, and fascia to calm pain, restore movement, and prepare your body for the exercises that keep results.</p>
+        <a href="contact.html#book" class="btn btn-primary btn-lg">Book Now</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <!-- WHAT & WHY -->
+    <section class="card">
+      <h2 class="section-title">What manual therapy is & why we use it</h2>
+      <div class="grid grid-2">
+        <div>
+          <p>Manual therapy includes specific touch-based techniques applied by a physiotherapist to joints and soft tissues. It helps decrease pain, reduce protective muscle guarding, and improve mobility—so you can move more comfortably and train effectively.</p>
+          <ul class="check">
+            <li>Short-term pain relief and mobility gains</li>
+            <li>Prepares you for targeted exercise</li>
+            <li>Individualized to your condition and goals</li>
+            <li>Best outcomes when combined with education & loading</li>
+          </ul>
+        </div>
+        <div class="note">
+          <strong>What to expect</strong>
+          <ul class="clean" style="margin-top:8px">
+            <li>Clear explanation; gentle start, then progress as tolerated</li>
+            <li>Options adjusted for sensitivity (position, pressure, duration)</li>
+            <li>Always followed by simple exercises to “lock in” change</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- TECHNIQUES -->
+    <section class="card">
+      <h2 class="section-title">Techniques we may use</h2>
+      <div class="grid grid-3">
+        <div>
+          <h3>Joints</h3>
+          <ul class="clean">
+            <li>Maitland & Mulligan joint mobilizations (Grades I–IV, MWM)</li>
+            <li>Segmental & rib mobilizations; lumbar/thoracic techniques</li>
+            <li>SIJ & hip mobilization; ankle/foot, wrist/hand techniques</li>
+            <li>Occasional manipulation where indicated*</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Soft Tissue & Fascia</h3>
+          <ul class="clean">
+            <li>Myofascial release, trigger point pressure</li>
+            <li><b>IASTM/Graston</b> (instrument-assisted) for tissue glide</li>
+            <li><b>Cupping</b> (decompression) to improve tissue excursion</li>
+            <li>Scar & cross-friction techniques when appropriate</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Neuro & Support</h3>
+          <ul class="clean">
+            <li>Nerve glides (median/ulnar/radial, sciatic/tibial)</li>
+            <li>PNF & muscle energy techniques (MET)</li>
+            <li>Taping (rigid/Kinesio) for comfort and cueing</li>
+            <li>Breathing & relaxation strategies</li>
+          </ul>
+        </div>
+      </div>
+      <p class="note" style="margin-top:12px"><strong>*</strong> High-velocity techniques are used selectively, with consent, only when clinically appropriate.</p>
+    </section>
+
+    <!-- IMAGE MINI-CARDS -->
+    <section class="card">
+      <h2 class="section-title">Techniques — quick guide with images</h2>
+      <div class="tech-grid cols-3">
+
+        <!-- IASTM / Graston -->
+        <article class="tech-card">
+          <div class="media">
+            <img
+              src="images/graston-960.jpg"
+              srcset="images/graston-480.jpg 480w,
+                      images/graston-960.jpg 960w,
+                      images/graston-1200.jpg 1200w"
+              sizes="(max-width: 980px) 100vw, 33vw"
+              alt="IASTM/Graston tool gliding along forearm muscle">
+          </div>
+          <div class="content">
+            <h3>IASTM / Graston</h3>
+            <p>Stainless-steel instruments glide along superficial fascia and muscle to reduce tension and improve tissue mobility and range of motion.</p>
+            <ul>
+              <li>Reduces friction and improves tissue glide</li>
+              <li>Modulates pain and supports ROM</li>
+              <li>Follow with 2–3 exercises to make gains stick</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Cupping -->
+        <article class="tech-card">
+          <div class="media">
+            <img
+              src="images/cupping-960.jpg"
+              srcset="images/cupping-480.jpg 480w,
+                      images/cupping-960.jpg 960w,
+                      images/cupping-1200.jpg 1200w"
+              sizes="(max-width: 980px) 100vw, 33vw"
+              alt="Silicone cup applied to the upper back for decompression">
+          </div>
+          <div class="content">
+            <h3>Cupping (Decompression)</h3>
+            <p>Gentle negative pressure lifts tissue, increases local circulation, and improves skin–fascia glide. Can be static or sliding.</p>
+            <ul>
+              <li>Adjustable dosing for sensitive areas</li>
+              <li>Temporary marks can be normal</li>
+              <li>Finish with mobility drills</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Myofascial Release -->
+        <article class="tech-card">
+          <div class="media">
+            <img
+              src="images/myofascial-960.jpg"
+              srcset="images/myofascial-480.jpg 480w,
+                      images/myofascial-960.jpg 960w,
+                      images/myofascial-1200.jpg 1200w"
+              sizes="(max-width: 980px) 100vw, 33vw"
+              alt="Myofascial release applied to shoulder and upper back">
+          </div>
+          <div class="content">
+            <h3>Myofascial Release</h3>
+            <p>Soft-tissue techniques that target muscle and surrounding fascia to calm pain, reduce protective guarding, and improve movement quality.</p>
+            <ul>
+              <li>Reduces protective muscle tension</li>
+              <li>Enhances movement comfort and control</li>
+              <li>Often paired with breathing/relaxation strategies</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Joint Mobilizations -->
+        <article class="tech-card">
+          <div class="media">
+            <img
+              src="images/mobilization-960.jpg"
+              srcset="images/mobilization-480.jpg 480w,
+                      images/mobilization-960.jpg 960w,
+                      images/mobilization-1200.jpg 1200w"
+              sizes="(max-width: 980px) 100vw, 33vw"
+              alt="Physiotherapist performing shoulder joint mobilization">
+          </div>
+          <div class="content">
+            <h3>Joint Mobilizations</h3>
+            <p>Rhythmic, targeted oscillations and glides (Maitland/Mulligan) to reduce pain and improve joint play and motion.</p>
+            <ul>
+              <li>Grades I–IV and MWM variations</li>
+              <li>Short, focused dosing</li>
+              <li>Follow with active motion and loading</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Trigger Point -->
+        <article class="tech-card">
+          <div class="media">
+            <img
+              src="images/triggerpoint-960.jpg"
+              srcset="images/triggerpoint-480.jpg 480w,
+                      images/triggerpoint-960.jpg 960w,
+                      images/triggerpoint-1200.jpg 1200w"
+              sizes="(max-width: 980px) 100vw, 33vw"
+              alt="Trigger point pressure applied to forearm extensors">
+          </div>
+          <div class="content">
+            <h3>Trigger Point Release</h3>
+            <p>Focused pressure to sensitive bands/trigger points to settle referred pain and normalize muscle activation.</p>
+            <ul>
+              <li>Gradual pressure within comfort</li>
+              <li>May be combined with dry needling when appropriate</li>
+              <li>Finish with stretch/activation work</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Nerve Glides / Taping -->
+        <article class="tech-card">
+          <div class="media">
+            <img
+              src="images/taping-960.jpg"
+              srcset="images/taping-480.jpg 480w,
+                      images/taping-960.jpg 960w,
+                      images/taping-1200.jpg 1200w"
+              sizes="(max-width: 980px) 100vw, 33vw"
+              alt="Kinesiology taping applied to the knee for support and cueing">
+          </div>
+          <div class="content">
+            <h3>Nerve Glides & Taping</h3>
+            <p>Neural mobilization (median/ulnar/radial, sciatic/tibial) and kinesio/rigid taping as supportive cues—not a substitute for exercise.</p>
+            <ul>
+              <li>Dosed to sensitivity and goals</li>
+              <li>Short-term support; long-term change comes from loading</li>
+              <li>Simple self-care tips for between visits</li>
+            </ul>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- CONDITIONS -->
+    <section class="card">
+      <h2 class="section-title">Common problems we help</h2>
+      <div class="grid grid-3">
+        <div>
+          <h3>Spine & Head</h3>
+          <ul class="clean">
+            <li>Neck pain, cervicogenic headache</li>
+            <li>Thoracic stiffness, low back pain</li>
+            <li>Postural strain and desk-related pain</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Upper Limb</h3>
+          <ul class="clean">
+            <li>Rotator cuff/shoulder impingement</li>
+            <li>Tennis & golfer’s elbow</li>
+            <li>Wrist/hand overuse & TFCC irritation</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Lower Limb</h3>
+          <ul class="clean">
+            <li>Knee pain (PFPS, jumper’s knee)</li>
+            <li>Hip/gluteal pain, trochanteric bursitis</li>
+            <li>Ankle sprain, plantar fasciitis, Achilles pain</li>
+          </ul>
+        </div>
+      </div>
+      <div class="pill-row">
+        <span class="pill">Joint Mobilization</span>
+        <span class="pill">IASTM/Graston</span>
+        <span class="pill">Cupping</span>
+        <span class="pill">Trigger Point</span>
+        <span class="pill">Taping</span>
+      </div>
+    </section>
+
+    <!-- HOW WE TREAT -->
+    <section class="card">
+      <h2 class="section-title">How we use manual therapy in your plan</h2>
+      <div class="grid grid-2">
+        <div>
+          <ul class="check">
+            <li>Hands-on to settle pain & improve movement</li>
+            <li>Immediate follow-up with 2–4 key exercises</li>
+            <li>Progressive loading for strength and tolerance</li>
+            <li>Posture/ergonomics and pacing for day-to-day control</li>
+            <li>We track objective changes each visit (ROM, strength, function)</li>
+          </ul>
+        </div>
+        <div class="note">
+          <strong>Plan of care (typical ranges)</strong>
+          <p><b>Acute flares:</b> 3–6 visits across 3–5 weeks.</p>
+          <p><b>Persistent pain/stiffness:</b> 6–10 visits across 6–10 weeks.</p>
+          <p><b>Complex/long-standing cases:</b> 8–12+ visits across 8–12+ weeks.</p>
+          <p style="margin-top:6px">We reassess every session; if progress is limited, we modify the approach or coordinate with your physician.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SAFETY -->
+    <section class="card">
+      <h2 class="section-title">Safety & when we avoid certain techniques</h2>
+      <div class="grid grid-2">
+        <div>
+          <p>Manual therapy is safe when applied by trained clinicians and tailored to you. Soreness for 24–48 hours can be normal, especially early on.</p>
+        </div>
+        <div class="warn">
+          <strong>We modify/avoid if you have</strong>
+          <ul class="clean" style="margin-top:8px">
+            <li>Acute fracture, infection, open wound or active cancer at the site</li>
+            <li>Severe osteoporosis or inflammatory flare</li>
+            <li>Neurological red flags, progressive weakness or numbness</li>
+            <li>Anticoagulants/bleeding disorders (for soft-tissue/cupping)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- INSURANCE -->
+    <section class="card">
+      <h2 class="section-title">Insurance & Direct Billing</h2>
+      <p>Manual therapy is part of physiotherapy. In NL you can book directly—some plans may request a physician’s referral for reimbursement. We offer <a href="direct-billing.html">Direct Billing</a> to many insurers and provide detailed receipts for others.</p>
+    </section>
+
+    <!-- FAQ -->
+    <section class="card">
+      <h2 class="section-title">FAQ</h2>
+      <details class="faq">
+        <summary>Is manual therapy the main treatment?</summary>
+        <p>It’s a tool, not the whole plan. Hands-on care reduces pain and stiffness so you can do the exercises that create lasting change.</p>
+      </details>
+      <details class="faq">
+        <summary>Does it hurt?</summary>
+        <p>You may feel pressure or stretch; we always work within comfort and adjust technique immediately if it’s too much.</p>
+      </details>
+      <details class="faq">
+        <summary>Do you do Graston/IASTM and cupping?</summary>
+        <p>Yes, when appropriate and with consent. We also teach simple self-care strategies for home between visits.</p>
+      </details>
+      <details class="faq">
+        <summary>How quickly will I feel better?</summary>
+        <p>Many notice short-term relief right away; durability builds as you progress exercises over weeks. We’ll set realistic milestones together.</p>
+      </details>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-center">
+      <h2>Ready to get moving again?</h2>
+      <p>Book your one-on-one assessment. We’ll tailor hands-on care and a simple plan that fits your life.</p>
+      <a href="contact.html#book" class="btn btn-primary btn-lg">Book Now</a>
+    </section>
+  </div>
+
+  <!-- JS: dropdowns -->
+  <script>
+    (function () {
+      document.querySelectorAll('.dropdown .drop-trigger').forEach(function (trig) {
+        trig.addEventListener('click', function (e) {
+          e.preventDefault(); e.stopPropagation();
+          const dd = trig.closest('.dropdown');
+          document.querySelectorAll('.dropdown.open').forEach(el => { if (el !== dd) el.classList.remove('open'); });
+          dd.classList.toggle('open');
+        });
+      });
+      document.addEventListener('click', () => document.querySelectorAll('.dropdown.open').forEach(el => el.classList.remove('open')));
+      document.addEventListener('keydown', e => { if (e.key === 'Escape') document.querySelectorAll('.dropdown.open').forEach(el => el.classList.remove('open')); });
+    })();
+  </script>
+</body>
+</html>
