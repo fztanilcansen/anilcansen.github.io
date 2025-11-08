@@ -1,1 +1,335 @@
 
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Physiotherapy | Physio Island</title>
+  <meta name="description" content="One-on-one, evidence-based physiotherapy: clear assessment, hands-on care, and simple exercise plans to reduce pain and restore confident movement." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=20">
+  <link rel="icon" href="favicon.ico">
+  <style>
+    :root{ --brand:#0E5B59; --soft:rgba(14,91,89,.06); --ink:#253237; --muted:#64748b; }
+    body{ background:#f5f7fa; color:#333; }
+    section.card{ background:#fff; border-radius:12px; padding:26px; box-shadow:0 5px 15px rgba(0,0,0,.06); margin-bottom:24px; }
+    .grid{ display:grid; gap:20px; }
+    .grid-2{ grid-template-columns: 1.2fr 1fr; }
+    .grid-3{ grid-template-columns: repeat(3, minmax(0,1fr)); }
+    @media (max-width:980px){ .grid-2,.grid-3{ grid-template-columns:1fr; } }
+    h2.section-title{ color:var(--brand); font-size:1.6rem; margin:0 0 12px; border-bottom:2px solid var(--soft); padding-bottom:8px; }
+    h3{ color:var(--ink); margin:10px 0; font-size:1.12rem; }
+    p{ line-height:1.65; }
+    ul.clean{ margin:10px 0 0 0; padding:0; list-style:none; }
+    ul.clean li{ margin:8px 0; padding-left:14px; position:relative; }
+    ul.clean li::before{ content:"—"; position:absolute; left:0; color:#94a3b8; }
+    ul.check{ margin:10px 0 0 0; list-style:none; padding:0; }
+    ul.check li{ margin:8px 0; padding-left:24px; position:relative; }
+    ul.check li::before{ content:"✓"; position:absolute; left:0; color:var(--brand); }
+    .note{ background:#f8fafc; border-left:4px solid var(--brand); padding:12px 14px; border-radius:8px; color:#334155; }
+    .warn{ background:#fff9e6; border-left:4px solid #f59e0b; }
+    .pill-row{ display:flex; flex-wrap:wrap; gap:10px; margin-top:10px; }
+    .pill{ background:#eef7f7; color:var(--brand); padding:6px 10px; border-radius:999px; font-weight:600; font-size:12px; border:1px solid rgba(0,0,0,.06); }
+    details.faq{ background:#fff; border:1px solid rgba(0,0,0,.08); border-radius:10px; padding:14px 16px; margin:12px 0; }
+    details.faq > summary{ cursor:pointer; font-weight:600; }
+    details.faq > summary::-webkit-details-marker{ display:none; }
+    details.faq[open]{ border-color: rgba(14,91,89,.25); }
+    .cta-center{ text-align:center; padding:28px 0; }
+    .btn{ display:inline-flex; align-items:center; gap:8px; border-radius:999px; padding:11px 20px; font-weight:700; text-decoration:none; }
+    .btn-primary{ background:var(--brand); color:#fff; }
+    .btn-primary:hover{ filter:brightness(.95); }
+    .btn-outline{ border:1px solid rgba(0,0,0,.14); color:var(--brand); background:#fff; }
+  </style>
+</head>
+
+<body>
+  <!-- Top bar -->
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <span>Coming soon in Burin NL by late 2025</span>
+      <a class="topbar-link" href="tel:+17095550000">Call: (709) 555-0000</a>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html" aria-label="Physio Island Home">
+        <img src="images/logo.png" alt="Physio Island Logo">
+      </a>
+      <input type="checkbox" id="menu-toggle" class="menu-toggle">
+      <label for="menu-toggle" class="burger"><span></span><span></span><span></span></label>
+
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+
+        <div class="dropdown">
+          <a class="drop-trigger" href="#">Services ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="services.html#physiotherapy">Physiotherapy</a></li>
+            <li><a href="services.html#workplace">Workplace NL</a></li>
+            <li><a href="services.html#mva">Motor Vehicle Accidents</a></li>
+            <li><a href="services.html#veterans">Veteran Affairs Canada</a></li>
+            <li><a href="services.html#sports-rehab">Advanced Sports Rehabilitation</a></li>
+            <li><a href="services.html#acupuncture">Acupuncture</a></li>
+            <li><a href="services.html#manual">Manual Therapy</a></li>
+            <li><a href="services.html#vestibular">Vestibular Rehab / Vertigo</a></li>
+            <li><a href="services.html#shockwave">Shockwave Therapy</a></li>
+            <li><a href="services.html#klaser">K-laser Grade IV (coming soon)</a></li>
+            <li><a href="services.html#orthotics">Custom Foot Orthotics</a></li>
+            <li><a href="services.html#concussion">Concussion / Whiplash</a></li>
+            <li><a href="services.html#neuro">Neurological Rehab</a></li>
+            <li><a href="services.html#kinesiology">Kinesiology / Exercise Therapy</a></li>
+          </ul>
+        </div>
+
+        <div class="dropdown">
+          <a class="drop-trigger" href="about.html">About ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="about.html#about-us">About Us</a></li>
+            <li><a href="about.html#team">Our Team</a></li>
+          </ul>
+        </div>
+
+        <a href="careers.html">Careers</a>
+
+        <div class="dropdown">
+          <a class="drop-trigger" href="learn-more.html">Learn More ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="direct-billing.html">Direct Billing</a></li>
+          </ul>
+        </div>
+
+        <div class="dropdown">
+          <a class="drop-trigger" href="contact.html">Contact ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="contact.html#location">Location</a></li>
+          </ul>
+        </div>
+
+        <a href="#book-now" class="btn btn-primary btn-lg">Book Now</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO (same square template) -->
+  <header class="eswt-hero hero--square">
+    <div class="container hero-inner">
+      <div class="hero-square">
+        <img
+          src="images/physio-960.jpg"
+          srcset="images/physio-480.jpg 480w,
+                  images/physio-960.jpg 960w,
+                  images/physio-1200.jpg 1200w"
+          sizes="(max-width: 980px) 80vw, 520px"
+          alt="One-on-one physiotherapy session"
+          loading="eager" decoding="async">
+      </div>
+
+      <div class="hero-copy">
+        <h1>Physiotherapy</h1>
+        <p>One-on-one, evidence-based care that explains what’s going on and gives you a simple plan to move with confidence again.</p>
+        <a href="contact.html#book" class="btn btn-primary btn-lg">Book Now</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <!-- WHAT & WHY -->
+    <section class="card">
+      <h2 class="section-title">What physiotherapy does</h2>
+      <div class="grid grid-2">
+        <div>
+          <p>Physiotherapy helps reduce pain, restore mobility and strength, and prevent flare-ups. We combine hands-on treatment with the right dose of exercise and clear education so you understand your condition and can self-manage between visits.</p>
+          <ul class="check">
+            <li>Thorough assessment to find the main drivers of your symptoms</li>
+            <li>Manual therapy to calm pain and improve joint/soft-tissue mobility</li>
+            <li>Simple exercises that fit your day (2–5 key movements)</li>
+            <li>Home and work tips that protect healing and prevent recurrence</li>
+          </ul>
+        </div>
+        <div class="note">
+          <strong>New to physiotherapy?</strong>
+          <ul class="clean" style="margin-top:8px">
+            <li>You’ll get a clear explanation in plain language—no jargon</li>
+            <li>We measure progress each session (pain, function, strength)</li>
+            <li>Most people start weekly, then taper as things improve</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- FIRST VISIT -->
+    <section class="card">
+      <h2 class="section-title">Your first visit (45–60 minutes)</h2>
+      <div class="grid grid-2">
+        <div>
+          <h3>Assessment</h3>
+          <ul class="clean">
+            <li>Focused history (what brings it on/settles it, work/sport demands)</li>
+            <li>Movement, strength and joint testing; nerve screens if needed</li>
+            <li>Summary of likely diagnosis and contributing factors</li>
+          </ul>
+          <h3>Treatment & plan</h3>
+          <ul class="clean">
+            <li>Hands-on care plus a short starter program (2–3 exercises)</li>
+            <li>Clear plan for the week (sets/reps, what to avoid, pacing)</li>
+            <li>Printed/emailed instructions; follow-up booked if appropriate</li>
+          </ul>
+        </div>
+        <div class="note">
+          <strong>Bring & wear</strong>
+          <ul class="clean" style="margin-top:8px">
+            <li>Health card, medication list, any imaging/referrals</li>
+            <li>Comfortable clothing (shorts for knee/hip, tank for shoulder/neck)</li>
+            <li>Private insurance details (we offer <a href="direct-billing.html">Direct Billing</a>)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONDITIONS -->
+    <section class="card">
+      <h2 class="section-title">Common conditions we treat</h2>
+      <div class="grid grid-3">
+        <div>
+          <h3>Spine</h3>
+          <ul class="clean">
+            <li>Neck pain, tension headaches</li>
+            <li>Mid/low back pain, sciatica</li>
+            <li>Whiplash & concussion-related symptoms</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Upper Limb</h3>
+          <ul class="clean">
+            <li>Rotator cuff / shoulder impingement</li>
+            <li>Tennis & golfer’s elbow</li>
+            <li>Wrist / hand sprains and overuse pain</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Lower Limb</h3>
+          <ul class="clean">
+            <li>Knee pain (PFPS, jumper’s knee)</li>
+            <li>Hip/gluteal pain, trochanteric bursitis</li>
+            <li>Ankle sprain, plantar fasciitis, Achilles pain</li>
+          </ul>
+        </div>
+      </div>
+      <div class="pill-row">
+        <span class="pill">Manual Therapy</span>
+        <span class="pill">Exercise Rehab</span>
+        <span class="pill">Education</span>
+        <span class="pill">Return to Sport/Work</span>
+      </div>
+    </section>
+
+    <!-- HOW WE TREAT -->
+    <section class="card">
+      <h2 class="section-title">How we treat</h2>
+      <div class="grid grid-2">
+        <div>
+          <ul class="check">
+            <li>Joint mobilization, Maitland/Mulligan techniques</li>
+            <li>Soft-tissue & myofascial techniques; trigger point release</li>
+            <li>Neuromuscular & posture retraining; gait and balance</li>
+            <li>Progressive loading, strength & flexibility programs</li>
+            <li>Vestibular strategies when indicated</li>
+            <li>Adjuncts when appropriate (e.g., acupuncture, shockwave)</li>
+          </ul>
+        </div>
+        <div class="note">
+          <strong>Plan of care</strong>
+          <p>Most start weekly for 2–3 weeks, then space out as symptoms settle and self-management grows. We adjust the plan each visit based on your goals and objective change.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- IS IT RIGHT / SAFETY -->
+    <section class="card">
+      <h2 class="section-title">Is physiotherapy right for me?</h2>
+      <div class="grid grid-2">
+        <div>
+          <p>Yes—physiotherapy is appropriate for most musculoskeletal problems, acute or chronic. If your case needs other care, we’ll explain why and help you coordinate it.</p>
+          <a class="btn btn-outline" href="contact.html#book">Ask a physiotherapist</a>
+        </div>
+        <div class="warn">
+          <strong>When to seek urgent medical care</strong>
+          <ul class="clean" style="margin-top:8px">
+            <li>New unexplained numbness/weakness in both legs or loss of bladder/bowel control</li>
+            <li>Suspected fracture, infection, unexplained fever with severe pain</li>
+            <li>Chest pain, shortness of breath, or red-flag neurological symptoms</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- INSURANCE -->
+    <section class="card">
+      <h2 class="section-title">Insurance & Direct Billing</h2>
+      <p>In Newfoundland & Labrador, you can book with a physiotherapist directly—no doctor’s referral is required to be seen. Some insurance plans may request a referral for reimbursement. We offer <a href="direct-billing.html">Direct Billing</a> to many insurers and can provide detailed receipts for others.</p>
+      <div class="grid grid-3">
+        <div class="note">
+          <strong>WorkplaceNL</strong>
+          <p>Tell us if your injury happened at work. We coordinate claims and required forms with WorkplaceNL.</p>
+        </div>
+        <div class="note">
+          <strong>Motor Vehicle Accidents</strong>
+          <p>For MVA claims, we communicate with your insurer and help set up approved treatment plans.</p>
+        </div>
+        <div class="note">
+          <strong>Veterans Affairs Canada</strong>
+          <p>Registered provider. If you have a VAC K-number, you may be eligible for pre-approved sessions.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="card">
+      <h2 class="section-title">FAQ</h2>
+      <details class="faq">
+        <summary>Do I need a referral?</summary>
+        <p>No, not to be assessed. Some plans may require a physician’s referral for reimbursement—check your policy.</p>
+      </details>
+      <details class="faq">
+        <summary>How many sessions will I need?</summary>
+        <p>Varies by condition and goals. We’ll review expected timelines at your first visit and track progress each session.</p>
+      </details>
+      <details class="faq">
+        <summary>Should I come if I’m in pain today?</summary>
+        <p>Yes—acute pain can be assessed safely. We’ll modify testing/treatment to keep you comfortable.</p>
+      </details>
+      <details class="faq">
+        <summary>What’s your cancellation policy?</summary>
+        <p>Please provide 24 hours’ notice to avoid a late-cancellation fee. Missed appointments delay progress.</p>
+      </details>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-center">
+      <h2>Ready to get started?</h2>
+      <p>Book your one-on-one assessment today. We’ll explain what’s going on and build a plan that fits your life.</p>
+      <a href="contact.html#book" class="btn btn-primary btn-lg">Book Now</a>
+    </section>
+  </div>
+
+  <!-- JS: dropdowns -->
+  <script>
+    (function () {
+      document.querySelectorAll('.dropdown .drop-trigger').forEach(function (trig) {
+        trig.addEventListener('click', function (e) {
+          e.preventDefault(); e.stopPropagation();
+          const dd = trig.closest('.dropdown');
+          document.querySelectorAll('.dropdown.open').forEach(el => { if (el !== dd) el.classList.remove('open'); });
+          dd.classList.toggle('open');
+        });
+      });
+      document.addEventListener('click', () => document.querySelectorAll('.dropdown.open').forEach(el => el.classList.remove('open')));
+      document.addEventListener('keydown', e => { if (e.key === 'Escape') document.querySelectorAll('.dropdown.open').forEach(el => el.classList.remove('open')); });
+    })();
+  </script>
+</body>
+</html>
