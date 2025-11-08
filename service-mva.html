@@ -28,17 +28,11 @@
     ul.check li::before{ content:"✓"; position:absolute; left:0; color:var(--brand); }
     .note{ background:#f8fafc; border-left:4px solid var(--brand); padding:12px 14px; border-radius:8px; color:#334155; }
     .warn{ background:#fff9e6; border-left:4px solid #f59e0b; }
-    .pill-row{ display:flex; flex-wrap:wrap; gap:10px; margin-top:10px; }
-    .pill{ background:#eef7f7; color:var(--brand); padding:6px 10px; border-radius:999px; font-weight:600; font-size:12px; border:1px solid rgba(0,0,0,.06); }
-    details.faq{ background:#fff; border:1px solid rgba(0,0,0,.08); border-radius:10px; padding:14px 16px; margin:12px 0; }
-    details.faq > summary{ cursor:pointer; font-weight:600; }
-    details.faq > summary::-webkit-details-marker{ display:none; }
-    details.faq[open]{ border-color: rgba(14,91,89,.25); }
     .cta-center{ text-align:center; padding:28px 0; }
     .btn{ display:inline-flex; align-items:center; gap:8px; border-radius:999px; padding:11px 20px; font-weight:700; text-decoration:none; }
     .btn-primary{ background:var(--brand); color:#fff; }
     .btn-primary:hover{ filter:brightness(.95); }
-    .btn-outline{ border:1px solid rgba(0,0,0,.14); color:var(--brand); background:#fff; }
+    .btn-outline{ border:1px solid rgba(0,0,0,.14); color:#fff; background:#0E5B59; }
   </style>
 </head>
 
@@ -149,6 +143,15 @@
             <li>Flare management and pacing for real-life demands</li>
           </ul>
         </div>
+        <div class="note">
+          <strong>Paperwork made simpler</strong>
+          <ul class="clean" style="margin-top:8px">
+            <li>We explain forms and approvals in plain language</li>
+            <li>With your consent, we send objective progress updates</li>
+            <li>We outline abilities/limitations to support daily life and work</li>
+          </ul>
+          <p style="margin-top:8px">We focus on clinical care and transparent communication. We do not provide legal advice.</p>
+        </div>
       </div>
     </section>
 
@@ -199,13 +202,12 @@
           </ul>
         </div>
         <div class="note">
-          <strong>Paperwork &amp; insurer communication</strong>
+          <strong>Insurer communication</strong>
           <ul class="clean" style="margin-top:8px">
             <li>We guide forms and approvals in plain language</li>
             <li>With your consent, we submit objective progress reports</li>
             <li>We outline abilities/limitations to support daily life and work</li>
           </ul>
-          <p style="margin-top:8px">We focus on clinical care and transparent communication. We do not provide legal advice.</p>
         </div>
       </div>
     </section>
@@ -224,45 +226,43 @@
         </div>
         <div class="note">
           <strong>Direct Billing</strong>
-          <p>For approved claims, we bill your insurer directly. We’ll tell you what information they need and how we track progress (pain, ROM, strength, function).</p>
+          <p>For approved MVA claims, we bill your insurer directly and track progress with pain, ROM, strength, and function measures.</p>
         </div>
       </div>
     </section>
 
-    <!-- INSURANCE -->
-    <section class="card">
-      <h2 class="section-title">Insurance & Direct Billing</h2>
-      <p>In Newfoundland &amp; Labrador, you can book with a physiotherapist directly. Some insurers may ask for a physician referral for reimbursement. We offer <a href="direct-billing.html">Direct Billing</a> where available and provide detailed receipts for others.</p>
-      <div class="grid grid-3">
-        <div class="note">
-          <strong>Motor Vehicle Accidents</strong>
-          <p>We communicate with your insurer (with consent), submit objective updates, and help organize approved treatment plans.</p>
-        </div>
-        <div class="note">
-          <strong>Private Plans &amp; VAC</strong>
-          <p>Many private plans reimburse MVA care. VAC clients with a K-number may have pre-approved sessions.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- FAQ -->
+    <!-- FAQ (MVA-FOCUSED) -->
     <section class="card">
       <h2 class="section-title">FAQ</h2>
+
       <details class="faq">
-        <summary>Is the treatment hands-on or exercise?</summary>
-        <p>Both, as needed. We use gentle manual therapy to calm pain and improve mobility, then reinforce gains with simple, targeted exercise. Education and pacing tie it together.</p>
+        <summary>How soon should I start physio after a collision?</summary>
+        <p>Usually within the first week once urgent issues are ruled out. Early, gentle assessment and movement are linked with better outcomes. We’ll pace everything to your symptoms.</p>
       </details>
+
       <details class="faq">
-        <summary>Can I start physio before my claim number arrives?</summary>
+        <summary>Can I begin before my claim number is ready?</summary>
         <p>Yes. We can assess and treat, help with forms, and add your claim number once it’s issued. We’ll explain any costs before you proceed.</p>
       </details>
+
       <details class="faq">
-        <summary>Do you set a fixed number of sessions?</summary>
-        <p>No—we individualize care and track objective change each visit. Your plan progresses based on your goals, job/sport demands, and clinical response.</p>
+        <summary>Do you use hands-on treatment or exercise?</summary>
+        <p>Both, as indicated. We calm pain and stiffness with gentle manual therapy, then reinforce gains with simple, targeted exercise and pacing strategies.</p>
       </details>
+
       <details class="faq">
-        <summary>What if I feel worse after a busy day?</summary>
-        <p>That’s common early on. We’ll adjust loads, give quick “reset” drills, and refine pacing so you keep making steady progress without flare-ups.</p>
+        <summary>How long will recovery take?</summary>
+        <p>It depends on the injury and your daily demands. We don’t set a fixed session count—we track objective change each visit and progress your plan accordingly.</p>
+      </details>
+
+      <details class="faq">
+        <summary>Is soreness normal after busy days or new exercises?</summary>
+        <p>Mild, short-lived soreness is common early on. We’ll adjust loads, provide quick “reset” drills, and keep you moving without flare-ups.</p>
+      </details>
+
+      <details class="faq">
+        <summary>What should I bring to the first appointment?</summary>
+        <p>Any insurer letters (claim number if available), a medication list, relevant imaging/referrals, and comfortable clothing for movement testing.</p>
       </details>
     </section>
 
