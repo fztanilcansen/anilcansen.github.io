@@ -887,3 +887,19 @@ h1 {
 }
 .service-card .actions{ display:flex; gap:10px; margin-top:6px; }
 .service-card .btn{ padding:9px 14px; }
+/* Make service Learn more buttons bigger and on-brand */
+/* Learn more = marka rengi */
+.service-card .btn-primary.btn-lg{
+  background: var(--brand);
+  color:#fff;
+  padding:12px 18px;
+  font-weight:700;
+  border-radius:999px;
+  border:none;
+}
+.service-card .btn-primary.btn-lg:hover{ filter:brightness(.95); }
+.service-card .btn-primary.btn-lg:focus-visible{
+  outline:3px solid #93e2e0;   /* erişilebilir odak */
+  outline-offset:2px;
+}
+
