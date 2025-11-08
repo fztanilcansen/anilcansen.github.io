@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en">
 <head>
@@ -71,6 +70,12 @@
     .tech-card ul{ margin:8px 0 0; padding:0; list-style:none; }
     .tech-card ul li{ margin:6px 0; padding-left:14px; position:relative; }
     .tech-card ul li::before{ content:"–"; position:absolute; left:0; color:#94a3b8; }
+
+    /* === Small visual upgrade: slightly larger technique images on desktop === */
+    @media (min-width:981px){
+      .tech-grid.cols-3{ grid-template-columns: repeat(3, minmax(280px,1fr)); }
+      .tech-card .media{ aspect-ratio: 4/3; }
+    }
   </style>
 </head>
 
@@ -161,7 +166,7 @@
 
       <div class="hero-copy">
         <h1>Manual Therapy</h1>
-        <p>Hands-on techniques for joints, muscles, and fascia to calm pain, restore movement, and prepare your body for the exercises that keep results.</p>
+        <p>Hands-on techniques that ease pain, restore motion, and prepare your body for the simple exercises that make results last.</p>
         <a href="contact.html#book" class="btn btn-primary btn-lg">Book Now</a>
       </div>
     </div>
@@ -173,7 +178,7 @@
       <h2 class="section-title">What manual therapy is & why we use it</h2>
       <div class="grid grid-2">
         <div>
-          <p>Manual therapy includes specific touch-based techniques applied by a physiotherapist to joints and soft tissues. It helps decrease pain, reduce protective muscle guarding, and improve mobility—so you can move more comfortably and train effectively.</p>
+          <p>Manual therapy is targeted, hands-on treatment to joints, muscles, and fascia. It helps calm pain and protective tension, improves mobility, and makes exercise more comfortable and effective.</p>
           <ul class="check">
             <li>Short-term pain relief and mobility gains</li>
             <li>Prepares you for targeted exercise</li>
@@ -187,7 +192,10 @@
             <li>Clear explanation; gentle start, then progress as tolerated</li>
             <li>Options adjusted for sensitivity (position, pressure, duration)</li>
             <li>Always followed by simple exercises to “lock in” change</li>
+            <li>Mild post-treatment soreness for 24–48 hours can be normal; we’ll show you how to manage it.</li>
           </ul>
+          <p class="note" style="margin-top:10px;"><strong>Before &amp; after your visit</strong><br>
+          Drink water, keep moving gently the same day, and use light heat/ice if needed. We’ll give you simple home steps to manage any post-treatment soreness.</p>
         </div>
       </div>
     </section>
@@ -202,7 +210,7 @@
             <li>Maitland & Mulligan joint mobilizations (Grades I–IV, MWM)</li>
             <li>Segmental & rib mobilizations; lumbar/thoracic techniques</li>
             <li>SIJ & hip mobilization; ankle/foot, wrist/hand techniques</li>
-            <li>Occasional manipulation where indicated*</li>
+            <li>High-velocity techniques used selectively, with consent.</li>
           </ul>
         </div>
         <div>
@@ -224,7 +232,7 @@
           </ul>
         </div>
       </div>
-      <p class="note" style="margin-top:12px"><strong>*</strong> High-velocity techniques are used selectively, with consent, only when clinically appropriate.</p>
+      <p class="note" style="margin-top:12px"><strong>*</strong> Techniques are tailored to you and used only when clinically appropriate.</p>
     </section>
 
     <!-- IMAGE MINI-CARDS -->
@@ -423,7 +431,7 @@
           <p><b>Acute flares:</b> 3–6 visits across 3–5 weeks.</p>
           <p><b>Persistent pain/stiffness:</b> 6–10 visits across 6–10 weeks.</p>
           <p><b>Complex/long-standing cases:</b> 8–12+ visits across 8–12+ weeks.</p>
-          <p style="margin-top:6px">We reassess every session; if progress is limited, we modify the approach or coordinate with your physician.</p>
+          <p style="margin-top:6px">We reassess each session (pain, range of motion, strength, function). If progress stalls for 2–3 visits, we adjust the plan or coordinate with your physician.</p>
         </div>
       </div>
     </section>
