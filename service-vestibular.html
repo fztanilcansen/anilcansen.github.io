@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vestibular Rehabilitation | Physio Island</title>
+  <meta name="description" content="Assessment and treatment for dizziness, vertigo, balance problems and visual motion sensitivity. BPPV maneuvers, gaze-stabilization, habituation and balance training." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=20">
+  <link rel="icon" href="favicon.ico">
+  <style>
+    :root{ --brand:#0E5B59; --soft:rgba(14,91,89,.06); --ink:#253237; --muted:#64748b; }
+    body{ background:#f5f7fa; color:#333; }
+    section.card{ background:#fff; border-radius:12px; padding:26px; box-shadow:0 5px 15px rgba(0,0,0,.06); margin-bottom:24px; }
+    .grid{ display:grid; gap:20px; }
+    .grid-2{ grid-template-columns: 1.2fr 1fr; }
+    .grid-3{ grid-template-columns: repeat(3, minmax(0,1fr)); }
+    @media (max-width:980px){ .grid-2,.grid-3{ grid-template-columns:1fr; } }
+    h2.section-title{ color:var(--brand); font-size:1.6rem; margin:0 0 12px; border-bottom:2px solid var(--soft); padding-bottom:8px; }
+    h3{ color:var(--ink); margin:10px 0; font-size:1.12rem; }
+    p{ line-height:1.65; }
+    ul.clean{ margin:10px 0 0 0; padding:0; list-style:none; }
+    ul.clean li{ margin:8px 0; padding-left:14px; position:relative; }
+    ul.clean li::before{ content:"—"; position:absolute; left:0; color:#94a3b8; }
+    ul.check{ margin:10px 0 0 0; list-style:none; padding:0; }
+    ul.check li{ margin:8px 0; padding-left:24px; position:relative; }
+    ul.check li::before{ content:"✓"; position:absolute; left:0; color:var(--brand); }
+    .note{ background:#f8fafc; border-left:4px solid var(--brand); padding:12px 14px; border-radius:8px; color:#334155; }
+    .warn{ background:#fff9e6; border-left:4px solid #f59e0b; }
+    .pill-row{ display:flex; flex-wrap:wrap; gap:10px; margin-top:10px; }
+    .pill{ background:#eef7f7; color:var(--brand); padding:6px 10px; border-radius:999px; font-weight:600; font-size:12px; border:1px solid rgba(0,0,0,.06); }
+    details.faq{ background:#fff; border:1px solid rgba(0,0,0,.08); border-radius:10px; padding:14px 16px; margin:12px 0; }
+    details.faq > summary{ cursor:pointer; font-weight:600; }
+    details.faq > summary::-webkit-details-marker{ display:none; }
+    details.faq[open]{ border-color: rgba(14,91,89,.25); }
+    .cta-center{ text-align:center; padding:28px 0; }
+    .btn{ display:inline-flex; align-items:center; gap:8px; border-radius:999px; padding:11px 20px; font-weight:700; text-decoration:none; }
+    .btn-primary{ background:var(--brand); color:#fff; }
+    .btn-primary:hover{ filter:brightness(.95); }
+    .btn-outline{ border:1px solid rgba(0,0,0,.14); color:var(--brand); background:#fff; }
+  </style>
+</head>
+
+<body>
+  <!-- Top bar -->
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <span>Coming soon in Burin NL by late 2025</span>
+      <a class="topbar-link" href="tel:+17095550000">Call: (709) 555-0000</a>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html" aria-label="Physio Island Home">
+        <img src="images/logo.png" alt="Physio Island Logo">
+      </a>
+      <input type="checkbox" id="menu-toggle" class="menu-toggle">
+      <label for="menu-toggle" class="burger"><span></span><span></span><span></span></label>
+
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+
+        <div class="dropdown">
+          <a class="drop-trigger" href="#">Services ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="services.html#physiotherapy">Physiotherapy</a></li>
+            <li><a href="services.html#workplace">Workplace NL</a></li>
+            <li><a href="services.html#mva">Motor Vehicle Accidents</a></li>
+            <li><a href="services.html#veterans">Veteran Affairs Canada</a></li>
+            <li><a href="services.html#sports-rehab">Advanced Sports Rehabilitation</a></li>
+            <li><a href="services.html#acupuncture">Acupuncture</a></li>
+            <li><a href="services.html#manual">Manual Therapy</a></li>
+            <li><a href="services.html#vestibular">Vestibular Rehab / Vertigo</a></li>
+            <li><a href="services.html#shockwave">Shockwave Therapy</a></li>
+            <li><a href="services.html#klaser">K-laser Grade IV (coming soon)</a></li>
+            <li><a href="services.html#orthotics">Custom Foot Orthotics</a></li>
+            <li><a href="services.html#concussion">Concussion / Whiplash</a></li>
+            <li><a href="services.html#neuro">Neurological Rehab</a></li>
+            <li><a href="services.html#kinesiology">Kinesiology / Exercise Therapy</a></li>
+          </ul>
+        </div>
+
+        <div class="dropdown">
+          <a class="drop-trigger" href="about.html">About ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="about.html#about-us">About Us</a></li>
+            <li><a href="about.html#team">Our Team</a></li>
+          </ul>
+        </div>
+
+        <a href="careers.html">Careers</a>
+
+        <div class="dropdown">
+          <a class="drop-trigger" href="learn-more.html">Learn More ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="direct-billing.html">Direct Billing</a></li>
+          </ul>
+        </div>
+
+        <div class="dropdown">
+          <a class="drop-trigger" href="contact.html">Contact ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="contact.html#location">Location</a></li>
+          </ul>
+        </div>
+
+        <a href="#book-now" class="btn btn-primary btn-lg">Book Now</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="eswt-hero hero--square">
+    <div class="container hero-inner">
+      <div class="hero-square">
+        <img
+          src="images/vestibular-960.jpg"
+          srcset="images/vestibular-480.jpg 480w,
+                  images/vestibular-960.jpg 960w,
+                  images/vestibular-1200.jpg 1200w"
+          sizes="(max-width: 980px) 80vw, 520px"
+          alt="Vestibular assessment — eye tracking and balance testing"
+          loading="eager" decoding="async">
+      </div>
+
+      <div class="hero-copy">
+        <h1>Vestibular Rehabilitation (Dizziness & Balance)</h1>
+        <p>One-on-one assessment and targeted exercises to treat vertigo, dizziness, and motion sensitivity—so you can move confidently again.</p>
+        <a href="contact.html#book" class="btn btn-primary btn-lg">Book Now</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <!-- WHAT & WHY -->
+    <section class="card">
+      <h2 class="section-title">What vestibular rehab does</h2>
+      <div class="grid grid-2">
+        <div>
+          <p>The vestibular system (inner ear, eyes, and brain) keeps you steady and oriented. Injury or dysfunction can cause vertigo, dizziness, imbalance, nausea, and “busy background” blur. Vestibular rehabilitation uses specific maneuvers and exercises to retrain this system.</p>
+          <ul class="check">
+            <li>Reduce vertigo and dizziness</li>
+            <li>Improve gaze stability and reduce visual motion sensitivity</li>
+            <li>Restore balance and confidence in daily activities</li>
+            <li>Teach self-management to prevent recurrences</li>
+          </ul>
+        </div>
+        <div class="note">
+          <strong>What to expect</strong>
+          <ul class="clean" style="margin-top:8px">
+            <li>Clear, plain-language explanation of your specific dizziness</li>
+            <li>Gentle testing of eye movements, balance, and positional triggers</li>
+            <li>A precise plan: canalith repositioning, gaze exercises, habituation, and balance drills—tailored to you</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONDITIONS -->
+    <section class="card">
+      <h2 class="section-title">Common conditions we treat</h2>
+      <div class="grid grid-3">
+        <div>
+          <h3>BPPV (Benign Paroxysmal Positional Vertigo)</h3>
+          <ul class="clean">
+            <li>Brief spinning with rolling in bed, looking up, or bending</li>
+            <li>Treated with repositioning maneuvers (Epley, Semont, BBQ roll)</li>
+            <li>Self-care tips and recurrence prevention</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Vestibular Neuritis / Labyrinthitis</h3>
+          <ul class="clean">
+            <li>Acute vertigo followed by lingering imbalance and motion sensitivity</li>
+            <li>Adaptation (gaze-stabilization VOR x1/x2) and balance retraining</li>
+            <li>Graded return to normal activities</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Menière’s Disease</h3>
+          <ul class="clean">
+            <li>Episodic vertigo with ear fullness, tinnitus, and hearing changes</li>
+            <li>Stability training between attacks; flare management strategies</li>
+            <li>Education and coordination with your physician/ENT</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="grid grid-3" style="margin-top:10px">
+        <div>
+          <h3>PPPD / Motion Sensitivity</h3>
+          <ul class="clean">
+            <li>Persistent dizziness worse in busy places, screens, or walking</li>
+            <li>Habituation and graded visual-motion exposure</li>
+            <li>Breathing/pacing strategies to reduce symptom focus</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Concussion / Whiplash-related Dizziness</h3>
+          <ul class="clean">
+            <li>Neck and eye-movement contributors screened</li>
+            <li>VOR training, balance and dual-task progression</li>
+            <li>Return-to-learn/work/sport guidance</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Age-related Imbalance & Falls Risk</h3>
+          <ul class="clean">
+            <li>Strength, sensory integration and reaction training</li>
+            <li>Home safety and walking aid advice</li>
+            <li>Community activity confidence building</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="pill-row">
+        <span class="pill">BPPV Maneuvers</span>
+        <span class="pill">Gaze Stabilization</span>
+        <span class="pill">Habituation</span>
+        <span class="pill">Balance Training</span>
+        <span class="pill">Falls Prevention</span>
+      </div>
+    </section>
+
+    <!-- FIRST VISIT -->
+    <section class="card">
+      <h2 class="section-title">Your first visit (45–60 minutes)</h2>
+      <div class="grid grid-2">
+        <div>
+          <h3>Assessment</h3>
+          <ul class="clean">
+            <li>Detailed history of triggers, duration, ear/hearing symptoms, migraines, and medications</li>
+            <li>Oculomotor tests (smooth pursuit, saccades), head-impulse (VOR), positional testing (Dix-Hallpike, roll test)</li>
+            <li>Balance and gait tests (Romberg, tandem, single-leg)</li>
+          </ul>
+          <h3>Treatment & plan</h3>
+          <ul class="clean">
+            <li>Immediate maneuvers if BPPV is confirmed</li>
+            <li>Home program: 2–4 short sessions/day of targeted exercises</li>
+            <li>Progression milestones and follow-up schedule</li>
+          </ul>
+        </div>
+        <div class="note">
+          <strong>Bring & wear</strong>
+          <ul class="clean" style="margin-top:8px">
+            <li>List of medications and recent medical findings</li>
+            <li>Glasses you normally use; avoid heavy eye makeup if possible</li>
+            <li>Comfortable clothing and flat shoes</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW WE TREAT -->
+    <section class="card">
+      <h2 class="section-title">How we treat</h2>
+      <div class="grid grid-2">
+        <div>
+          <ul class="check">
+            <li><b>Canalith repositioning:</b> Epley/Semont/BBQ roll variants for the affected canal</li>
+            <li><b>Adaptation:</b> gaze-stabilization (VOR x1/x2), head-eye coordination</li>
+            <li><b>Habituation:</b> graded exposure to provoking head/visual movements</li>
+            <li><b>Balance & gait:</b> stance progression, dynamic walking, dual-tasking</li>
+            <li><b>Neck & visual contributors:</b> cervical mobility, oculomotor drills</li>
+            <li><b>Education:</b> sleep, hydration, pacing, flare management, relapse prevention</li>
+          </ul>
+        </div>
+        <div class="note">
+          <strong>Typical care pathway</strong>
+          <p><b>BPPV:</b> many improve in 1–3 sessions; recurrences are common but usually resolve quickly with repeat maneuvers and home strategies.</p>
+          <p><b>Unilateral hypofunction / neuritis:</b> often 4–8 visits over 4–8 weeks with daily home exercises.</p>
+          <p><b>Complex cases (PPPD, post-concussion, Menière’s):</b> usually 6–12+ visits across 8–12+ weeks with careful progression and medical coordination.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SAFETY / RED FLAGS -->
+    <section class="card">
+      <h2 class="section-title">Safety first</h2>
+      <div class="grid grid-2">
+        <div>
+          <p>Vestibular rehab is safe and effective when tailored to you. Mild temporary dizziness during exercises is expected and part of retraining.</p>
+        </div>
+        <div class="warn">
+          <strong>Seek urgent medical care if you have</strong>
+          <ul class="clean" style="margin-top:8px">
+            <li>Sudden severe headache, double vision, slurred speech, facial droop, limb weakness/numbness</li>
+            <li>Chest pain, fainting, or new neurological symptoms</li>
+            <li>Acute hearing loss in one ear—contact your doctor/ER promptly</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- INSURANCE -->
+    <section class="card">
+      <h2 class="section-title">Insurance & Direct Billing</h2>
+      <p>Vestibular therapy provided by licensed physiotherapists is billed as physiotherapy. In NL you can book directly; some plans may require a physician’s referral for reimbursement. We offer <a href="direct-billing.html">Direct Billing</a> to many insurers.</p>
+    </section>
+
+    <!-- FAQ -->
+    <section class="card">
+      <h2 class="section-title">FAQ</h2>
+      <details class="faq">
+        <summary>Will the maneuvers make me very dizzy?</summary>
+        <p>They can briefly provoke vertigo, which is expected, but episodes are short. We guide breathing and pacing to keep you safe.</p>
+      </details>
+      <details class="faq">
+        <summary>How long until I feel better?</summary>
+        <p>BPPV often improves immediately or within a few days. Hypofunction and post-concussion dizziness improve steadily over weeks with consistent home practice.</p>
+      </details>
+      <details class="faq">
+        <summary>Will it come back?</summary>
+        <p>BPPV can recur; we’ll teach recognition and self-care. For other conditions, staying active and continuing a few maintenance drills helps durability.</p>
+      </details>
+      <details class="faq">
+        <summary>Do I need imaging or a referral?</summary>
+        <p>No imaging is typically required, and you can book directly. If we suspect a medical issue, we’ll liaise with your physician or ENT.</p>
+      </details>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-center">
+      <h2>Ready to steady your balance?</h2>
+      <p>Book your one-on-one vestibular assessment. We’ll confirm the cause and build a plan to help you move with confidence.</p>
+      <a href="contact.html#book" class="btn btn-primary btn-lg">Book Now</a>
+    </section>
+  </div>
+
+  <!-- JS: dropdowns -->
+  <script>
+    (function () {
+      document.querySelectorAll('.dropdown .drop-trigger').forEach(function (trig) {
+        trig.addEventListener('click', function (e) {
+          e.preventDefault(); e.stopPropagation();
+          const dd = trig.closest('.dropdown');
+          document.querySelectorAll('.dropdown.open').forEach(el => { if (el !== dd) el.classList.remove('open'); });
+          dd.classList.toggle('open');
+        });
+      });
+      document.addEventListener('click', () => document.querySelectorAll('.dropdown.open').forEach(el => el.classList.remove('open')));
+      document.addEventListener('keydown', e => { if (e.key === 'Escape') document.querySelectorAll('.dropdown.open').forEach(el => el.classList.remove('open')); });
+    })();
+  </script>
+</body>
+</html>
