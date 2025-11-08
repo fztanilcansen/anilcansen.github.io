@@ -1,1 +1,353 @@
 
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Concussion & Whiplash Rehab | Physio Island</title>
+  <meta name="description" content="Sport and MVA concussion rehab in Burin: clear assessment, vestibular/ocular and cervical care, graded exercise (Buffalo protocol), and safe return to school, work, and hockey/sport." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=20">
+  <link rel="icon" href="favicon.ico">
+  <style>
+    :root{ --brand:#0E5B59; --soft:rgba(14,91,89,.06); --ink:#253237; --muted:#64748b; }
+    body{ background:#f5f7fa; color:#333; }
+    section.card{ background:#fff; border-radius:12px; padding:26px; box-shadow:0 5px 15px rgba(0,0,0,.06); margin-bottom:24px; }
+    .grid{ display:grid; gap:20px; }
+    .grid-2{ grid-template-columns: 1.2fr 1fr; }
+    .grid-3{ grid-template-columns: repeat(3, minmax(0,1fr)); }
+    @media (max-width:980px){ .grid-2,.grid-3{ grid-template-columns:1fr; } }
+    h2.section-title{ color:var(--brand); font-size:1.6rem; margin:0 0 12px; border-bottom:2px solid var(--soft); padding-bottom:8px; }
+    h3{ color:var(--ink); margin:10px 0; font-size:1.12rem; }
+    p{ line-height:1.65; }
+    ul.clean{ margin:10px 0 0 0; padding:0; list-style:none; }
+    ul.clean li{ margin:8px 0; padding-left:14px; position:relative; }
+    ul.clean li::before{ content:"—"; position:absolute; left:0; color:#94a3b8; }
+    ul.check{ margin:10px 0 0 0; list-style:none; padding:0; }
+    ul.check li{ margin:8px 0; padding-left:24px; position:relative; }
+    ul.check li::before{ content:"✓"; position:absolute; left:0; color:var(--brand); }
+    .note{ background:#f8fafc; border-left:4px solid var(--brand); padding:12px 14px; border-radius:8px; color:#334155; }
+    .warn{ background:#fff9e6; border-left:4px solid #f59e0b; }
+    .pill-row{ display:flex; flex-wrap:wrap; gap:10px; margin-top:10px; }
+    .pill{ background:#eef7f7; color:var(--brand); padding:6px 10px; border-radius:999px; font-weight:600; font-size:12px; border:1px solid rgba(0,0,0,.06); }
+    details.faq{ background:#fff; border:1px solid rgba(0,0,0,.08); border-radius:10px; padding:14px 16px; margin:12px 0; }
+    details.faq > summary{ cursor:pointer; font-weight:600; }
+    details.faq > summary::-webkit-details-marker{ display:none; }
+    details.faq[open]{ border-color: rgba(14,91,89,.25); }
+    .cta-center{ text-align:center; padding:28px 0; }
+    .btn{ display:inline-flex; align-items:center; gap:8px; border-radius:999px; padding:11px 20px; font-weight:700; text-decoration:none; }
+    .btn-primary{ background:var(--brand); color:#fff; }
+    .btn-primary:hover{ filter:brightness(.95); }
+    .btn-outline{ border:1px solid rgba(0,0,0,.14); color:var(--brand); background:#fff; }
+  </style>
+</head>
+
+<body>
+  <!-- Top bar -->
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <span>Coming soon in Burin NL by late 2025</span>
+      <a class="topbar-link" href="tel:+17095550000">Call: (709) 555-0000</a>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html" aria-label="Physio Island Home">
+        <img src="images/logo.png" alt="Physio Island Logo">
+      </a>
+      <input type="checkbox" id="menu-toggle" class="menu-toggle">
+      <label for="menu-toggle" class="burger"><span></span><span></span><span></span></label>
+
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+
+        <div class="dropdown">
+          <a class="drop-trigger" href="#">Services ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="services.html#physiotherapy">Physiotherapy</a></li>
+            <li><a href="services.html#workplace">Workplace NL</a></li>
+            <li><a href="services.html#mva">Motor Vehicle Accidents</a></li>
+            <li><a href="services.html#veterans">Veterans Affairs Canada</a></li>
+            <li><a href="services.html#sports-rehab">Advanced Sports Rehabilitation</a></li>
+            <li><a href="services.html#acupuncture">Acupuncture</a></li>
+            <li><a href="services.html#manual">Manual Therapy</a></li>
+            <li><a href="services.html#vestibular">Vestibular Rehab / Vertigo</a></li>
+            <li><a href="services.html#shockwave">Shockwave Therapy</a></li>
+            <li><a href="services.html#klaser">K-laser Grade IV (coming soon)</a></li>
+            <li><a href="services.html#orthotics">Custom Foot Orthotics</a></li>
+            <li><a href="services.html#concussion">Concussion / Whiplash</a></li>
+            <li><a href="services.html#neuro">Neurological Rehab</a></li>
+            <li><a href="services.html#kinesiology">Kinesiology / Exercise Therapy</a></li>
+          </ul>
+        </div>
+
+        <div class="dropdown">
+          <a class="drop-trigger" href="about.html">About ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="about.html#about-us">About Us</a></li>
+            <li><a href="about.html#team">Our Team</a></li>
+          </ul>
+        </div>
+
+        <a href="careers.html">Careers</a>
+
+        <div class="dropdown">
+          <a class="drop-trigger" href="learn-more.html">Learn More ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="direct-billing.html">Direct Billing</a></li>
+          </ul>
+        </div>
+
+        <div class="dropdown">
+          <a class="drop-trigger" href="contact.html">Contact ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="contact.html#location">Location</a></li>
+          </ul>
+        </div>
+
+        <a href="#book-now" class="btn btn-primary btn-lg">Book Now</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="eswt-hero hero--square">
+    <div class="container hero-inner">
+      <div class="hero-square">
+        <img
+          src="images/concussion-960.jpg"
+          srcset="images/concussion-480.jpg 480w,
+                  images/concussion-960.jpg 960w,
+                  images/concussion-1200.jpg 1200w"
+          sizes="(max-width: 980px) 80vw, 520px"
+          alt="Concussion rehab assessment with balance and eye-head movement testing"
+          loading="eager" decoding="async">
+      </div>
+
+      <div class="hero-copy">
+        <h1>Concussion & Whiplash Rehab</h1>
+        <p>Sport and MVA-focused care: clear assessment, vestibular/ocular and neck treatment, and a graded return to school, work, and hockey/sport.</p>
+        <a href="contact.html#book" class="btn btn-primary btn-lg">Book Now</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <!-- WHAT WE DO -->
+    <section class="card">
+      <h2 class="section-title">What we do (sport & MVA)</h2>
+      <div class="grid grid-2">
+        <div>
+          <p>We assess the three common drivers after concussion and whiplash—<b>neck</b>, <b>vestibular/ocular</b>, and <b>exercise tolerance</b>—then build a simple plan you can follow. Our approach helps reduce headaches, dizziness, and brain fog, and guides you back to class, work, and the ice/field safely.</p>
+          <ul class="check">
+            <li>One-on-one assessment and clear diagnosis summary</li>
+            <li>Hands-on cervical care + vestibular/ocular therapy</li>
+            <li>Graded sub-symptom aerobic progression (Buffalo protocol)</li>
+            <li>Stepwise “return to learn/work/sport” with milestones</li>
+          </ul>
+        </div>
+        <div class="note">
+          <strong>Hockey & sport focus</strong>
+          <ul class="clean" style="margin-top:8px">
+            <li>SCAT6-informed symptom monitoring</li>
+            <li>Skate/ice and non-contact progression before full contact</li>
+            <li>Communication with coaches/trainers and parents</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- FIRST 48–72 HOURS -->
+    <section class="card">
+      <h2 class="section-title">First 48–72 hours</h2>
+      <div class="grid grid-2">
+        <div>
+          <ul class="clean">
+            <li>Relative rest: light daily activity is OK if symptoms stay mild</li>
+            <li>Limit heavy screen time; normalize sleep/wake and hydration</li>
+            <li>Short, easy walks can help—avoid risk of re-injury</li>
+          </ul>
+        </div>
+        <div class="warn">
+          <strong>Red flags (seek urgent care)</strong>
+          <ul class="clean" style="margin-top:8px">
+            <li>Worsening severe headache, repeated vomiting, seizures</li>
+            <li>Weakness/numbness, slurred speech, unusual behavior</li>
+            <li>Neck pain with neurologic signs or loss of consciousness</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ASSESSMENT -->
+    <section class="card">
+      <h2 class="section-title">Your assessment</h2>
+      <div class="grid grid-3">
+        <div>
+          <h3>Symptoms & Screens</h3>
+          <ul class="clean">
+            <li>Symptom checklist & cognitive screen</li>
+            <li>Balance tests and graded exertion screen</li>
+            <li>Return-to-learn/work planning</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Neck & Vest./Ocular</h3>
+          <ul class="clean">
+            <li>Cervical joint & muscle testing; whiplash patterns</li>
+            <li>VOR/OKN, saccades, visual motion sensitivity</li>
+            <li>Head-eye coordination drills as indicated</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Exercise Tolerance</h3>
+          <ul class="clean">
+            <li>Baseline sub-symptom heart-rate threshold</li>
+            <li>Buffalo Concussion Treadmill (or bike) progression</li>
+            <li>Weekly progression targets</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- TREATMENT PLAN -->
+    <section class="card">
+      <h2 class="section-title">Treatment plan</h2>
+      <div class="grid grid-2">
+        <div>
+          <ul class="check">
+            <li>Cervical manual therapy + motor control</li>
+            <li>Vestibular/ocular therapy (VOR, gaze stability, habituation)</li>
+            <li>Graded aerobic exercise below symptom threshold</li>
+            <li>Headache and sleep strategies; pacing/return-to-routine</li>
+          </ul>
+        </div>
+        <div class="note">
+          <strong>Typical ranges</strong>
+          <p><b>Acute sport concussion:</b> 3–6 visits over 3–5 weeks.</p>
+          <p><b>MVA concussion/whiplash:</b> 6–10+ visits over 6–10 weeks.</p>
+          <p style="margin-top:6px">We reassess every session and adjust based on objective progress.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- RETURN STEPS -->
+    <section class="card">
+      <h2 class="section-title">Return to learn, work, and sport</h2>
+      <div class="grid grid-3">
+        <div>
+          <h3>Return to Learn</h3>
+          <ul class="clean">
+            <li>Short study blocks at home → partial days at school</li>
+            <li>Increase cognitive load and reduce breaks as tolerated</li>
+            <li>Full day, then regular workload and tests</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Return to Work</h3>
+          <ul class="clean">
+            <li>Graduated hours and light duties</li>
+            <li>Screen breaks, task rotation, noise/light strategies</li>
+            <li>Progress to full duties and hours</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Return to Hockey/Sport</h3>
+          <ul class="clean">
+            <li>Light aerobic → sport-specific drills (no contact)</li>
+            <li>Non-contact practice → full contact practice</li>
+            <li>Game play after full practice tolerated symptom-free</li>
+          </ul>
+        </div>
+      </div>
+      <p class="note" style="margin-top:12px"><strong>Important:</strong> Progress one step per 24 hours when symptom-free at the current step and off symptom-masking meds.</p>
+    </section>
+
+    <!-- MVA SECTION -->
+    <section class="card">
+      <h2 class="section-title">Motor Vehicle Accidents (MVA)</h2>
+      <div class="grid grid-2">
+        <div>
+          <p>MVA-related concussion often co-exists with whiplash and neck dysfunction. We blend cervical treatment, graded exertion, and vestibular/ocular therapy to reduce headaches, neck pain, and dizziness, and we coordinate with your insurer on approved treatment plans.</p>
+        </div>
+        <div class="note">
+          <strong>What we handle</strong>
+          <ul class="clean" style="margin-top:8px">
+            <li>Insurer communication and forms</li>
+            <li>Objective measures for progress reports</li>
+            <li>Work accommodation guidance</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- INSURANCE -->
+    <section class="card">
+      <h2 class="section-title">Insurance & Direct Billing</h2>
+      <div class="grid grid-3">
+        <div class="note">
+          <strong>WorkplaceNL</strong>
+          <p>We coordinate claims and required forms with WorkplaceNL.</p>
+        </div>
+        <div class="note">
+          <strong>Motor Vehicle Accidents</strong>
+          <p>We help set up approved treatment plans and communicate with your insurer.</p>
+        </div>
+        <div class="note">
+          <strong>Private Plans & VAC</strong>
+          <p>Direct Billing available to many insurers; VAC K-number clients may be eligible for pre-approved sessions.</p>
+        </div>
+      </div>
+      <p style="margin-top:12px">In NL you can book directly with a physiotherapist; some plans may request a physician’s referral for reimbursement.</p>
+    </section>
+
+    <!-- FAQ -->
+    <section class="card">
+      <h2 class="section-title">FAQ</h2>
+      <details class="faq">
+        <summary>Do I need to rest completely?</summary>
+        <p>No—after 24–48 hours of relative rest, gradual activity is usually better than strict rest. We’ll guide the pace.</p>
+      </details>
+      <details class="faq">
+        <summary>Will exercise make it worse?</summary>
+        <p>We use sub-symptom aerobic training (Buffalo protocol). Done correctly, this improves recovery and tolerance.</p>
+      </details>
+      <details class="faq">
+        <summary>How long until I can skate or practice?</summary>
+        <p>Many athletes start light aerobic work within a few days and progress steps as symptoms resolve. Full contact only after non-contact practice is symptom-free.</p>
+      </details>
+      <details class="faq">
+        <summary>What if symptoms linger?</summary>
+        <p>We screen for persistent drivers (neck, vestibular/ocular, exertion intolerance) and adjust care. We’ll liaise with your physician if needed.</p>
+      </details>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-center">
+      <h2>Ready to move forward safely?</h2>
+      <p>Book your one-on-one concussion & whiplash assessment. We’ll map a clear path back to school, work, and sport.</p>
+      <a href="contact.html#book" class="btn btn-primary btn-lg">Book Now</a>
+    </section>
+  </div>
+
+  <!-- JS: dropdowns -->
+  <script>
+    (function () {
+      document.querySelectorAll('.dropdown .drop-trigger').forEach(function (trig) {
+        trig.addEventListener('click', function (e) {
+          e.preventDefault(); e.stopPropagation();
+          const dd = trig.closest('.dropdown');
+          document.querySelectorAll('.dropdown.open').forEach(el => { if (el !== dd) el.classList.remove('open'); });
+          dd.classList.toggle('open');
+        });
+      });
+      document.addEventListener('click', () => document.querySelectorAll('.dropdown.open').forEach(el => el.classList.remove('open')));
+      document.addEventListener('keydown', e => { if (e.key === 'Escape') document.querySelectorAll('.dropdown.open').forEach(el => el.classList.remove('open')); });
+    })();
+  </script>
+</body>
+</html>
