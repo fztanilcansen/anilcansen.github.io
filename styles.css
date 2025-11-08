@@ -766,53 +766,48 @@ h1 {
 /* Nav ile araya nefes */
 .nav + .eswt-hero { margin-top: 12px; }
 
-/* Contained hero: header içinde kalsın, taşmasın */
-.eswt-hero.hero--image{
-  position: relative;
-  border-radius: 14px;
+/* === Kare hero düzeni (desktop mantıklı boyut) === */
+.eswt-hero.hero--square{ margin: 12px 0 36px; }
+
+.eswt-hero .hero-inner{
+  display: grid;
+  gap: 16px;
+  justify-items: center;
+}
+
+/* Kare görsel kutusu: desktop'ta mantıklı maksimum */
+.eswt-hero .hero-square{
+  width: clamp(260px, 36vw, 520px); /* istersen 520->480 yap */
+  aspect-ratio: 1 / 1;              /* KARE */
+  border-radius: 16px;
   overflow: hidden;
-  margin: 0 0 36px;
-  background: #0E5B59; /* yedek zemin */
+  box-shadow: 0 10px 24px rgba(0,0,0,.08);
 }
-
-/* Görsel alanı: yükseklik clamp ile makul tutulur */
-.eswt-hero .hero-media{
-  height: clamp(240px, 34vh, 420px);  /* min 240, tipik 34vh, max 420 */
-}
-
-/* Görsel: alanı taşmadan doldur */
-.eswt-hero .hero-media img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;   /* gerekirse: center 35% */
+.eswt-hero .hero-square img{
+  width: 100%; height: 100%;
+  object-fit: cover;                /* kare içine sığdır, taşanı kes */
+  object-position: center 45%;      /* kadrajı ayarlamak için değiştir */
   display: block;
-  filter: contrast(.98) saturate(.98);
 }
 
-/* Metin katmanı (okunabilirlik için yumuşak degrade) */
-.eswt-hero .hero-content{
-  position: absolute;
-  inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+/* Metin bloğu: göz yormayan arka plan */
+.eswt-hero .hero-copy{
   text-align: center;
-  padding: 28px 16px;
   color: #fff;
-  background: linear-gradient(
-    180deg,
-    rgba(14,91,89,.55),
-    rgba(14,91,89,.25) 55%,
-    rgba(14,91,89,0)
-  );
+  background: linear-gradient(135deg, #0E5B59 0%, #20bfc6 100%);
+  padding: 18px 16px;
+  border-radius: 14px;
+  max-width: 900px;
 }
+.eswt-hero .hero-copy h1{ margin: 0 0 8px; }
+.eswt-hero .hero-copy p { margin: 0 0 14px; color: rgba(255,255,255,.95); }
 
-/* Başlık/alt başlık aralıkları */
-.eswt-hero .hero-content h1{ margin: 0 0 8px; }
-.eswt-hero .hero-content p { margin: 0 0 14px; color: rgba(255,255,255,.95); }
-
-/* Mobil ayarları */
-@media (max-width: 600px){
-  .eswt-hero .hero-content{ padding: 22px 12px; }
+/* Desktop: iki sütun (solda kare, sağda metin) */
+@media (min-width: 1024px){
+  .eswt-hero .hero-inner{
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 24px;
+  }
+  .eswt-hero .hero-copy{ text-align: left; padding: 22px; }
 }
