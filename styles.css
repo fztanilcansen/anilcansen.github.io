@@ -336,28 +336,27 @@ padding: 0 !important;  border-bottom:none !important; position:relative;
   }
   }
 /* === HERO – full-bleed slider (masaüstünde tam ekran) === */
-.hero{
-  position: relative;
-  height: 85svh;                /* tam ekran */
-  width: 100%;                  /* container sınırını kır */
-     max-width:1200px;
-  overflow: hidden;
-     border-radius: 12px;
-  margin: 0 auto; /* ← BU SATIRI EKLE! */
-
-   
+.hero.hero--full{
+  width:100vw;
+  max-width:100vw;
+  height:85svh;         /* yükseklik aynı */
+  margin:0;             /* container ortalamasını iptal */
+  border-radius:0;      /* kenarlar düz istiyorsan 0 (istersen 12px bırakabilirsin) */
+  position:relative;
+  left:50%;
+  right:50%;
+  margin-left:-50vw;    /* iki yana ekran kadar aç */
+  margin-right:-50vw;
+  overflow:hidden;
 }
 
 /* Slider HERO’nun tamamını kaplasın */
-.hero .image-slider{
-  position: absolute;
-  inset: 0;          /* top/right/bottom/left: 0 */
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  max-width: 100%;
-     border-radius: 12px;
-
+.hero.hero--full .image-slider{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  border-radius:0;      /* köşeler düz */
 }
 
 /* Her slide tüm alanı kaplasın (JS görünürlüğü yönetiyor) */
@@ -368,14 +367,13 @@ padding: 0 !important;  border-bottom:none !important; position:relative;
 }
 
 /* Görseller taşmadan dolsun; kadrajı biraz yukarı odakla */
-.hero .image-slider .slide img{
-  width: 100%;
-  height: 100%;
-  display: block;
-  object-fit: cover; /* Tam kaplasın */
-  object-position: center 30%; /* Baş kısmı göstersin */
-  border-radius: 12px;
-  box-shadow: none;
+.hero.hero--full .image-slider .slide img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center 30%;
+  border-radius:0;      /* köşeler düz */
+  display:block;
 }
 
 /* Fade animasyonu yerine yumuşak geçiş — JS ile uyumlu */
@@ -392,7 +390,7 @@ padding: 0 !important;  border-bottom:none !important; position:relative;
   background: radial-gradient(ellipse at center, rgba(0,0,0,.10), rgba(0,0,0,.18));
   pointer-events: none;
   z-index: 0;
-     border-radius: 12px;
+     border-radius: 0;
 
 }
 
