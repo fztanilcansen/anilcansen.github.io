@@ -335,41 +335,45 @@ padding: 0 !important;  border-bottom:none !important; position:relative;
     color: #fff;
   }
   }
-/* === HERO – full-bleed slider (masaüstünde tam ekran) === */
-.hero.full-width {
-  width: 100%;
-  max-width: 100vw; /* Viewport genişliğini aşmasın */
-  margin: 0;
-  border-radius: 0;
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
+/* === FULL-WIDTH HERO === */
+.hero.hero--full{
+  width:100vw;
+  max-width:100vw;
+  margin:0;                 /* container sınırından bağımsız olsun */
+  border-radius:0;
+  position:relative;
+  left:50%;
+  right:50%;
+  margin-left:-50vw;        /* sayfa kenarlarına kadar taşır */
+  margin-right:-50vw;
+  height:85svh;             /* mevcut yüksekliğin kalsın */
+  overflow:hidden;
 }
 
-/* Slider tam genişlik */
-.hero.full-width .image-slider {
-  max-width: 100vw;
-  border-radius: 0;
+/* Slider konteyneri tüm hero’yu kaplasın */
+.hero.hero--full .image-slider{
+  position:absolute;
+  inset:0;                  /* top/right/bottom/left: 0 */
+  width:100%;
+  height:100%;
+  border-radius:0;
 }
 
-/* Her slide tüm alanı kaplasın (JS görünürlüğü yönetiyor) */
+/* Her slide tüm alanı kaplasın (JS aktif olanı display:block yapıyor) */
 .hero .image-slider .slide{
-  position: absolute;
-  inset: 0;
-  display: none;     /* JS aktif olanı block yapacak */
+  position:absolute;
+  inset:0;
+  display:none;
 }
 
-/* Slider görselleri tam genişlik */
-.hero.full-width .image-slider .slide img {
-  border-radius: 0;
-  width: 100vw; /* Görseller viewport genişliğinde */
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-  position: relative;
+/* Görseller taşmadan dolsun – HATA: 100vw + negatif margin KALDIRILDI */
+.hero.hero--full .image-slider .slide img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center 30%;
+  border-radius:0;
+  display:block;
 }
 
 
@@ -379,14 +383,15 @@ padding: 0 !important;  border-bottom:none !important; position:relative;
   transition: opacity .6s ease;
 }
 
-/* Hero arka plan efekti */
-.hero.full-width::before {
-  border-radius: 0;
-  width: 100vw;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
+/* Arka plan koyuluk efekti */
+.hero.hero--full::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:radial-gradient(ellipse at center, rgba(0,0,0,.10), rgba(0,0,0,.18));
+  pointer-events:none;
+  border-radius:0;
+  z-index:0;
 }
 /* Hero içeriği ortalanmış kalacak */
 .hero.full-width .container {
