@@ -336,29 +336,27 @@ padding: 0 !important;  border-bottom:none !important; position:relative;
   }
   }
 /* === HERO – full-bleed slider (masaüstünde tam ekran) === */
-.hero{
-  position: relative;
-  height: 85svh;                /* tam ekran */
-  width: 100%;                  /* container sınırını kır */
-     max-width:1200px;
-  overflow: hidden;
-     border-radius: 12px;
-  margin: 0 auto; /* ← BU SATIRI EKLE! */
-
-   
-}
+@media (min-width: 901px) {
+  .hero.full-width {
+    width: 100vw;
+    max-width: 100vw;
+    margin: 0;
+    border-radius: 0;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    height: 85svh;
+    overflow: hidden;
+  }
 
 /* Slider HERO’nun tamamını kaplasın */
-.hero .image-slider{
-  position: absolute;
-  inset: 0;          /* top/right/bottom/left: 0 */
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  max-width: 100%;
-     border-radius: 12px;
-
-}
+  .hero.full-width .image-slider {
+    max-width: 100vw;
+    border-radius: 0;
+    width: 100vw;
+  }
 
 /* Her slide tüm alanı kaplasın (JS görünürlüğü yönetiyor) */
 .hero .image-slider .slide{
@@ -368,15 +366,14 @@ padding: 0 !important;  border-bottom:none !important; position:relative;
 }
 
 /* Görseller taşmadan dolsun; kadrajı biraz yukarı odakla */
-.hero .image-slider .slide img{
-  width: 100%;
-  height: 100%;
-  display: block;
-  object-fit: cover; /* Tam kaplasın */
-  object-position: center 30%; /* Baş kısmı göstersin */
-  border-radius: 12px;
-  box-shadow: none;
-}
+  .hero.full-width .image-slider .slide img {
+    border-radius: 0;
+    width: 100vw;
+    max-width: 100vw;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 
 /* Fade animasyonu yerine yumuşak geçiş — JS ile uyumlu */
 .fade{
@@ -392,7 +389,7 @@ padding: 0 !important;  border-bottom:none !important; position:relative;
   background: radial-gradient(ellipse at center, rgba(0,0,0,.10), rgba(0,0,0,.18));
   pointer-events: none;
   z-index: 0;
-     border-radius: 12px;
+     border-radius: 0;
 
 }
 
