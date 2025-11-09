@@ -382,16 +382,14 @@ padding: 0 !important;  border-bottom:none !important; position:relative;
 }
 
 /* Slider arkasına çok hafif koyuluk (metin varsa okunurluk için) */
-.hero::before{
-  content:"";
-  position: absolute;
-  inset: 0;
-  background: radial-gradient(ellipse at center, rgba(0,0,0,.10), rgba(0,0,0,.18));
-  pointer-events: none;
-  z-index: 0;
-     border-radius: 0;
-
-}
+  .hero.full-width::before {
+    border-radius: 0;
+    width: 100vw;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+  }
 
 /* Slider dışındaki içerik üste gelsin */
 .hero > *:not(.image-slider){
