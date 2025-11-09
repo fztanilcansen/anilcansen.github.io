@@ -357,6 +357,8 @@ padding: 0 !important;  border-bottom:none !important; position:relative;
   width:100%;
   height:100%;
   border-radius:0;      /* köşeler düz */
+   z-index: 0; 
+   
 }
 
 /* Her slide tüm alanı kaplasın (JS görünürlüğü yönetiyor) */
@@ -368,12 +370,11 @@ padding: 0 !important;  border-bottom:none !important; position:relative;
 
 /* Görseller taşmadan dolsun; kadrajı biraz yukarı odakla */
 .hero.hero--full .image-slider .slide img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  object-position:center 30%;
-  border-radius:0;      /* köşeler düz */
-  display:block;
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center 30%;
 }
 
 /* Fade animasyonu yerine yumuşak geçiş — JS ile uyumlu */
@@ -387,17 +388,20 @@ padding: 0 !important;  border-bottom:none !important; position:relative;
   content:"";
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse at center, rgba(0,0,0,.10), rgba(0,0,0,.18));
+  background: radial-gradient(ellipse at center,
+               rgba(0,0,0,.08), rgba(0,0,0,.14));
   pointer-events: none;
-  z-index: 0;
+  z-index: 1;
      border-radius: 0;
 
 }
+/* JS bozulsa bile ilk görsel görünsün (fallback) */
+.hero .image-slider .slide:first-child{ display: block; }
 
 /* Slider dışındaki içerik üste gelsin */
 .hero > *:not(.image-slider){
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 /* === HERO YAZI BLOĞU – resmin üstünde === */
 .hero-content{
