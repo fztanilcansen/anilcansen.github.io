@@ -894,3 +894,28 @@ h1 {
 
 /* Optional hover lift */
 .service-card:hover{ transform:translateY(-2px); box-shadow:0 8px 18px rgba(0,0,0,.07); }
+
+
+/* === FULL-WIDTH HERO kesinleştir — mevcut kuralların üstüne yaz === */
+
+/* 1) Daha stabil ortalama: -50vw yerine transform */
+.hero.hero--full{
+  left:50%;
+  transform: translateX(-50%);
+  margin-left:0;
+  margin-right:0;
+}
+
+/* 2) Global slider sınırlarını iptal et (tam genişlik) */
+.hero.hero--full .image-slider{
+  max-width: none;   /* ← 1200px sınırını kaldır */
+  margin: 0;         /* ← ortalamayı kaldır */
+}
+
+/* 3) (Zaten koyduysan sorun yok) Köşeler düz kalsın */
+.hero.hero--full .image-slider .slide img{
+  border-radius: 0;
+}
+
+/* 4) Yatay taşmayı kapat (tam genişlikte güvenlik) */
+html, body { overflow-x: hidden; }
