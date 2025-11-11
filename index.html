@@ -466,38 +466,53 @@
   </div>
 </section>
 
-  <!-- FAQs -->
-  <section id="faqs" class="alt">
-    <div class="container">
-      <div class="section-head">
-        <h2>FAQs</h2>
-        <p class="muted">Quick answers to common questions.</p>
-      </div>
-      <details class="faq"><summary>Do you offer direct billing?</summary><p>Direct billing is available for many plans. Bring your policy details to your first visit.</p></details>
-      <details class="faq"><summary>Do I need a doctor’s referral?</summary><p>No referral required for physiotherapy. Check your insurance policy for specifics.</p></details>
-      <details class="faq"><summary>What should I bring to my first appointment?</summary><p>Photo ID, insurance details, and comfortable clothing for movement.</p></details>
-    </div>
-  </section>
+    <!-- Location -->
+<section id="location">
+  <div class="map-wrapper">
+    <iframe
+      title="Physio Island - Burin Bay Arm"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10859.93660546242!2d-55.198691181164314!3d47.11898206765749!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4b6d7fc5e4db7171%3A0x6920ab7d54dedf!2sBurin%20Bay%20Arm%2C%20Burin%2C%20NL!5e0!3m2!1sen!2sca!4v1762101071074!5m2!1sen!2sca"
+      width="100%"
+      height="320"
+      style="border:0;"
+      allowfullscreen
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+</section>
 
-  <!-- Contact -->
-  <section id="contact">
-    <div class="container contact-grid">
-      <div>
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:physioislandburin@gmail.com">physioislandburin@gmail.com</a><br>
-           Phone: <a href="tel:">(</a><br>
-           Address: Burin Bay Arm, NL</p>
-        <p class="muted">Parking available • Wheelchair accessible • Close to transit</p>
+    <!-- Contact info + form -->
+    <section style="margin-top:28px">
+      <div class="grid" style="grid-template-columns:1fr 1fr; gap:24px">
+        <div>
+          <h3>Clinic Details</h3>
+          <p>
+            Email: <a href="mailto:physioislandburin@gmail.com">physioislandburin@gmail.com </a><br>
+            Phone: <a href="tel:+">(</a><br>
+            Address: Burin Bay Arm, NL
+          </p>
+          <p class="muted">Hours: We are coming by January 2026 </p>
+        </div>
+
+        <form class="contact-form"
+              action="https://formspree.io/f/your-id-here"
+              method="POST">
+          <!-- ⬆️ Formspree ID’ni 'your-id-here' yerine koy -->
+          <label>Name
+            <input name="name" required>
+          </label>
+          <label>Email
+            <input type="email" name="email" required>
+          </label>
+          <label>Message
+            <textarea name="message" rows="5" required></textarea>
+          </label>
+          <button class="btn primary" type="submit">Send Message</button>
+          <small class="muted">We’ll get back to you within one business day.</small>
+        </form>
       </div>
-      <form class="contact-form" action="https://formspree.io/f/your-id-here" method="POST">
-        <label>Name<input name="name" required></label>
-        <label>Email<input type="email" name="email" required></label>
-        <label>Message<textarea name="message" rows="5" required></textarea></label>
-        <button class="btn primary" type="submit">Send Message</button>
-        <small class="muted">Replace <b>your-id-here</b> with your Formspree form ID.</small>
-      </form>
-    </div>
-  </section>
+    </section>
 
   <!-- Footer -->
   <footer class="footer">
