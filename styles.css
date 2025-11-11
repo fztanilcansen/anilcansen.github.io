@@ -919,3 +919,29 @@ h1 {
 
 /* 4) Yatay taşmayı kapat (tam genişlikte güvenlik) */
 html, body { overflow-x: hidden; }
+
+/* ===== OUR TEAM: 3-across grid on desktop, responsive ===== */
+.team-grid{
+  display:grid;
+  grid-template-columns: repeat(3, minmax(0,1fr));
+  gap:18px;
+}
+@media (max-width: 980px){
+  .team-grid{ grid-template-columns: repeat(2, minmax(0,1fr)); }
+}
+@media (max-width: 620px){
+  .team-grid{ grid-template-columns: 1fr; }
+}
+
+/* Make team cards look tidy in a grid */
+.team-item{
+  height:100%;
+  display:block;
+}
+.team-item .team-body{ color:#334155; }
+
+/* Optional: lighter card hover like other cards */
+.team-item:hover{
+  box-shadow:0 8px 18px rgba(0,0,0,.07);
+  transform: translateY(-1px);
+}
