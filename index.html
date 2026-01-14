@@ -128,16 +128,6 @@
   </div>
 </section>
 
-<!-- Sayfada daha aşağıda bir yerde -->
-<div id="book-now" style="margin-top: 20px;">
-  <iframe
-    frameborder="0"
-    height="28"
-    scrolling="no"
-    src="https://physioisland.janeapp.com/embed/book_online"
-    width="177">
-  </iframe>
-</div>
 
   <!-- Services Section -->
   <section class="services-section">
@@ -640,6 +630,16 @@
       if (e.key === 'Escape') {
         document.querySelectorAll('.dropdown.open').forEach(el => el.classList.remove('open'));
       }
+    });
+  })();
+</script>
+<script>
+  (function () {
+    const BOOKING_URL = "https://physioisland.janeapp.com/";
+    document.querySelectorAll("a.book-now").forEach(a => {
+      a.href = BOOKING_URL;
+      a.target = "_blank";            // yeni sekmede açsın istersen kalsın
+      a.rel = "noopener";             // güvenlik
     });
   })();
 </script>
